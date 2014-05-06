@@ -8,7 +8,7 @@
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Settings</category>
 	<menuitems>
-		<arimanager>Asterisk ARI Users</arimanager>
+		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
 		*12.0.0* Initial Release
