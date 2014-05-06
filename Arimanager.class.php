@@ -154,10 +154,10 @@ class Arimanager implements BMO {
 		$set['hidden'] = 0;
 		$set['level'] = 0;
 		$set['module'] = '';
-		$set['category'] = 'Asterisk REST Interface';
+		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
-		$set['name'] = 'Enable the Asterisk REST Interface';
-		$set['description'] = "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.";
+		$set['name'] = _('Enable the Asterisk REST Interface');
+		$set['description'] = _("Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI',$set);
 
@@ -168,10 +168,10 @@ class Arimanager implements BMO {
 		$set['hidden'] = 0;
 		$set['level'] = 0;
 		$set['module'] = '';
-		$set['category'] = 'Asterisk REST Interface';
+		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
-		$set['name'] = 'Pretty Print JSON Responses';
-		$set['description'] = "Enable pretty-printing of the JSON responses from Asterisk";
+		$set['name'] = _('Pretty Print JSON Responses');
+		$set['description'] = _("Enable pretty-printing of the JSON responses from Asterisk");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI_PP',$set);
 
