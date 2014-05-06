@@ -1,0 +1,29 @@
+$(function() {
+	var type = $('select[name="password_type"]').val();
+	$('#ariform').submit(function( event ) {
+		if($('input[name="name"]').val().length === 0) {
+			alert("User Name Can Not Be Blank!");
+			event.preventDefault();
+			$('input[name="name"]').focus();
+			return false;
+		}
+		if($('input[name="password"]').val().length === 0) {
+			alert("User Password Can Not Be Blank!");
+			event.preventDefault();
+			$('input[name="password"]').focus();
+			return false;
+		}
+		if($('input[name="password"]').val() == '******' && ($('select[name="password_type"]').val() != type)) {
+			alert("You Cant Change Password Type Without Changing the Password");
+			event.preventDefault();
+			$('input[name="password"]').focus();
+			return false;
+		}
+		if(jQuery.inArray( $('input[name="name"]').val(), users) >= 0) {
+			alert("User Name already exists!");
+			event.preventDefault();
+			$('input[name="name"]').focus();
+			return false;
+		}
+	});
+});

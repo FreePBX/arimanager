@@ -1,0 +1,25 @@
+<module>
+	<rawname>arimanager</rawname>
+	<repo>extended</repo>
+	<name>Asterisk REST Interface Users</name>
+	<version>12.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<category>Settings</category>
+	<menuitems>
+		<arimanager>Asterisk ARI Users</arimanager>
+	</menuitems>
+	<changelog>
+		*12.0.0* Initial Release
+	</changelog>
+	<description>
+		Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users.
+	</description>
+	<depends>
+		<engine>asterisk 12</engine>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+</module>
