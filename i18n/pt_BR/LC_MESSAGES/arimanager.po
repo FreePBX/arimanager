@@ -21,19 +21,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-05 21:33-0400\n"
-"PO-Revision-Date: 2014-05-05 21:33-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2014-07-26 00:37+0200\n"
+"Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://git.freepbx.org/projects/freepbx/arimanager/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 
 msgid "Asterisk REST Interface Users"
 msgstr ""
 
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful "
@@ -52,7 +55,7 @@ msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
 
 msgid "Add User"
-msgstr ""
+msgstr "Adicionar Usuário"
 
 msgid "Edit Asterisk REST Interface User"
 msgstr ""
@@ -73,7 +76,7 @@ msgid "Asterisk REST Inferface Password."
 msgstr ""
 
 msgid "Password Type:"
-msgstr ""
+msgstr "Tipo de Senha:"
 
 msgid ""
 "For the security concious, you probably don't want to put plaintext "
@@ -82,31 +85,31 @@ msgid ""
 msgstr ""
 
 msgid "Crypt"
-msgstr ""
+msgstr "Criptografia"
 
 msgid "Plain Text"
-msgstr ""
+msgstr "Texto Plano"
 
 msgid "Read Only:"
-msgstr ""
+msgstr "Somente Leitura:"
 
 msgid "Set to True for read-only applications."
 msgstr ""
 
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Usuário já Existe!"
 
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Usuário adicionado com sucesso"
 
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Usuario atualizado com sucesso"
 
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Usuário apagado com sucesso"
 
 msgid "Creating ARI Manager Table"
 msgstr ""
@@ -133,4 +136,4 @@ msgid "Dropping ARI Manager Table"
 msgstr ""
 
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Apagar configurações avançadas do FreePBX"
