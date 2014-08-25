@@ -13,6 +13,9 @@
 		<?php } ?>
 	<ul>
 </div>
+<?php if(isset($user['id'])) {?>
+	<a href="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete"><span><img width="16" height="16" border="0" title="<?php echo sprintf(_('Delete User %s'),$user['name'])?>" alt="" src="images/core_delete.png">&nbsp;<?php echo sprintf(_('Delete User %s'),$user['name'])?></span></a>
+<?php } ?>
 <form autocomplete="off" id="ariform" method="post">
 	<input type="hidden" name="id" value="<?php echo (isset($user['id']) ? $user['id'] : ''); ?>">
 	<table>
