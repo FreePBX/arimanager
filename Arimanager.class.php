@@ -12,8 +12,38 @@ class Arimanager implements BMO {
 		$this->message = array();
 	}
 
+	public function getActionBar($request) {
+		$buttons = array();
+
+		switch($request['display']) {
+			case 'arimanager':
+				$buttons = array(
+					'delete' => array(
+						'name' => 'delete',
+						'id' => 'delete',
+						'value' => _('Delete')
+					),
+					'reset' => array(
+						'name' => 'reset',
+						'id' => 'reset',
+						'value' => _('Reset')
+					),
+					'submit' => array(
+						'name' => 'submit',
+						'id' => 'submit',
+						'value' => _('Submit')
+					)
+				);
+				if (empty($request['user'])) {
+					unset($buttons['delete']);
+				}
+			break;
+		}
+		return $buttons;
+	}
+
 	public function doConfigPageInit($page) {
-		if(isset($_POST['submit'])) {
+		if(!empty($_POST)) {
 			$readonly = ($_POST['readonly'] == 'yes') ? 1 : 0;
 			if(empty($_POST['id'])) {
 				$this->addUser($_POST['name'],$_POST['password'],$_POST['password_type'],$readonly);

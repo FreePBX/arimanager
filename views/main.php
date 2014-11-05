@@ -13,10 +13,7 @@
 		<?php } ?>
 	<ul>
 </div>
-<?php if(isset($user['id'])) {?>
-	<a href="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete"><span><img width="16" height="16" border="0" title="<?php echo sprintf(_('Delete User %s'),$user['name'])?>" alt="" src="images/core_delete.png">&nbsp;<?php echo sprintf(_('Delete User %s'),$user['name'])?></span></a>
-<?php } ?>
-<form autocomplete="off" id="ariform" method="post">
+<form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete">
 	<input type="hidden" name="id" value="<?php echo (isset($user['id']) ? $user['id'] : ''); ?>">
 	<table>
 		<tr><td colspan="2"><h5><?php echo (isset($user['id']) ? _("Edit Asterisk REST Interface User") : _("Add Asterisk REST Interface User")) ?><hr></h5></td></tr>
@@ -49,11 +46,6 @@
 					<input id="readonly-false" type="radio" name="readonly" value="no" <?php echo (isset($user['read_only']) && $user['read_only'] == 0) ? 'checked' : ''?>>
 					<label for="readonly-false">False</label>
 				</span>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<input type="submit" value="<?php echo _('Submit')?>" name="submit">
 			</td>
 		</tr>
 	</table>
