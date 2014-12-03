@@ -1,4 +1,7 @@
 <?php
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright 2013 Schmooze Com Inc.
+//
 class Arimanager implements BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
