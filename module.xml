@@ -1,9 +1,9 @@
 <module>
 	<rawname>arimanager</rawname>
-	<repo>extended</repo>
+	<repo>supported</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>12.0.2</version>
-	<publisher>FreePBX</publisher>
+	<version>12.0.3</version>
+	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Settings</category>
@@ -11,6 +11,7 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
+		*12.0.3* Copyright and licensing
 		*12.0.2* FREEPBX-7793 Add Password generator to the ARI
 		*12.0.1* FREEPBX-7792 Add option to DELETE users
 		*12.0.0* Initial Release
