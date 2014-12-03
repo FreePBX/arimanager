@@ -3,7 +3,7 @@
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
 	<version>13.0.1alpha1</version>
-	<publisher>FreePBX</publisher>
+	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Settings</category>
