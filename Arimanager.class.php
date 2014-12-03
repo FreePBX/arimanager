@@ -122,8 +122,10 @@ class Arimanager implements BMO {
 		);
 		if(!empty($_REQUEST['user'])) {
 			$array['user'] = $this->getUser($_REQUEST['user']);
+			$array['password'] = "******";
 		} else {
 			$array['user'] = array();
+			$array['password'] = md5(openssl_random_pseudo_bytes(16));
 		}
 
 		$array['usernames'] = array();

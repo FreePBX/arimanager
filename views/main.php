@@ -25,11 +25,11 @@
 		</tr>
 		<tr>
 			<td><a href="#" class="info"><?php echo _("REST Interface User Name:")?><span><?php echo _("Asterisk REST Interface User Name")?></span></a></td>
-			<td><input type="text" name="name" value="<?php echo (isset($user['name']) ? $user['name'] : ''); ?>"></td>
+			<td><input size="35" type="text" name="name" value="<?php echo (isset($user['name']) ? $user['name'] : ''); ?>"></td>
 		</tr>
 		<tr>
 			<td><a href="#" class="info"><?php echo _("REST Interface User Password:")?><span><?php echo _("Asterisk REST Inferface Password.")?></span></a></td>
-			<td><input type="password" name="password" value="<?php echo (isset($user['password']) ? '******' : ''); ?>"></td>
+			<td><input size="35" type="<?php echo ($password != '******') ? 'text' : 'password'?>" name="password" value="<?php echo $password ?>"></td>
 		</tr>
 		<tr>
 			<td><a href="#" class="info"><?php echo _("Password Type:")?><span><?php echo _("For the security concious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.")?></span></a></td>
