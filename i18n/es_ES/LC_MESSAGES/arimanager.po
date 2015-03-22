@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
 "PO-Revision-Date: 2015-03-21 20:41+0200\n"
-"Last-Translator: Nicolas <ibsani@gmail.com>\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/es_ES/>\n"
 "Language: es_ES\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: views/main.php:22
 msgid "Add Asterisk REST Interface User"
-msgstr "Añadir usuarios Asterisk REST Interface"
+msgstr "Añadir usuarios Asterisk Interface REST"
 
 #: views/main.php:9
 msgid "Add User"
