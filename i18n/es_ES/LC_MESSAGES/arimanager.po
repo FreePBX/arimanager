@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
-"PO-Revision-Date: 2015-03-23 00:34+0200\n"
-"Last-Translator: Nicolas <ibsani@gmail.com>\n"
+"PO-Revision-Date: 2015-03-23 00:39+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/es_ES/>\n"
 "Language: es_ES\n"
@@ -46,6 +46,9 @@ msgid ""
 "API's for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 introduce la Interface Asterisk REST (ARI), un conjunto de API's "
+"RESTful para construir aplicaciones basadas en Asterisk. Este modulo provee "
+"la habilidad de agregar y remover usuarios ARI."
 
 #: arimanager.i18n.php:5
 msgid ""
@@ -53,6 +56,9 @@ msgid ""
 "API\\'s for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 introduce lAsterisk REST Interface, un conjunto de APIs RESTful "
+"para crear aplicaciones basadas en Asterisk. Esto habilitará el servidor "
+"ARI, siempre y cuando el servidor HTTP también esté habilitado."
 
 #: Arimanager.class.php:169
 msgid ""
@@ -66,11 +72,11 @@ msgstr ""
 
 #: views/main.php:31
 msgid "Asterisk REST Inferface Password."
-msgstr "Contraseña Asterisk REST Inferface."
+msgstr "Contraseña de Inferface Asterisk REST."
 
 #: Arimanager.class.php:166 Arimanager.class.php:180
 msgid "Asterisk REST Interface"
-msgstr "Asterisk REST Interface"
+msgstr "Interface Asterisk REST"
 
 #: views/main.php:27
 msgid "Asterisk REST Interface User Name"
@@ -79,7 +85,7 @@ msgstr "Nombre de usuario Asterisk REST Interface"
 #: arimanager.i18n.php:3 arimanager.i18n.php:6 arimanager.i18n.php:8
 #: arimanager.i18n.php:14
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Usuarios de Interface REST Asterisk"
 
 #: Arimanager.class.php:156
 msgid "Creating ARI Manager Table"
