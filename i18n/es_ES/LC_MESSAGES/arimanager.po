@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
-"PO-Revision-Date: 2015-03-21 20:43+0200\n"
-"Last-Translator: Nicolas <ibsani@gmail.com>\n"
+"PO-Revision-Date: 2015-03-23 00:31+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/es_ES/>\n"
 "Language: es_ES\n"
@@ -83,32 +83,32 @@ msgstr ""
 
 #: Arimanager.class.php:156
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "Creando Tabla de gestión ARI"
 
 #: views/main.php:38
 msgid "Crypt"
-msgstr ""
+msgstr "Encripcion"
 
 #: views/main.php:17
 #, php-format
 msgid "Delete User %s"
-msgstr ""
+msgstr "Borrar Usuario %s"
 
 #: Arimanager.class.php:191
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Abandonando Tabla de Gestión ARI"
 
 #: views/main.php:22
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Editar Interface de Usuario de Asterisk REST"
 
 #: Arimanager.class.php:183
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr "Habilitar Impresión-linda de las respuestas de JSON desde Asterisk"
 
 #: Arimanager.class.php:168
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Habilitar la Interface REST de Asterisk"
 
 #: views/main.php:35
 msgid ""
@@ -116,26 +116,29 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"Para el consciente de Seguridad, usted probablemente no quiere colocar una "
+"contraseña de simple texto en el fichero de configuración. ARI soporta "
+"Criptografía(3) para almacenar la contraseña."
 
 #: views/main.php:35
 msgid "Password Type:"
-msgstr ""
+msgstr "Tipo de Contraseña:"
 
 #: views/main.php:39
 msgid "Plain Text"
-msgstr ""
+msgstr "Texto Simple"
 
 #: Arimanager.class.php:182
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Respuestas de impresión bonita JSON"
 
 #: views/main.php:27
 msgid "REST Interface User Name:"
-msgstr ""
+msgstr "Nombre de Usuario  de interface REST:"
 
 #: views/main.php:31
 msgid "REST Interface User Password:"
-msgstr ""
+msgstr "Contraseña de Usuario de Interface REST:"
 
 #: views/main.php:44
 msgid "Read Only:"
