@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
 "PO-Revision-Date: 2015-03-23 00:33+0200\n"
-"Last-Translator: Nicolas <ibsani@gmail.com>\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/es_ES/>\n"
 "Language: es_ES\n"
@@ -175,7 +175,7 @@ msgstr "Usuario actualizado satisfactoriamente"
 #: views/main.php:4
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
-"Asterisk REST Interface está actualmente deshabilitada en la configuración "
+"Interface Asterisk REST está actualmente deshabilitada en la configuración "
 "avanzada"
 
 #: views/main.php:2
