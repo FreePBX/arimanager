@@ -10,21 +10,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
-"PO-Revision-Date: 2015-02-20 18:58-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-04-24 21:21+0200\n"
+"Last-Translator: Paulo <paulop1975@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/pt_PT/>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/main.php:22
 msgid "Add Asterisk REST Interface User"
-msgstr ""
+msgstr "Adicionar Utilizador do Interface REST do Asterisk"
 
 #: views/main.php:9
 msgid "Add User"
-msgstr ""
+msgstr "Adicionar Utilizador"
 
 #: arimanager.i18n.php:12
 msgid ""
@@ -49,24 +52,24 @@ msgstr ""
 
 #: views/main.php:31
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Password do Interface REST do Asterisk."
 
 #: Arimanager.class.php:166 Arimanager.class.php:180
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Interface REST do Asterisk"
 
 #: views/main.php:27
 msgid "Asterisk REST Interface User Name"
-msgstr ""
+msgstr "Nome do Utilizador do Interface REST do Asterisk"
 
 #: arimanager.i18n.php:3 arimanager.i18n.php:6 arimanager.i18n.php:8
 #: arimanager.i18n.php:14
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Utilizadores do Interface REST do Asterisk"
 
 #: Arimanager.class.php:156
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "Criando Tabela do Gestor do ARI"
 
 #: views/main.php:38
 msgid "Crypt"
@@ -75,23 +78,23 @@ msgstr ""
 #: views/main.php:17
 #, php-format
 msgid "Delete User %s"
-msgstr ""
+msgstr "Eliminar Utilizador %s"
 
 #: Arimanager.class.php:191
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Apagando Tabela do Gestor do ARI"
 
 #: views/main.php:22
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Editar Utilizador do Interface REST do Asterisk"
 
 #: Arimanager.class.php:183
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr "Ativar pretty-printing das respostas JSON do Asterisk"
 
 #: Arimanager.class.php:168
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Ativar Interface REST do Asterisk"
 
 #: views/main.php:35
 msgid ""
@@ -102,65 +105,68 @@ msgstr ""
 
 #: views/main.php:35
 msgid "Password Type:"
-msgstr ""
+msgstr "Tipo de Password:"
 
 #: views/main.php:39
 msgid "Plain Text"
-msgstr ""
+msgstr "Texto Simples"
 
 #: Arimanager.class.php:182
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Respostas Pretty Print JSON"
 
 #: views/main.php:27
 msgid "REST Interface User Name:"
-msgstr ""
+msgstr "Nome de Utilizador do Interface REST:"
 
 #: views/main.php:31
 msgid "REST Interface User Password:"
-msgstr ""
+msgstr "Password do Utilizador do Interface REST:"
 
 #: views/main.php:44
 msgid "Read Only:"
-msgstr ""
+msgstr "Somente Leitura:"
 
 #: Arimanager.class.php:195
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Remover Configurações Avançadas do FreePBX"
 
 #: views/main.php:44
 msgid "Set to True for read-only applications."
-msgstr ""
+msgstr "Definir como Verdadeiro para aplicações somente de leitura."
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: views/main.php:56
 msgid "Submit"
-msgstr ""
+msgstr "Submeter"
 
 #: Arimanager.class.php:51
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Utilizador Adicionado com Sucesso"
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Utilizador Eliminado com Sucesso"
 
 #: Arimanager.class.php:75
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Utilizador Atualizado com Sucesso"
 
 #: views/main.php:4
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
+"O Interface REST do Asterisk encontra-se Inativo nas Configurações Avançadas"
 
 #: views/main.php:2
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
+"O Servidor mini-HTTP do Asterisk encontra-se Inativo nas Configurações "
+"Avançadas"
 
 #: Arimanager.class.php:39
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Utilizador Já Existente!"
