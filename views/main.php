@@ -13,7 +13,7 @@
 		<?php } ?>
 	<ul>
 </div>
-<form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete">
+<form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" <?php if(isset($user['id'])) { ?>data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete<?php } ?>">
 	<input type="hidden" name="id" value="<?php echo (isset($user['id']) ? $user['id'] : ''); ?>">
 	<table>
 		<tr><td colspan="2"><h5><?php echo (isset($user['id']) ? _("Edit Asterisk REST Interface User") : _("Add Asterisk REST Interface User")) ?><hr></h5></td></tr>
