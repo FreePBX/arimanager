@@ -1,6 +1,7 @@
 <?php
+
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2013 Schmooze Com Inc.
+//	Copyright 2013-2015 Sangoma Technologies Inc.
 //
 class Arimanager implements BMO {
 	public function __construct($freepbx = null) {
@@ -40,6 +41,9 @@ class Arimanager implements BMO {
 				if (empty($request['user'])) {
 					unset($buttons['delete']);
 				}
+				if(!isset($_REQUEST['view'])){
+					$buttons = array();
+				}
 			break;
 		}
 		return $buttons;
@@ -49,17 +53,24 @@ class Arimanager implements BMO {
 		if(!empty($_POST)) {
 			$readonly = ($_POST['readonly'] == 'yes') ? 1 : 0;
 			if(empty($_POST['id'])) {
-				$this->addUser($_POST['name'],$_POST['password'],$_POST['password_type'],$readonly);
+				$id = $this->addUser($_POST['name'],$_POST['password'],$_POST['password_type'],$readonly);
+				$_REQUEST['user'] = ($id)?$id:'';
 			} else {
 				if($_POST['password'] == '******') {
 					$this->editUser($_POST['id'],$_POST['name'],$readonly);
 				} else {
 					$this->editUser($_POST['id'],$_POST['name'],$readonly,$_POST['password'],$_POST['password_type']);
 				}
+				$_REQUEST['user'] = $_POST['id'];
+				$_REQUEST['view'] = 'form';
 			}
 		} elseif(isset($_REQUEST['action']) && $_REQUEST['action'] == 'delete') {
 			if(!empty($_REQUEST['user'])) {
 				$this->deleteUser($_REQUEST['user']);
+				unset($_REQUEST['user']);
+				if(isset($_REQUEST['view'])){
+					unset($_REQUEST['view']);
+				}
 			}
 		}
 	}
@@ -74,11 +85,13 @@ class Arimanager implements BMO {
 		$p = $this->genPassword($password,$type);
 		try {
 			$sth->execute(array($username,$p['password'],$p['type'],$readonly));
+			$id = $this->db->lastInsertId();
 		} catch (Exception $e) {
 			$this->message = array('type' => 'danger', 'message' => $e->getMessage());
 			return false;
 		}
 		$this->message = array('type' => 'success', 'message' => _('Sucessfully Added User'));
+		return $id;
 	}
 
 	public function editUser($id, $username, $readonly = 1, $password = '', $type = 'crypt') {
@@ -167,8 +180,17 @@ class Arimanager implements BMO {
 				$array['usernames'][] = $user['name'];
 			}
 		}
-
-		return show_view(__DIR__.'/views/main.php',$array);
+		$view = isset($_REQUEST['view'])?$_REQUEST['view']:'';
+		switch($view){
+			case 'form':
+				$content = load_view(__DIR__.'/views/form.php',$array);
+				return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled']));
+			break;
+			default:
+			$content = load_view(__DIR__.'/views/grid.php');
+			return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled']));
+			break;
+		}
 	}
 
 	/* Assorted stubs to validate the BMO Interface */
@@ -255,4 +277,38 @@ class Arimanager implements BMO {
 	public function writeConfig($conf){
 		$this->FreePBX->WriteConfig($conf);
 	}
+	public function ajaxRequest($req, &$setting) {
+       switch ($req) {
+           case 'getJSON':
+               return true;
+           break;
+           default:
+               return false;
+           break;
+       }
+   }
+   public function ajaxHandler(){
+       switch ($_REQUEST['command']) {
+           case 'getJSON':
+               switch ($_REQUEST['jdata']) {
+                   case 'grid':
+                      $data = array_values($this->getAllUsers());
+											if($data){
+                      	return $data;
+											}else{
+												return array();
+											}
+                   break;
+
+                   default:
+                       return false;
+                   break;
+               }
+           break;
+
+           default:
+               return false;
+           break;
+       }
+   }
 }
