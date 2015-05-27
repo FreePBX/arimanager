@@ -11,12 +11,6 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
 
 <h2> <?php echo (isset($user['id']) ? _("Edit Asterisk REST Interface User") : _("Add Asterisk REST Interface User")) ?> </h2>
 <?php echo $messagehtml?>
-<a class="btn btn-default" href="?display=arimanager">
-    <i class="fa fa-list"></i> <span><?php echo _('List Users')?></span>
-</a>
-<a class="btn btn-default" href="?display=arimanager&view=form">
-    <i class="fa fa-plus <?php echo isset($user['id'])?'':'hidden'?>"></i> <span><?php echo _('Add User')?></span>
-</a>
 
 <form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" <?php if(isset($user['id'])) { ?>data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete<?php } ?>">
 	<input type="hidden" name="id" value="<?php echo (isset($user['id']) ? $user['id'] : ''); ?>">
@@ -122,6 +116,5 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
     </div>
   </div>
   <!--END Read Only-->
-</div>
 </form>
 <script>var users = <?php echo json_encode($usernames)?></script>
