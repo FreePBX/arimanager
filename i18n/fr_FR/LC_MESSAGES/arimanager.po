@@ -10,21 +10,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
-"PO-Revision-Date: 2015-02-20 18:58-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-05-28 01:44+0200\n"
+"Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/main.php:22
 msgid "Add Asterisk REST Interface User"
-msgstr ""
+msgstr "Ajouter Asterisk Interface REST utilisateur"
 
 #: views/main.php:9
 msgid "Add User"
-msgstr ""
+msgstr "Ajouter un utilisateur"
 
 #: arimanager.i18n.php:12
 msgid ""
@@ -32,6 +35,9 @@ msgid ""
 "API's for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 introduit l'interface Asterisk REST ( ARI ) , un ensemble d'API "
+"RESTful pour la création d'applications basé sur Asterisk . Ce module offre "
+"la possibilité d'ajouter et de supprimer des utilisateurs ARI ."
 
 #: arimanager.i18n.php:5
 msgid ""
@@ -39,6 +45,9 @@ msgid ""
 "API\\'s for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 introduit l'interface Asterisk REST ( ARI ) , un ensemble de "
+"RESTful API \\ 's pour construire des applications de basé sur Asterisk . Ce "
+"module offre la possibilité d'ajouter et de supprimer des utilisateurs ARI ."
 
 #: Arimanager.class.php:169
 msgid ""
@@ -46,14 +55,17 @@ msgid ""
 "for building Asterisk based applications. This will enable the ARI server as "
 "long as the HTTP server is enabled as well."
 msgstr ""
+"Asterisk 12 introduit l'interface REST Asterisk , un ensemble d'API RESTful "
+"pour la création d'applications basé sur Asterisk . Ceci activera le serveur "
+"ARI tant que le serveur HTTP est aussi activé ."
 
 #: views/main.php:31
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Mot de passe Asterisk REST inferface ."
 
 #: Arimanager.class.php:166 Arimanager.class.php:180
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Asterisk Interface REST"
 
 #: views/main.php:27
 msgid "Asterisk REST Interface User Name"
