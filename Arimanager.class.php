@@ -61,12 +61,14 @@ class Arimanager implements BMO {
 				} else {
 					$this->editUser($_POST['id'],$_POST['name'],$readonly,$_POST['password'],$_POST['password_type']);
 				}
+				\needreload();
 				$_REQUEST['user'] = $_POST['id'];
 				$_REQUEST['view'] = 'form';
 			}
 		} elseif(isset($_REQUEST['action']) && $_REQUEST['action'] == 'delete') {
 			if(!empty($_REQUEST['user'])) {
 				$this->deleteUser($_REQUEST['user']);
+				\needreload();
 				unset($_REQUEST['user']);
 				if(isset($_REQUEST['view'])){
 					unset($_REQUEST['view']);
