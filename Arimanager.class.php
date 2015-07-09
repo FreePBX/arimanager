@@ -65,6 +65,7 @@ class Arimanager implements BMO {
 				$_REQUEST['user'] = $_POST['id'];
 				$_REQUEST['view'] = 'form';
 			}
+			needreload();
 		} elseif(isset($_REQUEST['action']) && $_REQUEST['action'] == 'delete') {
 			if(!empty($_REQUEST['user'])) {
 				$this->deleteUser($_REQUEST['user']);

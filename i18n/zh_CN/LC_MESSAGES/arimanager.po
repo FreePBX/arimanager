@@ -31,10 +31,7 @@ msgid "Add User"
 msgstr "添加用户"
 
 #: Arimanager.class.php:221
-msgid ""
-"Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
-"for building Asterisk based applications. This will enable the ARI server as "
-"long as the HTTP server is enabled as well."
+msgid "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well."
 msgstr ""
 
 #: views/form.php:60
@@ -82,10 +79,7 @@ msgid "Enable the Asterisk REST Interface"
 msgstr ""
 
 #: views/form.php:87
-msgid ""
-"For the security consious, you probably don't want to put plaintext "
-"passwords in the configuration file. ARI supports the use of crypt(3) for "
-"password storage."
+msgid "For the security consious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage."
 msgstr ""
 
 #: views/main.php:23
@@ -153,8 +147,7 @@ msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
 
 #: views/main.php:4
-msgid ""
-"The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
+msgid "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
 
 #: Arimanager.class.php:80
@@ -167,6 +160,27 @@ msgstr ""
 
 #: views/form.php:104
 msgid "Yes"
+msgstr ""
+
+#: views/main.php:17
+#, php-format
+msgid "Delete User %s"
+msgstr ""
+
+#: views/main.php:35
+msgid "For the security concious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage."
+msgstr ""
+
+#: views/main.php:44
+msgid "Set to True for read-only applications."
+msgstr ""
+
+#: arimanager.i18n.php:12
+msgid "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users."
+msgstr ""
+
+#: arimanager.i18n.php:5
+msgid "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users."
 msgstr ""
 
 #~ msgid "Asterisk REST Interface Users"
