@@ -21,16 +21,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:58-0500\n"
-"PO-Revision-Date: 2014-11-17 17:18+0200\n"
+"PO-Revision-Date: 2015-03-11 20:41+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/arimanager/"
-"bg_BG/>\n"
+"Language-Team: Bulgarian "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/bg_BG/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/main.php:22
 msgid "Add Asterisk REST Interface User"
@@ -56,6 +56,9 @@ msgid ""
 "API\\'s for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Астериск 12 представя Астериск REST Интерфейс (ARI), набор от RESTful API-та "
+"за създаване на Астериск базирани приложения. Този модул дава възможност да "
+"добавяте и премахвате потребители на ARI."
 
 #: Arimanager.class.php:169
 msgid ""
@@ -95,7 +98,7 @@ msgstr "Криптирана"
 #: views/main.php:17
 #, php-format
 msgid "Delete User %s"
-msgstr ""
+msgstr "Изтрий Потребител %s"
 
 #: Arimanager.class.php:191
 msgid "Dropping ARI Manager Table"
