@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 16:20-0400\n"
+"POT-Creation-Date: 2015-07-20 21:02-0400\n"
 "PO-Revision-Date: 2015-02-20 18:58-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,15 +30,18 @@ msgstr "添加 REST接口用户"
 msgid "Add User"
 msgstr "添加用户"
 
-#: Arimanager.class.php:221
-msgid "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well."
+#: Arimanager.class.php:223
+msgid ""
+"Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
+"for building Asterisk based applications. This will enable the ARI server as "
+"long as the HTTP server is enabled as well."
 msgstr ""
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
 msgstr ""
 
-#: Arimanager.class.php:218 Arimanager.class.php:232
+#: Arimanager.class.php:220 Arimanager.class.php:234
 msgid "Asterisk REST Interface"
 msgstr ""
 
@@ -50,7 +53,7 @@ msgstr "REST接口用户名称"
 msgid "Asterisk Rest Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:208
+#: Arimanager.class.php:210
 msgid "Creating ARI Manager Table"
 msgstr "创建ARI manager 表"
 
@@ -62,7 +65,7 @@ msgstr "加密"
 msgid "Delete"
 msgstr ""
 
-#: Arimanager.class.php:243
+#: Arimanager.class.php:245
 msgid "Dropping ARI Manager Table"
 msgstr "删除ARI Manager 表"
 
@@ -70,16 +73,19 @@ msgstr "删除ARI Manager 表"
 msgid "Edit Asterisk REST Interface User"
 msgstr "编辑REST 接口用户"
 
-#: Arimanager.class.php:235
+#: Arimanager.class.php:237
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr ""
 
-#: Arimanager.class.php:220
+#: Arimanager.class.php:222
 msgid "Enable the Asterisk REST Interface"
 msgstr ""
 
 #: views/form.php:87
-msgid "For the security consious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage."
+msgid ""
+"For the security consious, you probably don't want to put plaintext "
+"passwords in the configuration file. ARI supports the use of crypt(3) for "
+"password storage."
 msgstr ""
 
 #: views/main.php:23
@@ -98,7 +104,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr "普通文本"
 
-#: Arimanager.class.php:234
+#: Arimanager.class.php:236
 msgid "Pretty Print JSON Responses"
 msgstr ""
 
@@ -114,7 +120,7 @@ msgstr ""
 msgid "Read Only"
 msgstr ""
 
-#: Arimanager.class.php:247
+#: Arimanager.class.php:249
 msgid "Remove FreePBX Advanced Settings"
 msgstr "清除FreePBX高级设置"
 
@@ -130,15 +136,15 @@ msgstr ""
 msgid "Submit"
 msgstr "提交"
 
-#: Arimanager.class.php:93
+#: Arimanager.class.php:95
 msgid "Sucessfully Added User"
 msgstr "成功添加用户"
 
-#: Arimanager.class.php:145
+#: Arimanager.class.php:147
 msgid "Sucessfully Deleted User"
 msgstr "成功删除用户"
 
-#: Arimanager.class.php:118
+#: Arimanager.class.php:120
 msgid "Sucessfully Updated User"
 msgstr "成功更新用户"
 
@@ -147,12 +153,25 @@ msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
 
 #: views/main.php:4
-msgid "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
+msgid ""
+"The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
 
-#: Arimanager.class.php:80
+#: Arimanager.class.php:82
 msgid "User Already Exists!"
 msgstr "用户已存在"
+
+#: assets/js/main.js:5
+msgid "User Name Can Not Be Blank!"
+msgstr ""
+
+#: assets/js/main.js:23
+msgid "User Name already exists!"
+msgstr ""
+
+#: assets/js/main.js:11
+msgid "User Password Can Not Be Blank!"
+msgstr ""
 
 #: views/grid.php:12
 msgid "Username"
@@ -162,25 +181,8 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: views/main.php:17
-#, php-format
-msgid "Delete User %s"
-msgstr ""
-
-#: views/main.php:35
-msgid "For the security concious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage."
-msgstr ""
-
-#: views/main.php:44
-msgid "Set to True for read-only applications."
-msgstr ""
-
-#: arimanager.i18n.php:12
-msgid "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users."
-msgstr ""
-
-#: arimanager.i18n.php:5
-msgid "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users."
+#: assets/js/main.js:17
+msgid "You Cant Change Password Type Without Changing the Password"
 msgstr ""
 
 #~ msgid "Asterisk REST Interface Users"
