@@ -10,16 +10,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:02-0400\n"
-"PO-Revision-Date: 2015-07-20 21:02-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-10-10 11:21+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:14
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: views/form.php:12
 msgid "Add Asterisk REST Interface User"
@@ -27,7 +31,7 @@ msgstr ""
 
 #: views/grid.php:6 views/main.php:24
 msgid "Add User"
-msgstr ""
+msgstr "افزودن کاربر"
 
 #: Arimanager.class.php:223
 msgid ""
@@ -62,7 +66,7 @@ msgstr ""
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: Arimanager.class.php:245
 msgid "Dropping ARI Manager Table"
@@ -89,19 +93,19 @@ msgstr ""
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "فهرست کاربران"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "نوع پسورد"
 
 #: views/form.php:79
 msgid "Plain Text"
-msgstr ""
+msgstr "متن ساده"
 
 #: Arimanager.class.php:236
 msgid "Pretty Print JSON Responses"
@@ -117,7 +121,7 @@ msgstr ""
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "فقط خواندنی"
 
 #: Arimanager.class.php:249
 msgid "Remove FreePBX Advanced Settings"
@@ -125,27 +129,27 @@ msgstr ""
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "برای برنامه‌ های فقط خواندنی روی بله تنظیم کنید."
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr ""
+msgstr "ثبت"
 
 #: Arimanager.class.php:95
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "کاربر با موفقیت اضافه شد"
 
 #: Arimanager.class.php:147
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "کاربر با موفقیت حذف شد"
 
 #: Arimanager.class.php:120
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "کاربر با موفقیت به روز شد"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
@@ -158,28 +162,28 @@ msgstr ""
 
 #: Arimanager.class.php:82
 msgid "User Already Exists!"
-msgstr ""
+msgstr "کاربر موجود است!"
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "نام کاربری نمیتواند خالی باشد!"
 
 #: assets/js/main.js:23
 msgid "User Name already exists!"
-msgstr ""
+msgstr "نام کاربری موجود است!"
 
 #: assets/js/main.js:11
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "پسورد نمیتواند خالی باشد!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr ""
+msgstr "نام کاربری"
 
 #: views/form.php:104
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "بدون تغییر پسورد نمیتوانید نوع پسورد را تغییر دهید"
