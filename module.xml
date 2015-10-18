@@ -2,16 +2,18 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>13.0.3</version>
+	<version>14.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Settings</category>
 	<menuitems>
 		<arimanager>Asterisk REST Interface Users</arimanager>
+		<arimanagerapps category="Reports">Asterisk REST Interface Apps</arimanagerapps>
 	</menuitems>
 	<changelog>
-		*13.0.3* FREEPBX-9619 Adding user with Asterisk Rest Interface users does not prompt for system reload 
+		*14.0.1* Add app report, additional advanced settings.
+		*13.0.3* FREEPBX-9619 Adding user with Asterisk Rest Interface users does not prompt for system reload
 		*13.0.2* Version bump Beta
 		*13.0.1alpha2* Visual Styling Fixes
 		*12.0.2* FREEPBX-7793 Add Password generator to the ARI
