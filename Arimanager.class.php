@@ -382,13 +382,10 @@ class Arimanager implements BMO {
                }
            break;
 					 case 'listApps':
-					 //Get first user
-					 	$sql = 'SELECT name,password from arimanager LIMIT 1';
-						$stmt = $this->db->prepare($sql);
-						$stmt->execute();
-						$user = $stmt->fetch(\PDO::FETCH_ASSOC);
+					 	$ariuser = $this->Conf->get_conf_setting('FPBX_ARI_USER');
+					 	$aripass = $this->Conf->get_conf_setting('FPBX_ARI_PASSWORD');
 					 	$pest = new \Pest('http://localhost:8088/ari/');
-						$pest->setupAuth($user['name'], $user['password']);
+						$pest->setupAuth($ariuser, $aripass);
 						$apps = $pest->get('/applications');
 						return json_decode($apps);
 					 break;
