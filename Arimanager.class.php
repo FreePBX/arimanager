@@ -308,6 +308,10 @@ class Arimanager implements BMO {
 		//Remove FreePBX Advanced Setting
 		$this->Conf->remove_conf_settings('ENABLE_ARI');
 		$this->Conf->remove_conf_settings('ENABLE_ARI_PP');
+		$this->Conf->remove_conf_settings('ARI_WS_WRITE_TIMEOUT');
+		$this->Conf->remove_conf_settings('ARI_ALLOWED_ORIGINS');
+		$this->Conf->remove_conf_settings('FPBX_ARI_PASSWORD');
+		$this->Conf->remove_conf_settings('FPBX_ARI_USER');
 	}
 
 	public function backup() {
