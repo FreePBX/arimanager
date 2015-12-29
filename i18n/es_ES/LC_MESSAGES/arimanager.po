@@ -199,7 +199,7 @@ msgstr "Contraseña de Usuario no puede estar en Blanco!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr "Username"
+msgstr "Nombreusuario"
 
 #: views/form.php:104
 msgid "Yes"
