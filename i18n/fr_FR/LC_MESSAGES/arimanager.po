@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:02-0400\n"
-"PO-Revision-Date: 2016-01-20 06:14+0200\n"
+"PO-Revision-Date: 2016-01-22 06:34+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/fr_FR/>\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: Arimanager.class.php:245
 msgid "Dropping ARI Manager Table"
