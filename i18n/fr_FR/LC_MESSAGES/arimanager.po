@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:02-0400\n"
-"PO-Revision-Date: 2016-02-01 00:49+0200\n"
+"PO-Revision-Date: 2016-02-04 23:05+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/fr_FR/>\n"
@@ -135,11 +135,11 @@ msgstr "Suppression des paramètres avancés de FreePBX"
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr "Mettre à oui pour les applications en lecture seule."
+msgstr "Choisissez Oui pour les applications en lecture seule."
 
 #: Arimanager.class.php:38
 msgid "Submit"
