@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:02-0400\n"
-"PO-Revision-Date: 2016-02-04 23:05+0200\n"
+"PO-Revision-Date: 2016-02-06 06:34+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/fr_FR/>\n"
@@ -49,7 +49,7 @@ msgstr "Mot de passe Asterisk REST inferface ."
 
 #: Arimanager.class.php:220 Arimanager.class.php:234
 msgid "Asterisk REST Interface"
-msgstr "Asterisk Interface REST"
+msgstr "Interface REST d'Asterisk"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
