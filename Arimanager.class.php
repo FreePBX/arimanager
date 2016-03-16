@@ -77,6 +77,13 @@ class Arimanager implements BMO {
 		}
 	}
 
+	/**
+	 * Add new ARI User
+	 * @param string  $username Username
+	 * @param string  $password Password
+	 * @param string  $type     Plaintext or cypt password
+	 * @param integer $readonly Read Only user
+	 */
 	public function addUser($username, $password, $type = 'crypt', $readonly = 1) {
 		if($this->checkUsername($username)) {
 			$this->message = array('type' => 'danger', 'message' => _('User Already Exists!'));
@@ -96,6 +103,14 @@ class Arimanager implements BMO {
 		return $id;
 	}
 
+	/**
+	 * Add new ARI User
+	 * @param integer $id       The ID of the user
+	 * @param string  $username Username
+	 * @param integer $readonly Read Only user
+	 * @param string  $password Password
+	 * @param string  $type     Plaintext or cypt password
+	 */
 	public function editUser($id, $username, $readonly = 1, $password = '', $type = 'crypt') {
 		if(empty($password)) {
 			$sql = "UPDATE arimanager SET name = ?, read_only = ? WHERE id = ?";
@@ -118,8 +133,14 @@ class Arimanager implements BMO {
 			}
 		}
 		$this->message = array('type' => 'success', 'message' => _('Sucessfully Updated User'));
+		return true;
 	}
 
+	/**
+	 * Check if username exists
+	 * @param  string $username The username to check
+	 * @return boolean           If the username exists or not
+	 */
 	private function checkUsername($username) {
 		$sql = "SELECT * FROM arimanager WHERE name = ?";
 		$sth = $this->db->prepare($sql);
@@ -128,6 +149,12 @@ class Arimanager implements BMO {
 		return !empty($t);
 	}
 
+	/**
+	 * Generate a crypted password
+	 * @param  string $password The cypted password
+	 * @param  string $type     If crypt this will be 'crypt'
+	 * @return [type]           [description]
+	 */
 	private function genPassword($password,$type) {
 		if($type == 'crypt') {
 			$l = $this->astman->Command('ari mkpasswd '.$password);
@@ -140,6 +167,10 @@ class Arimanager implements BMO {
 		return array("password" => $password, "type" => $type);
 	}
 
+	/**
+	 * Delete User By ID
+	 * @param  integer $id The ID of the user
+	 */
 	public function deleteUser($id) {
 		$sql = 'DELETE FROM arimanager WHERE id = ?';
 		$sth = $this->db->prepare($sql);
@@ -147,6 +178,10 @@ class Arimanager implements BMO {
 		$this->message = array('type' => 'success', 'message' => _('Sucessfully Deleted User'));
 	}
 
+	/**
+	 * Get all users
+	 * @return mixed Return array of users
+	 */
 	public function getAllUsers() {
 		$sql = "SELECT * FROM arimanager";
 		$sth = $this->db->prepare($sql);
@@ -154,6 +189,23 @@ class Arimanager implements BMO {
 		return $sth->fetchAll(PDO::FETCH_ASSOC);
 	}
 
+	/**
+	 * Get User data by username
+	 * @param  string $username Username
+	 * @return mixed           Array of user data or false if no user
+	 */
+	public function getUserByUsername($username) {
+		$sql = "SELECT * FROM arimanager WHERE name = ?";
+		$sth = $this->db->prepare($sql);
+		$sth->execute(array($username));
+		return $sth->fetch(PDO::FETCH_ASSOC);
+	}
+
+	/**
+	 * Get User by ID
+	 * @param  integer $id The ID of the User
+	 * @return mixed     Array of user data or false if no user
+	 */
 	public function getUser($id) {
 		$sql = "SELECT * FROM arimanager WHERE id = ?";
 		$sth = $this->db->prepare($sql);
