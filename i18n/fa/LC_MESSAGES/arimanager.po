@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:02-0400\n"
-"PO-Revision-Date: 2016-02-14 06:59+0200\n"
+"PO-Revision-Date: 2016-03-17 01:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/fa/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:14
 msgid "Actions"
@@ -39,6 +39,9 @@ msgid ""
 "for building Asterisk based applications. This will enable the ARI server as "
 "long as the HTTP server is enabled as well."
 msgstr ""
+"Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
+"for building Asterisk based applications. This will enable the ARI server as "
+"long as the HTTP server is enabled as well ."
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
@@ -58,11 +61,11 @@ msgstr "کاربران رابط کاربری REST استریسک"
 
 #: Arimanager.class.php:210
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "ایجاد جدول مدیریت ARI"
 
 #: views/form.php:77
 msgid "Crypt"
-msgstr ""
+msgstr "کد"
 
 #: Arimanager.class.php:28
 msgid "Delete"
@@ -70,19 +73,19 @@ msgstr "حذف"
 
 #: Arimanager.class.php:245
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "انداختن جدول مدیریت ARI"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "ویرایش رابط کاربری استریسک"
 
 #: Arimanager.class.php:237
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr ",Enable pretty-printing of the JSON responses from Asterisk"
 
 #: Arimanager.class.php:222
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "فعال کردن رابط کاربری REST استریسک"
 
 #: views/form.php:87
 msgid ""
@@ -90,6 +93,9 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"For the security consious, you probably don't want to put plaintext "
+"passwords in the configuration file. ARI supports the use of crypt(3) for "
+"password storage ."
 
 #: views/main.php:23
 msgid "List Users"
@@ -109,15 +115,15 @@ msgstr "متن ساده"
 
 #: Arimanager.class.php:236
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Pretty Print, JSON Responses"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "نام رابط کاربری REST"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "کلمه عبور رابط کاربری REST"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
@@ -125,7 +131,7 @@ msgstr "فقط خواندنی"
 
 #: Arimanager.class.php:249
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "برداشتن تنظیمات پیشرفته FreePBX"
 
 #: Arimanager.class.php:33
 msgid "Reset"
@@ -153,12 +159,12 @@ msgstr "کاربر با موفقیت به روز شد"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
-msgstr ""
+msgstr "رابط کاربری REST  استریسک در تنظیمات پیشرفته غیرفعال شده است"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
-msgstr ""
+msgstr "سرور mini-HTTP استریسک در تنظیمات پیشرفته غیرفعال شده است"
 
 #: Arimanager.class.php:82
 msgid "User Already Exists!"
