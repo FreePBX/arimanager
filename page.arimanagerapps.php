@@ -18,6 +18,8 @@ $dataurl = "ajax.php?module=arimanager&command=listApps";
                   data-maintain-selected="true"
                   data-toggle="table"
                   data-pagination="true"
+                  data-detail-view="true"
+                  data-detail-formatter="moreDetails"
                   class="table table-striped">
               <thead>
                 <tr>
@@ -40,4 +42,14 @@ $dataurl = "ajax.php?module=arimanager&command=listApps";
   function BRFormatter(v,row){ return row['bridge_ids'].length;}
   function EPFormatter(v,row){ return row['endpoint_ids'].length;}
   function DEVFormatter(v,row){ return row['device_names'].length;}
+  function moreDetails(v,row){
+    var html = _('Channels:')+"<br/>"+row.channel_ids.join("<br/>");
+    html += '<hr/>';
+    html += _('Bridges:')+"<br/>"+row.bridge_ids.join("<br/>");
+    html += '<hr/>';
+    html += _('Endpoints:')+"<br/>"+row.endpoint_ids.join("<br/>");
+    html += '<hr/>';
+    html += _('Devices:')+"<br/>"+row.device_names.join("<br/>");
+    return html;
+  }
 </script>
