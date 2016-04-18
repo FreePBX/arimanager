@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:02-0400\n"
+"POT-Creation-Date: 2016-04-17 17:25-0700\n"
 "PO-Revision-Date: 2015-05-01 11:17+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -31,6 +31,14 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
+
+#: Arimanager.class.php:303
+msgid "ARI Password"
+msgstr ""
+
+#: Arimanager.class.php:288
+msgid "ARI Username"
+msgstr ""
 
 #: views/grid.php:14
 msgid "Actions"
@@ -44,7 +52,25 @@ msgstr "Adicionar Usuário da Interface REST do Asterisk"
 msgid "Add User"
 msgstr "Adicionar Usuário"
 
-#: Arimanager.class.php:223
+#: Arimanager.class.php:346
+msgid "Allowed Origins"
+msgstr ""
+
+#: page.arimanagerapps.php:26
+msgid "Application Name"
+msgstr ""
+
+#: arimanager.i18n.php:8
+msgid ""
+"Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful "
+"API's for building Asterisk based applications. This module provides the "
+"ability to add and remove ARI users."
+msgstr ""
+"O Asterisk 12 introduz a Interface REST do Asterisk (ARI), um conjunto de "
+"APIs RESTful para construir aplicações baseadas em Asterisk. Este módulo "
+"fornece a habilidade de adicionar e remover usuários ARI."
+
+#: Arimanager.class.php:275
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -58,19 +84,42 @@ msgstr ""
 msgid "Asterisk REST Inferface Password."
 msgstr "Senha da Interface REST do Asterisk."
 
-#: Arimanager.class.php:220 Arimanager.class.php:234
+#: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
+#: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
 msgstr "Interface REST Asterisk"
+
+#: page.arimanagerapps.php:6
+msgid "Asterisk REST Interface Applications"
+msgstr ""
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
 msgstr "Nome de Usuário da Interface REST Asterisk"
 
+#: arimanager.i18n.php:4 arimanager.i18n.php:10
+msgid "Asterisk REST Interface Users"
+msgstr "Usuários da Interface REST Asterisk"
+
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:210
+#: page.arimanagerapps.php:28
+msgid "Bridge Count"
+msgstr ""
+
+#: page.arimanagerapps.php:27
+msgid "Channel Count"
+msgstr ""
+
+#: Arimanager.class.php:347
+msgid ""
+"Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
+"May be set to * to allow all origins."
+msgstr ""
+
+#: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
 msgstr "Criando Tabela do Gerenciador ARI"
 
@@ -82,7 +131,11 @@ msgstr "Criptografia"
 msgid "Delete"
 msgstr ""
 
-#: Arimanager.class.php:245
+#: page.arimanagerapps.php:30
+msgid "Device Count"
+msgstr ""
+
+#: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
 msgstr "Descartando Tabela do Gerenciador ARI"
 
@@ -90,13 +143,17 @@ msgstr "Descartando Tabela do Gerenciador ARI"
 msgid "Edit Asterisk REST Interface User"
 msgstr "Editar Usuário da Interface REST Asterisk"
 
-#: Arimanager.class.php:237
+#: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "Habilitando impressão-bonita das respostas JSON do Asterisk"
 
-#: Arimanager.class.php:222
+#: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
 msgstr "Habilitar a Interface REST Asterisk"
+
+#: page.arimanagerapps.php:29
+msgid "Endpoint Count"
+msgstr ""
 
 #: views/form.php:87
 msgid ""
@@ -117,11 +174,15 @@ msgstr ""
 msgid "Password Type"
 msgstr ""
 
+#: Arimanager.class.php:304
+msgid "Password for internal ARI calls"
+msgstr ""
+
 #: views/form.php:79
 msgid "Plain Text"
 msgstr "Texto Plano"
 
-#: Arimanager.class.php:236
+#: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
 msgstr "Impressão Bonita Respostas JSON"
 
@@ -137,7 +198,7 @@ msgstr ""
 msgid "Read Only"
 msgstr ""
 
-#: Arimanager.class.php:249
+#: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
 msgstr "Apagar configurações avançadas do FreePBX"
 
@@ -149,19 +210,23 @@ msgstr ""
 msgid "Set to Yes for read-only applications."
 msgstr ""
 
+#: arimanager.i18n.php:6 arimanager.i18n.php:12
+msgid "Settings"
+msgstr "Configurações"
+
 #: Arimanager.class.php:38
 msgid "Submit"
 msgstr "Enviar"
 
-#: Arimanager.class.php:95
+#: Arimanager.class.php:102
 msgid "Sucessfully Added User"
 msgstr "Usuário adicionado com sucesso"
 
-#: Arimanager.class.php:147
+#: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
 msgstr "Usuário apagado com sucesso"
 
-#: Arimanager.class.php:120
+#: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
 msgstr "Usuario atualizado com sucesso"
 
@@ -178,7 +243,15 @@ msgstr ""
 "O Servidor mini-HTTP do Asterisk está Atualmente Desabilitado nas "
 "Configurações Avançadas"
 
-#: Arimanager.class.php:82
+#: page.arimanagerapps.php:13
+msgid "The following applications have registered with Asterisk."
+msgstr ""
+
+#: Arimanager.class.php:333
+msgid "The timeout (in milliseconds) to set on WebSocket connections."
+msgstr ""
+
+#: Arimanager.class.php:89
 msgid "User Already Exists!"
 msgstr "Usuário já Existe!"
 
@@ -196,6 +269,14 @@ msgstr ""
 
 #: views/grid.php:12
 msgid "Username"
+msgstr ""
+
+#: Arimanager.class.php:289
+msgid "Username for internal ARI calls"
+msgstr ""
+
+#: Arimanager.class.php:332
+msgid "Web Socket Write Timeout"
 msgstr ""
 
 #: views/form.php:104
@@ -235,24 +316,9 @@ msgstr ""
 
 #~ msgid ""
 #~ "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of "
-#~ "RESTful API's for building Asterisk based applications. This module "
-#~ "provides the ability to add and remove ARI users."
-#~ msgstr ""
-#~ "O Asterisk 12 introduz a Interface REST do Asterisk (ARI), um conjunto de "
-#~ "APIs RESTful para construir aplicações baseadas em Asterisk. Este módulo "
-#~ "fornece a habilidade de adicionar e remover usuários ARI."
-
-#~ msgid ""
-#~ "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of "
 #~ "RESTful API\\'s for building Asterisk based applications. This module "
 #~ "provides the ability to add and remove ARI users."
 #~ msgstr ""
 #~ "O Asterisk 12 introduz a Interface REST do Asterisk (ARI), um conjunto de "
 #~ "APIs RESTful para construir aplicações baseadas em Asterisk. Este módulo "
 #~ "fornece a habilidade de adicionar e remover usuários ARI."
-
-#~ msgid "Asterisk REST Interface Users"
-#~ msgstr "Usuários da Interface REST Asterisk"
-
-#~ msgid "Settings"
-#~ msgstr "Configurações"

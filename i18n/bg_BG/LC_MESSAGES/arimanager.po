@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:02-0400\n"
+"POT-Creation-Date: 2016-04-17 17:25-0700\n"
 "PO-Revision-Date: 2015-03-11 20:41+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -31,6 +31,14 @@ msgstr ""
 "Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
+
+#: Arimanager.class.php:303
+msgid "ARI Password"
+msgstr ""
+
+#: Arimanager.class.php:288
+msgid "ARI Username"
+msgstr ""
 
 #: views/grid.php:14
 msgid "Actions"
@@ -44,7 +52,25 @@ msgstr "Добавяне на Потребител на Астериск REST И
 msgid "Add User"
 msgstr "Добави Потребител"
 
-#: Arimanager.class.php:223
+#: Arimanager.class.php:346
+msgid "Allowed Origins"
+msgstr ""
+
+#: page.arimanagerapps.php:26
+msgid "Application Name"
+msgstr ""
+
+#: arimanager.i18n.php:8
+msgid ""
+"Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful "
+"API's for building Asterisk based applications. This module provides the "
+"ability to add and remove ARI users."
+msgstr ""
+"Астериск 12 представя Астериск REST Интерфейс (ARI), набор от RESTful API-та "
+"за създаване на Астериск базирани приложения. Този модул дава възможност да "
+"добавяте и премахвате потребители на ARI."
+
+#: Arimanager.class.php:275
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -58,19 +84,42 @@ msgstr ""
 msgid "Asterisk REST Inferface Password."
 msgstr "Парола за Астериск REST Интерфейс."
 
-#: Arimanager.class.php:220 Arimanager.class.php:234
+#: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
+#: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
 msgstr "Астериск REST Интерфейс"
+
+#: page.arimanagerapps.php:6
+msgid "Asterisk REST Interface Applications"
+msgstr ""
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
 msgstr "Потребителско Име за Астериск REST Интерфейс"
 
+#: arimanager.i18n.php:4 arimanager.i18n.php:10
+msgid "Asterisk REST Interface Users"
+msgstr "Астериск REST Потребители"
+
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
 msgstr "Потребители на Астериск REST Интерфейс"
 
-#: Arimanager.class.php:210
+#: page.arimanagerapps.php:28
+msgid "Bridge Count"
+msgstr ""
+
+#: page.arimanagerapps.php:27
+msgid "Channel Count"
+msgstr ""
+
+#: Arimanager.class.php:347
+msgid ""
+"Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
+"May be set to * to allow all origins."
+msgstr ""
+
+#: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
 msgstr "Създаване на ARI Manager Таблица"
 
@@ -82,7 +131,11 @@ msgstr "Криптирана"
 msgid "Delete"
 msgstr "Изтрий"
 
-#: Arimanager.class.php:245
+#: page.arimanagerapps.php:30
+msgid "Device Count"
+msgstr ""
+
+#: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
 msgstr "Премахване на Таблица ARI Manager"
 
@@ -90,13 +143,17 @@ msgstr "Премахване на Таблица ARI Manager"
 msgid "Edit Asterisk REST Interface User"
 msgstr "Редактиране на Потребител на Астериск REST Интерфейс"
 
-#: Arimanager.class.php:237
+#: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "Включва pretty-printing на JSON отговори от Астериск"
 
-#: Arimanager.class.php:222
+#: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
 msgstr "Включване на Астериск REST Интерфейс"
+
+#: page.arimanagerapps.php:29
+msgid "Endpoint Count"
+msgstr ""
 
 #: views/form.php:87
 msgid ""
@@ -120,11 +177,15 @@ msgstr "Не"
 msgid "Password Type"
 msgstr "Вид на Парола"
 
+#: Arimanager.class.php:304
+msgid "Password for internal ARI calls"
+msgstr ""
+
 #: views/form.php:79
 msgid "Plain Text"
 msgstr "Прав Текст"
 
-#: Arimanager.class.php:236
+#: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
 msgstr "Pretty Print JSON Отговори"
 
@@ -140,7 +201,7 @@ msgstr "Парола за Потребител на REST Интерфейс"
 msgid "Read Only"
 msgstr "Само за Четене"
 
-#: Arimanager.class.php:249
+#: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
 msgstr "Премахни FreePBX Допълнителни Настройки"
 
@@ -152,19 +213,23 @@ msgstr "Изчисти"
 msgid "Set to Yes for read-only applications."
 msgstr "Настройте на Да за приложения които са само-за-четене."
 
+#: arimanager.i18n.php:6 arimanager.i18n.php:12
+msgid "Settings"
+msgstr "Настройки"
+
 #: Arimanager.class.php:38
 msgid "Submit"
 msgstr "Приеми"
 
-#: Arimanager.class.php:95
+#: Arimanager.class.php:102
 msgid "Sucessfully Added User"
 msgstr "Успешно Добавен Потребител"
 
-#: Arimanager.class.php:147
+#: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
 msgstr "Успешно Премахнат Потребител"
 
-#: Arimanager.class.php:120
+#: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
 msgstr "Успешно Обновен Потребител"
 
@@ -177,7 +242,15 @@ msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr "Астериск mini-HTTP Сървър е забранен в Допълнителни Настройки"
 
-#: Arimanager.class.php:82
+#: page.arimanagerapps.php:13
+msgid "The following applications have registered with Asterisk."
+msgstr ""
+
+#: Arimanager.class.php:333
+msgid "The timeout (in milliseconds) to set on WebSocket connections."
+msgstr ""
+
+#: Arimanager.class.php:89
 msgid "User Already Exists!"
 msgstr "Потребителят Вече Съществува!"
 
@@ -196,6 +269,14 @@ msgstr "Паролата не може да е празно!"
 #: views/grid.php:12
 msgid "Username"
 msgstr "Потребителско Име"
+
+#: Arimanager.class.php:289
+msgid "Username for internal ARI calls"
+msgstr ""
+
+#: Arimanager.class.php:332
+msgid "Web Socket Write Timeout"
+msgstr ""
 
 #: views/form.php:104
 msgid "Yes"
@@ -234,15 +315,6 @@ msgstr "Не Можете да Промените Вид на Парола бе�
 
 #~ msgid ""
 #~ "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of "
-#~ "RESTful API's for building Asterisk based applications. This module "
-#~ "provides the ability to add and remove ARI users."
-#~ msgstr ""
-#~ "Астериск 12 представя Астериск REST Интерфейс (ARI), набор от RESTful API-"
-#~ "та за създаване на Астериск базирани приложения. Този модул дава "
-#~ "възможност да добавяте и премахвате потребители на ARI."
-
-#~ msgid ""
-#~ "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of "
 #~ "RESTful API\\'s for building Asterisk based applications. This module "
 #~ "provides the ability to add and remove ARI users."
 #~ msgstr ""
@@ -252,9 +324,3 @@ msgstr "Не Можете да Промените Вид на Парола бе�
 
 #~ msgid "Asterisk ARI Users"
 #~ msgstr "Потребители на Астериск ARI"
-
-#~ msgid "Asterisk REST Interface Users"
-#~ msgstr "Астериск REST Потребители"
-
-#~ msgid "Settings"
-#~ msgstr "Настройки"
