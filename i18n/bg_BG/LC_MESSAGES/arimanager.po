@@ -34,7 +34,7 @@ msgstr ""
 
 #: views/grid.php:14
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/form.php:12
 msgid "Add Asterisk REST Interface User"
@@ -68,7 +68,7 @@ msgstr "Потребителско Име за Астериск REST Интер�
 
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "Потребители на Астериск REST Интерфейс"
 
 #: Arimanager.class.php:210
 msgid "Creating ARI Manager Table"
@@ -80,7 +80,7 @@ msgstr "Криптирана"
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 #: Arimanager.class.php:245
 msgid "Dropping ARI Manager Table"
@@ -104,18 +104,21 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"От мерки за сигурност, най-вероятно не бихте искали да сложите паролите като "
+"прав текст в конфигурационния файл. ARI поддържа използването на crypt(3) за "
+"съхраняване на пароли."
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "Списък на Потребители"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "Вид на Парола"
 
 #: views/form.php:79
 msgid "Plain Text"
@@ -127,15 +130,15 @@ msgstr "Pretty Print JSON Отговори"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "Потребителско Име за REST Интерфейс"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "Парола за Потребител на REST Интерфейс"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "Само за Четене"
 
 #: Arimanager.class.php:249
 msgid "Remove FreePBX Advanced Settings"
@@ -143,11 +146,11 @@ msgstr "Премахни FreePBX Допълнителни Настройки"
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr ""
+msgstr "Изчисти"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "Настройте на Да за приложения които са само-за-четене."
 
 #: Arimanager.class.php:38
 msgid "Submit"
@@ -180,27 +183,27 @@ msgstr "Потребителят Вече Съществува!"
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "Потребителското Име не може да е празно!"
 
 #: assets/js/main.js:23
 msgid "User Name already exists!"
-msgstr ""
+msgstr "Потребителското Име вече съществува!"
 
 #: assets/js/main.js:11
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "Паролата не може да е празно!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr ""
+msgstr "Потребителско Име"
 
 #: views/form.php:104
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "Не Можете да Промените Вид на Парола без да Промените Паролата"
 
 #~ msgid "Delete User %s"
 #~ msgstr "Изтрий Потребител %s"
