@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2016-04-18 18:46+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"PO-Revision-Date: 2016-04-27 10:00+0200\n"
+"Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/fa_IR/>\n"
 "Language: fa_IR\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: Arimanager.class.php:303
 msgid "ARI Password"
-msgstr "کلمه عبور ARI"
+msgstr "رمز عبور ARI"
 
 #: Arimanager.class.php:288
 msgid "ARI Username"
@@ -35,7 +35,7 @@ msgstr "عملیات"
 
 #: views/form.php:12
 msgid "Add Asterisk REST Interface User"
-msgstr "افزودن رابط کاربری REST استریسک"
+msgstr "افزودن کاربر برای واسط استریسک REST"
 
 #: views/grid.php:6 views/main.php:24
 msgid "Add User"
@@ -43,7 +43,7 @@ msgstr "افزودن کاربر"
 
 #: Arimanager.class.php:346
 msgid "Allowed Origins"
-msgstr "ریشه مجاز"
+msgstr "مبدأ مجاز"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
