@@ -21,24 +21,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2015-12-29 08:35+0200\n"
+"PO-Revision-Date: 2016-06-06 20:19+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"arimanager/es_ES/>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: Arimanager.class.php:303
 msgid "ARI Password"
-msgstr ""
+msgstr "Contraseña ARI"
 
 #: Arimanager.class.php:288
 msgid "ARI Username"
-msgstr ""
+msgstr "Usuario ARI"
 
 #: views/grid.php:14
 msgid "Actions"
@@ -54,11 +54,11 @@ msgstr "Añadir usuario"
 
 #: Arimanager.class.php:346
 msgid "Allowed Origins"
-msgstr ""
+msgstr "Orígenes permitidos"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
-msgstr ""
+msgstr "Nombre Aplicación"
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -91,7 +91,7 @@ msgstr "Interface Asterisk REST"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "Aplicaciones Interfaces Asterisk REST"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
@@ -107,17 +107,20 @@ msgstr "Usuarios de Inteface Rest Asterisk"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
-msgstr ""
+msgstr "Conteo Bridge"
 
 #: page.arimanagerapps.php:27
 msgid "Channel Count"
-msgstr ""
+msgstr "Conteo Canales"
 
 #: Arimanager.class.php:347
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
 msgstr ""
+"Lista separada por comas de los orígenes permitidos, para Recursos "
+"Compartidos de Cross-Origin. Puede ser fijado en * para permitir todos los "
+"orígenes."
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
@@ -133,7 +136,7 @@ msgstr "Borrar"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
-msgstr ""
+msgstr "Conteo Dispositivos"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
@@ -153,7 +156,7 @@ msgstr "Habilitar Asterisk REST Interface"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "Conteo de Endpoints"
 
 #: views/form.php:87
 msgid ""
@@ -179,7 +182,7 @@ msgstr "Tipo Contraseña"
 
 #: Arimanager.class.php:304
 msgid "Password for internal ARI calls"
-msgstr ""
+msgstr "Contraseña para llamadas internas ARI"
 
 #: views/form.php:79
 msgid "Plain Text"
@@ -248,11 +251,13 @@ msgstr ""
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
-msgstr ""
+msgstr "Las siguientes aplicaciones se han registrado con Asterisk."
 
 #: Arimanager.class.php:333
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
+"El tiempo de espera (en mili-segundos) para establecer conexiones en "
+"WebSocket."
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
@@ -276,11 +281,11 @@ msgstr "Nombreusuario"
 
 #: Arimanager.class.php:289
 msgid "Username for internal ARI calls"
-msgstr ""
+msgstr "Usuario para las llamadas ARI Internas"
 
 #: Arimanager.class.php:332
 msgid "Web Socket Write Timeout"
-msgstr ""
+msgstr "Tiempo de espera de escritura Web Socket"
 
 #: views/form.php:104
 msgid "Yes"
