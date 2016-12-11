@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2016-12-03 08:43+0200\n"
+"PO-Revision-Date: 2016-12-11 02:24+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/pt_BR/>\n"
@@ -114,7 +114,6 @@ msgid "Channel Count"
 msgstr "Contagem de Canal"
 
 #: Arimanager.class.php:347
-#, fuzzy
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -157,7 +156,7 @@ msgstr "Habilitar a Interface REST Asterisk"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "Contagem de Pontos de Extremidade"
 
 #: views/form.php:87
 msgid ""
@@ -165,6 +164,9 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"Para os cientes em segurança, provavelmente não irão querer colocar senhas "
+"em texto simples no arquivo de configuração. ARI suporta o uso de "
+"criptografia(3) para armazenamento de senha."
 
 #: views/main.php:23
 msgid "List Users"
@@ -253,7 +255,7 @@ msgstr "Os seguintes aplicativos foram registrados com o Asterisk."
 
 #: Arimanager.class.php:333
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
-msgstr ""
+msgstr "O tempo limite (em milissegundos) para estabelecer conexões WebSocket."
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
