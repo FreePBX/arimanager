@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2016-12-14 12:57+0200\n"
+"PO-Revision-Date: 2016-12-14 13:46+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/de_DE/>\n"
@@ -43,11 +43,11 @@ msgstr "Benutzer hinzufügen"
 
 #: Arimanager.class.php:346
 msgid "Allowed Origins"
-msgstr ""
+msgstr "Erlaubte Quellen"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
-msgstr ""
+msgstr "Anwendungsname"
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -65,58 +65,60 @@ msgstr ""
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Asterisk REST Interface Passwort."
 
 #: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
 #: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Asterisk REST Interface"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "Asterisk REST Interface Anwendungen"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
-msgstr ""
+msgstr "Asterisk REST Interface Benutzername"
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Asterisk REST Interface Benutzer"
 
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "Asterisk REST Interface Benutzer"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
-msgstr ""
+msgstr "Brückenanzahl"
 
 #: page.arimanagerapps.php:27
 msgid "Channel Count"
-msgstr ""
+msgstr "Kanalanzahl"
 
 #: Arimanager.class.php:347
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
 msgstr ""
+"Ist eine Komma getrennte Liste der erlaubten Quellen von Ressourcen für die "
+"gemeinsame Nutzung. Kann auf * gesetzt werden, um alle Quellen zu erlauben."
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "ARI-Manager-Tabelle erstellen"
 
 #: views/form.php:77
 msgid "Crypt"
-msgstr ""
+msgstr "Verschlüsselt"
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
-msgstr ""
+msgstr "Geräteanzahl"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
@@ -124,7 +126,7 @@ msgstr ""
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Benutzer bearbeiten"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
@@ -132,11 +134,11 @@ msgstr ""
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Asterisk Interface aktivieren"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "Endpoint-Anzahl"
 
 #: views/form.php:87
 msgid ""
@@ -147,23 +149,23 @@ msgstr ""
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "Benutzerliste"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "Kennworttyp"
 
 #: Arimanager.class.php:304
 msgid "Password for internal ARI calls"
-msgstr ""
+msgstr "Passwort für interne ARI Anrufe"
 
 #: views/form.php:79
 msgid "Plain Text"
-msgstr ""
+msgstr "Klartext"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
@@ -171,15 +173,15 @@ msgstr ""
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "Benutzername"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "Benutzerpasswort"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "Nur Lesen"
 
 #: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
@@ -187,72 +189,76 @@ msgstr ""
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "Für nur Lesezugriff auf Ja setzen."
 
 #: arimanager.i18n.php:6 arimanager.i18n.php:12
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Benutzer erfolgreich hinzugefügt"
 
 #: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Benutzer erfolgreich gelöscht"
 
 #: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Benutzer erfolgreich aktualisiert"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
+"Das Asterisk REST-Interface ist derzeit in den erweiterten Einstellungen "
+"deaktiviert."
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
+"Der Asterisk mini-HTTP Server ist derzeit in den erweiterten Einstellungen "
+"deaktiviert."
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
-msgstr ""
+msgstr "Die folgenden Anwendungen haben sich bei Asterisk registriert."
 
 #: Arimanager.class.php:333
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
-msgstr ""
+msgstr "Zeitüberschreitung (in Millisekunden) für WebSocket-Verbindungen."
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Benutzer existiert bereits!"
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "Benutzername darf nicht leer sein!"
 
 #: assets/js/main.js:23
 msgid "User Name already exists!"
-msgstr ""
+msgstr "Benutzername existiert bereits!"
 
 #: assets/js/main.js:11
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "Benutzerpasswort darf nicht leer sein!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr ""
+msgstr "Benutzername"
 
 #: Arimanager.class.php:289
 msgid "Username for internal ARI calls"
-msgstr ""
+msgstr "Benutzername für interne ARI Anrufe"
 
 #: Arimanager.class.php:332
 msgid "Web Socket Write Timeout"
@@ -260,8 +266,8 @@ msgstr ""
 
 #: views/form.php:104
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "Sie können den Kennworttyp nicht ändern, ohne das Kennwort zu ändern."
