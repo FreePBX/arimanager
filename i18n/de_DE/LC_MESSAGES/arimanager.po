@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2016-12-14 13:46+0200\n"
-"Last-Translator: Sven <spiderrs4@web.de>\n"
+"PO-Revision-Date: 2017-03-06 02:35+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/de_DE/>\n"
 "Language: de_DE\n"
@@ -219,14 +219,14 @@ msgstr "Benutzer erfolgreich aktualisiert"
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
 "Das Asterisk REST-Interface ist derzeit in den erweiterten Einstellungen "
-"deaktiviert."
+"deaktiviert"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
 "Der Asterisk mini-HTTP Server ist derzeit in den erweiterten Einstellungen "
-"deaktiviert."
+"deaktiviert"
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
@@ -270,4 +270,4 @@ msgstr "Ja"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr "Sie können den Kennworttyp nicht ändern, ohne das Kennwort zu ändern."
+msgstr "Sie können den Kennworttyp nicht ändern, ohne das Kennwort zu ändern"
