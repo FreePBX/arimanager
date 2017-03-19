@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2017-03-19 11:59+0200\n"
+"PO-Revision-Date: 2017-03-19 12:22+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish (Polish) "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/pl_PL/>\n"
@@ -175,97 +175,100 @@ msgstr ""
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "Nazwa użytkownika interfejsu REST"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "Hasło użytkownika interfejsu REST"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "Tylko do odczytu"
 
 #: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Usuń zaawansowane ustawienia FreePBX"
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr ""
+msgstr "Ponowne ustawienia"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "Ustaw na Tak dla aplikacji tylko do odczytu."
 
 #: arimanager.i18n.php:6 arimanager.i18n.php:12
 msgid "Settings"
-msgstr ""
+msgstr "Ustawienia"
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr ""
+msgstr "Zatwierdź"
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Dodanie użytkownika zakończone sukcesem"
 
 #: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Usuwanie użytkownika zakończone sukcesem"
 
 #: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Aktualizacja użytkownika zakończona sukcesem"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
+"Interfejs Asterisk REST jest obecnie wyłączone w ustawieniach zaawansowanych"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
+"Serwer Asterisk mini-HTTP jest obecnie wyłączony z ustawieniach "
+"zaawansowanych"
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
-msgstr ""
+msgstr "Następujące aplikacje zostały zarejestrowane w Asterisk."
 
 #: Arimanager.class.php:333
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
-msgstr ""
+msgstr "Limit czasu (w milisekundach) aby ustawić na połączeniach WebSocket."
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Użytkownik już istnieje!"
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "Nazwa użytkownika nie może być pusta!"
 
 #: assets/js/main.js:23
 msgid "User Name already exists!"
-msgstr ""
+msgstr "Nazwa użytkownika już istnieje!"
 
 #: assets/js/main.js:11
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "Hasło użytkownika nie może być puste!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr ""
+msgstr "Nazwa użytkownika"
 
 #: Arimanager.class.php:289
 msgid "Username for internal ARI calls"
-msgstr ""
+msgstr "Nazwa użytkownika dla połączeń wewnętrznych ARI"
 
 #: Arimanager.class.php:332
 msgid "Web Socket Write Timeout"
-msgstr ""
+msgstr "Koniec czasu wpisu Web Socket"
 
 #: views/form.php:104
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "Nie można zmienić rodzaju hasła bez zmiany hasła"
