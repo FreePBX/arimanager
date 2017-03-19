@@ -10,34 +10,37 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2016-04-17 17:25-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-03-19 11:59+0200\n"
+"Last-Translator: Michal <mboltz@tlen.pl>\n"
+"Language-Team: Polish (Polish) "
+"<http://weblate.freepbx.org/projects/freepbx/arimanager/pl_PL/>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: Arimanager.class.php:303
 msgid "ARI Password"
-msgstr ""
+msgstr "Hasło ARI"
 
 #: Arimanager.class.php:288
 msgid "ARI Username"
-msgstr ""
+msgstr "Nazwa użytkownika ARI"
 
 #: views/grid.php:14
 msgid "Actions"
-msgstr ""
+msgstr "Działania"
 
 #: views/form.php:12
 msgid "Add Asterisk REST Interface User"
-msgstr ""
+msgstr "Dodaj Asterisk REST do interfejsu użytkownika"
 
 #: views/grid.php:6 views/main.php:24
 msgid "Add User"
-msgstr ""
+msgstr "Dodaj użytkownika"
 
 #: Arimanager.class.php:346
 msgid "Allowed Origins"
@@ -45,7 +48,7 @@ msgstr ""
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
-msgstr ""
+msgstr "Nazwa aplikacji"
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -63,28 +66,28 @@ msgstr ""
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Hasło interfejsu Asterisk REST."
 
 #: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
 #: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Interfejs Aserisk REST"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "Aplikacje interfejsu Asterisk REST"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
-msgstr ""
+msgstr "Nazwa użytkownika interfejsu Asterisk REST"
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Użytkownicy interfejsu Asterisk REST"
 
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "Użytkownicy interfejsu Asterisk Rest"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
@@ -102,7 +105,7 @@ msgstr ""
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "Tworzenie tabeli menadżera ARI"
 
 #: views/form.php:77
 msgid "Crypt"
@@ -110,7 +113,7 @@ msgstr ""
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "Kasuj"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
@@ -118,11 +121,11 @@ msgstr ""
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Upuszczanie tabeli menadżera ARI"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Edytowanie użytkownika interfejsu Asterisk REST"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
@@ -130,7 +133,7 @@ msgstr ""
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Włącz interfejs Asterisk REST"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
@@ -142,26 +145,29 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"Dla bezpieczeństwa, prawdopodobnie nie chcesz umieścić haseł w postaci "
+"zwykłego tekstu w pliku konfiguracji. ARI popiera używanie  crypty(3) do "
+"przechowywania haseł."
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "Lista Użytkowników"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "Rodzaj hasła"
 
 #: Arimanager.class.php:304
 msgid "Password for internal ARI calls"
-msgstr ""
+msgstr "Hasło dla wewnętrznych rozmówców ARI"
 
 #: views/form.php:79
 msgid "Plain Text"
-msgstr ""
+msgstr "Zwykły twkst"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
