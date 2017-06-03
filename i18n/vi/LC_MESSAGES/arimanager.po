@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2017-06-03 12:33+0200\n"
+"PO-Revision-Date: 2017-06-03 12:53+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/vi/>\n"
@@ -109,8 +109,7 @@ msgid ""
 "May be set to * to allow all origins."
 msgstr ""
 "Danh sách các nguồn gốc được cho phép ngăn cách nhau bằng dấu phẩy, cho việc "
-"chia sẻ nguồn gốc chéo. Có thể thiết lập tới * cho phép tất cả các nguồn "
-"gốc\"."
+"chia sẻ nguồn gốc chéo. Có thể cài đặt * cho phép tất cả các nguồn gốc\"."
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
@@ -138,7 +137,7 @@ msgstr "Hiệu chỉnh giao diện người dùng Asterisk REST"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr "Kích hoạt pretty-priting của các phản hồi JSON từ Asterisk"
+msgstr "Kích hoạt pretty-priting của các hồi đáp lệnh JSON từ Asterisk"
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
@@ -154,8 +153,9 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
-"đối với việc an ninh bảo mật, ban có thể không muốn đặt mật khẩu plaintext "
-"trong tệp cấu hình. ARI hỗ trợ sử dụng crypt(3) cho việc lưu mật khẩu."
+"Đối với việc an ninh bảo mật, ban có thể không muốn đặt mật khẩu dạng văn "
+"bản thuần túy trong tệp cấu hình. ARI hỗ trợ sử dụng bảo mật (3) cho việc "
+"lưu mật khẩu."
 
 #: views/main.php:23
 msgid "List Users"
@@ -179,7 +179,7 @@ msgstr "Văn bản thuần túy"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
-msgstr "Các phản hồi Pretty Print JSON"
+msgstr "Các hồi đáp lệnh Pretty Print JSON"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
