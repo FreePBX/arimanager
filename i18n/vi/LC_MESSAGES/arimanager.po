@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2017-06-03 09:41+0200\n"
+"PO-Revision-Date: 2017-06-03 12:33+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/vi/>\n"
@@ -47,7 +47,7 @@ msgstr "Các nguồn gốc được cho phép"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
-msgstr ""
+msgstr "Tên ứng dụng"
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -55,6 +55,9 @@ msgid ""
 "API's for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 giới thiệu giao diện Asterisk REST interface ( ARI), một bộ "
+"những API đi theo cấu trúc REST cho việc tạo nên các ứng dụng dựa trên "
+"Asterisk. Mô đun này cung cấp khả năng Thêm hoặc Xóa ARI người dùng."
 
 #: Arimanager.class.php:275
 msgid ""
@@ -62,81 +65,88 @@ msgid ""
 "for building Asterisk based applications. This will enable the ARI server as "
 "long as the HTTP server is enabled as well."
 msgstr ""
+"Asterisk 12 giới thiệu giao diện Asterisk REST interface ( ARI), một bộ "
+"những API đi theo cấu trúc REST cho việc tạo nên các ứng dụng dựa trên "
+"Asterisk. Điều này sẽ kích hoạt máy chủ ARI sao cho máy chủ HTTP cũng được "
+"kích hoạt."
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Mật khẩu giao diện Asterisk REST."
 
 #: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
 #: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Giao diện Asterisk REST"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "Các ứng dụng giao diện Asterisk REST"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
-msgstr ""
+msgstr "Tên người dùng giao diện Asterisk REST"
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Người dùng giao diện Asterisk REST"
 
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "Người dùng giao diện Asterisk Rest"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
-msgstr ""
+msgstr "Đếm Bridge"
 
 #: page.arimanagerapps.php:27
 msgid "Channel Count"
-msgstr ""
+msgstr "Đếm kênh"
 
 #: Arimanager.class.php:347
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
 msgstr ""
+"Danh sách các nguồn gốc được cho phép ngăn cách nhau bằng dấu phẩy, cho việc "
+"chia sẻ nguồn gốc chéo. Có thể thiết lập tới * cho phép tất cả các nguồn "
+"gốc\"."
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "Tạo bảng quản lý ARI"
 
 #: views/form.php:77
 msgid "Crypt"
-msgstr ""
+msgstr "Bảo mật"
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
-msgstr ""
+msgstr "Đếm thiết bị"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Thả bảng quản lý ARI"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Hiệu chỉnh giao diện người dùng Asterisk REST"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr "Kích hoạt pretty-priting của các phản hồi JSON từ Asterisk"
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Kích hoạt giao diện Asterisk REST"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "Đếm điểm cuối"
 
 #: views/form.php:87
 msgid ""
@@ -144,124 +154,128 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"đối với việc an ninh bảo mật, ban có thể không muốn đặt mật khẩu plaintext "
+"trong tệp cấu hình. ARI hỗ trợ sử dụng crypt(3) cho việc lưu mật khẩu."
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "Danh sách người dùng"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "Kiểu mật khẩu"
 
 #: Arimanager.class.php:304
 msgid "Password for internal ARI calls"
-msgstr ""
+msgstr "Mật khẩu cho các cuộc gọi ARI nội bộ"
 
 #: views/form.php:79
 msgid "Plain Text"
-msgstr ""
+msgstr "Văn bản thuần túy"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Các phản hồi Pretty Print JSON"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "Tên người dùng giao diện REST"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "Mật khẩu ngừời dùng giao diện REST"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "Chỉ được đọc"
 
 #: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Xóa các cài đặt nâng cao FreePBX"
 
 #: Arimanager.class.php:33
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: views/form.php:114
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "Cài đặt Có cho các ứng dụng chỉ được đọc."
 
 #: arimanager.i18n.php:6 arimanager.i18n.php:12
 msgid "Settings"
-msgstr ""
+msgstr "Các cài đặt"
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr ""
+msgstr "Gửi"
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Đã thêm người dùng thành công"
 
 #: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Đã xóa người dùng thành công"
 
 #: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Đã cập nhật người dùng thành công"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
-msgstr ""
+msgstr "Giao diện Asterisk REST hiện tại đã bị vô hiệu trong cài đặt nâng cao"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
+"Máy chủ Asterisk mini-HTTP  hiện tại đã bị vô hiệu trong Cài đặt nâng cao"
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
-msgstr ""
+msgstr "Các ứng dụng sau đây vừa được đăng ký với Asterisk."
 
 #: Arimanager.class.php:333
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
+"Thời gian chờ ( tính bằng mili giây) để thiết lập trên các kết nối WebSocket."
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Người dùng đã tồn tại!"
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "Tên người dùng không thể để trống!"
 
 #: assets/js/main.js:23
 msgid "User Name already exists!"
-msgstr ""
+msgstr "Tên người dùng đã tồn tại!"
 
 #: assets/js/main.js:11
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "Mật khẩu người dùng không thể để trống!"
 
 #: views/grid.php:12
 msgid "Username"
-msgstr ""
+msgstr "Tên người dùng"
 
 #: Arimanager.class.php:289
 msgid "Username for internal ARI calls"
-msgstr ""
+msgstr "Tên người dùng cho các cuộc gọi ARI nội bộ"
 
 #: Arimanager.class.php:332
 msgid "Web Socket Write Timeout"
-msgstr ""
+msgstr "Thời gian chờ đọc Web Socket"
 
 #: views/form.php:104
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "Bạn không thể thay đổi Kiểu mật khẩu khi không thay đổi mật khẩu"
