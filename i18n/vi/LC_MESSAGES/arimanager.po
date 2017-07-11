@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2017-06-03 12:53+0200\n"
+"PO-Revision-Date: 2017-07-10 19:52+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/vi/>\n"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
-msgstr "Tạo bảng quản lý ARI"
+msgstr "Tạo bảng trình quản lý ARI"
 
 #: views/form.php:77
 msgid "Crypt"
@@ -129,7 +129,7 @@ msgstr "Đếm thiết bị"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
-msgstr "Thả bảng quản lý ARI"
+msgstr "Thả bảng trình quản lý ARI"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
