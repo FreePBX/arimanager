@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2017-07-10 19:52+0200\n"
+"PO-Revision-Date: 2017-07-14 10:03+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/vi/>\n"
@@ -211,7 +211,7 @@ msgstr "Các cài đặt"
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr "Gửi"
+msgstr "Gửi đi"
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Added User"
