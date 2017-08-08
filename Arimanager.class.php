@@ -249,20 +249,8 @@ class Arimanager implements BMO {
 
 	/* Assorted stubs to validate the BMO Interface */
 	public function install() {
-		$sql = "CREATE TABLE IF NOT EXISTS `arimanager` (
-			`id` int(11) NOT NULL AUTO_INCREMENT,
-			`name` varchar(15) NOT NULL,
-			`password` varchar(255) DEFAULT NULL,
-			`password_format` varchar(255) DEFAULT NULL,
-			`read_only` int(1) DEFAULT '1',
-			PRIMARY KEY (`id`),
-			UNIQUE KEY `name_UNIQUE` (`name`)
-		)";
 
-		out(_('Creating ARI Manager Table'));
-		$this->db->query($sql);
-
-		$set['value'] = false;
+		$set['value'] = true;
 		$set['defaultval'] =& $set['value'];
 		$set['options'] = '';
 		$set['readonly'] = 0;
@@ -275,6 +263,7 @@ class Arimanager implements BMO {
 		$set['description'] = _("Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI',$set);
+		$this->Conf->update('ENABLE_ARI',true);
 
 		$set['value'] = 'freepbxuser';
 		$set['defaultval'] =& $set['value'];
@@ -288,7 +277,7 @@ class Arimanager implements BMO {
 		$set['name'] = _('ARI Username');
 		$set['description'] = _("Username for internal ARI calls");
 		$set['type'] = CONF_TYPE_TEXT;
-				$set['sortorder'] = 98;
+		$set['sortorder'] = 98;
 		$this->Conf->define_conf_setting('FPBX_ARI_USER',$set);
 
 		$set['value'] = md5(openssl_random_pseudo_bytes(16));
@@ -303,7 +292,7 @@ class Arimanager implements BMO {
 		$set['name'] = _('ARI Password');
 		$set['description'] = _("Password for internal ARI calls");
 		$set['type'] = CONF_TYPE_TEXT;
-				$set['sortorder'] = 99;
+		$set['sortorder'] = 99;
 		$this->Conf->define_conf_setting('FPBX_ARI_PASSWORD',$set);
 
 		$set['value'] = false;

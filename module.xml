@@ -11,14 +11,20 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
-		*13.0.4* Comment and add function to find by username
-		*13.0.3* FREEPBX-9619 Adding user with Asterisk Rest Interface users does not prompt for system reload
-		*13.0.2* Version bump Beta
-		*13.0.1alpha2* Visual Styling Fixes
-		*12.0.2* FREEPBX-7793 Add Password generator to the ARI
-		*12.0.1* FREEPBX-7792 Add option to DELETE users
-		*12.0.0* Initial Release
+		*15.0.1* Forked from 13.0.4,enable by default
 	</changelog>
+	<database>
+	  <table name="arimanager">
+	    <field name="id" type="integer" primarykey="true" autoincrement="true"/>
+	    <field name="name" type="string" length="15"/>
+	    <field name="password" type="string" length="255" notnull="false"/>
+	    <field name="password_format" type="string" length="255" notnull="false"/>
+	    <field name="read_only" type="integer" default="1" notnull="false"/>
+	    <key name="name_UNIQUE" type="unique">
+	      <column name="name"/>
+	    </key>
+	  </table>
+	</database>
 	<description>
 		Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users.
 	</description>
