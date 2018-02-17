@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2018-01-29 23:12+0200\n"
+"PO-Revision-Date: 2018-02-16 18:19+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/de_DE/>\n"
@@ -128,7 +128,7 @@ msgstr "Geräteanzahl"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Löschen der ARI-Manager-Tabelle"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
@@ -136,7 +136,7 @@ msgstr "Benutzer bearbeiten"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr "Aktivieren Sie das pretty-printing der JSON-Antworten von Asterisk"
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
@@ -152,6 +152,9 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"Aus Sicherheitsgründen sollten Sie keine Plaintext-Passwörter in die "
+"Konfigurationsdatei einfügen. ARI unterstützt die Verwendung von crypt (3) "
+"zur Passwortspeicherung."
 
 #: views/main.php:23
 msgid "List Users"
@@ -175,7 +178,7 @@ msgstr "Klartext"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Ptreety Printing JSON Antworten"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
@@ -191,7 +194,7 @@ msgstr "Nur Lesen"
 
 #: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Entfernen Sie die erweiterten FreePBX-Einstellungen"
 
 #: Arimanager.class.php:33
 msgid "Reset"
@@ -268,7 +271,7 @@ msgstr "Benutzername für interne ARI Anrufe"
 
 #: Arimanager.class.php:332
 msgid "Web Socket Write Timeout"
-msgstr ""
+msgstr "Web Socket Write Timeout"
 
 #: views/form.php:104
 msgid "Yes"
