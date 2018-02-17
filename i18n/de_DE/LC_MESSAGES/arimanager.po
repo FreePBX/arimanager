@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-17 17:25-0700\n"
-"PO-Revision-Date: 2018-02-16 18:19+0200\n"
+"PO-Revision-Date: 2018-02-16 18:22+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/arimanager/de_DE/>\n"
@@ -178,15 +178,15 @@ msgstr "Klartext"
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
-msgstr "Ptreety Printing JSON Antworten"
+msgstr "Pretty Printing JSON Antworten"
 
 #: views/form.php:24
 msgid "REST Interface User Name"
-msgstr "Benutzername"
+msgstr "REST-Interface Benutzername"
 
 #: views/form.php:48
 msgid "REST Interface User Password"
-msgstr "Benutzerpasswort"
+msgstr "Benutzer-Passwort für REST-Interface"
 
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
