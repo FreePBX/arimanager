@@ -2,7 +2,7 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>13.0.4</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -33,6 +33,6 @@
 		<engine>asterisk 12</engine>
 	</depends>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
 </module>
