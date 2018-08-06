@@ -16,6 +16,16 @@ class Arimanager implements BMO {
 		$this->message = array();
 	}
 
+	public function setDatabase($database){
+		$this->db = $database;
+		return $this;
+	}
+	
+	public function resetDatabase(){
+		$this->db = $this-FreePBX->Database();
+		return $this;
+	}
+
 	public function getActionBar($request) {
 		$buttons = array();
 
