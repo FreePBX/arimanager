@@ -22,7 +22,7 @@ class Arimanager implements BMO {
 	}
 	
 	public function resetDatabase(){
-		$this->db = $this-FreePBX->Database();
+		$this->db = $this->FreePBX->Database();
 		return $this;
 	}
 
