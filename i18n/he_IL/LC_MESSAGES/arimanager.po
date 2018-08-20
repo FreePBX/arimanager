@@ -3,51 +3,51 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for arimanager
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-19 17:26-0400\n"
-"PO-Revision-Date: 2015-04-24 21:21+0200\n"
-"Last-Translator: Paulo <paulop1975@gmail.com>\n"
-"Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
-"freepbx/arimanager/pt_PT/>\n"
-"Language: pt_PT\n"
+"PO-Revision-Date: 2016-05-09 03:26+0200\n"
+"Last-Translator: Avishay <baabad@outlook.com>\n"
+"Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
+"arimanager/he_IL/>\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: Arimanager.class.php:303
 msgid "ARI Password"
-msgstr ""
+msgstr "סיסמת ARI"
 
 #: Arimanager.class.php:288
 msgid "ARI Username"
-msgstr ""
+msgstr "שם משתמש ARI"
 
 #: views/grid.php:14
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 #: views/form.php:12
 msgid "Add Asterisk REST Interface User"
-msgstr "Adicionar Utilizador do Interface REST do Asterisk"
+msgstr "הוסף משתמש לממשק Asterisk REST"
 
 #: views/grid.php:6 views/main.php:24
 msgid "Add User"
-msgstr "Adicionar Utilizador"
+msgstr "הוספת משתמש"
 
 #: Arimanager.class.php:346
 msgid "Allowed Origins"
-msgstr ""
+msgstr "מקורות מאופשרים"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
-msgstr ""
+msgstr "שם תכונה"
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -55,6 +55,8 @@ msgid ""
 "API's for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"גירסה 12 של אסטריסק מציגה את ממשק הREST(ARI) , סט של RESTful API כדי לבנות "
+"ישומים מבוססים אסטריסק. מודול זה מספק יכולת להוסיף ולמחוק משתמשי ARI."
 
 #: Arimanager.class.php:275
 msgid ""
@@ -65,28 +67,28 @@ msgstr ""
 
 #: views/form.php:60
 msgid "Asterisk REST Inferface Password."
-msgstr "Password do Interface REST do Asterisk."
+msgstr "סיסמה לממשק אסטריסק REST."
 
 #: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
 #: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
 msgid "Asterisk REST Interface"
-msgstr "Interface REST do Asterisk"
+msgstr "ממשק אסטריסק REST"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "תכונות ממשק אסטריסק REST"
 
 #: views/form.php:36
 msgid "Asterisk REST Interface User Name"
-msgstr "Nome do Utilizador do Interface REST do Asterisk"
+msgstr "שם משתמש לממשק אסטריסק REST"
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Asterisk REST Interface Users"
-msgstr "Utilizadores do Interface REST do Asterisk"
+msgstr "משתמשי ממשק אסטריסק REST"
 
 #: views/main.php:10
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "משתמשי ממשק אסטריסק REST"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
@@ -94,17 +96,19 @@ msgstr ""
 
 #: page.arimanagerapps.php:27
 msgid "Channel Count"
-msgstr ""
+msgstr "מספר ערוצים"
 
 #: Arimanager.class.php:347
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
 msgstr ""
+"רשימה מופרדת בפסיקים של  של מקורות מאופשרים, לשיתוף משאבים ממקורות שונים. "
+"ניתן להגדיר * כדי לאפשר את כל המקורות."
 
 #: Arimanager.class.php:262
 msgid "Creating ARI Manager Table"
-msgstr "Criando Tabela do Gestor do ARI"
+msgstr "יצירת טבלת ניהול ARI"
 
 #: views/form.php:77
 msgid "Crypt"
@@ -112,31 +116,31 @@ msgstr ""
 
 #: Arimanager.class.php:28
 msgid "Delete"
-msgstr ""
+msgstr "מחיקה"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
-msgstr ""
+msgstr "מספרה התקנים"
 
 #: Arimanager.class.php:355
 msgid "Dropping ARI Manager Table"
-msgstr "Apagando Tabela do Gestor do ARI"
+msgstr "מחיקת טבלת ניהול ARI"
 
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
-msgstr "Editar Utilizador do Interface REST do Asterisk"
+msgstr "עריכת משתמש לממשק אסטריסק REST"
 
 #: Arimanager.class.php:319
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr "Ativar pretty-printing das respostas JSON do Asterisk"
+msgstr "אפשר הדפסה נוחה של מענה ה-JSON מהאסטריסק"
 
 #: Arimanager.class.php:274
 msgid "Enable the Asterisk REST Interface"
-msgstr "Ativar Interface REST do Asterisk"
+msgstr "אפשר את ממשק אסטריסק REST"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "ספירת נקודות קצה"
 
 #: views/form.php:87
 msgid ""
@@ -147,15 +151,15 @@ msgstr ""
 
 #: views/main.php:23
 msgid "List Users"
-msgstr ""
+msgstr "רשימת משתמשים"
 
 #: views/form.php:106
 msgid "No"
-msgstr ""
+msgstr "לא"
 
 #: views/form.php:72
 msgid "Password Type"
-msgstr ""
+msgstr "סוג סיסמא"
 
 #: Arimanager.class.php:304
 msgid "Password for internal ARI calls"
@@ -163,11 +167,11 @@ msgstr ""
 
 #: views/form.php:79
 msgid "Plain Text"
-msgstr "Texto Simples"
+msgstr ""
 
 #: Arimanager.class.php:318
 msgid "Pretty Print JSON Responses"
-msgstr "Respostas Pretty Print JSON"
+msgstr ""
 
 #: views/form.php:24
 msgid "REST Interface User Name"
@@ -183,7 +187,7 @@ msgstr ""
 
 #: Arimanager.class.php:359
 msgid "Remove FreePBX Advanced Settings"
-msgstr "Remover Configurações Avançadas do FreePBX"
+msgstr ""
 
 #: Arimanager.class.php:33
 msgid "Reset"
@@ -195,35 +199,32 @@ msgstr ""
 
 #: arimanager.i18n.php:6
 msgid "Settings"
-msgstr "Configurações"
+msgstr ""
 
 #: Arimanager.class.php:38
 msgid "Submit"
-msgstr "Submeter"
+msgstr ""
 
 #: Arimanager.class.php:102
 msgid "Sucessfully Added User"
-msgstr "Utilizador Adicionado com Sucesso"
+msgstr ""
 
 #: Arimanager.class.php:178
 msgid "Sucessfully Deleted User"
-msgstr "Utilizador Eliminado com Sucesso"
+msgstr ""
 
 #: Arimanager.class.php:135
 msgid "Sucessfully Updated User"
-msgstr "Utilizador Atualizado com Sucesso"
+msgstr ""
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
-"O Interface REST do Asterisk encontra-se Inativo nas Configurações Avançadas"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
-"O Servidor mini-HTTP do Asterisk encontra-se Inativo nas Configurações "
-"Avançadas"
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
@@ -235,7 +236,7 @@ msgstr ""
 
 #: Arimanager.class.php:89
 msgid "User Already Exists!"
-msgstr "Utilizador Já Existente!"
+msgstr ""
 
 #: assets/js/main.js:5
 msgid "User Name Can Not Be Blank!"
@@ -268,21 +269,3 @@ msgstr ""
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr ""
-
-#~ msgid "Delete User %s"
-#~ msgstr "Eliminar Utilizador %s"
-
-#~ msgid "Password Type:"
-#~ msgstr "Tipo de Password:"
-
-#~ msgid "REST Interface User Name:"
-#~ msgstr "Nome de Utilizador do Interface REST:"
-
-#~ msgid "REST Interface User Password:"
-#~ msgstr "Password do Utilizador do Interface REST:"
-
-#~ msgid "Read Only:"
-#~ msgstr "Somente Leitura:"
-
-#~ msgid "Set to True for read-only applications."
-#~ msgstr "Definir como Verdadeiro para aplicações somente de leitura."
