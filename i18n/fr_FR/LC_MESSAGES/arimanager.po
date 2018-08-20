@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 17:26-0400\n"
+"POT-Creation-Date: 2018-08-20 12:39-0400\n"
 "PO-Revision-Date: 2017-12-01 18:33+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Arimanager.class.php:303
+#: Arimanager.class.php:302
 msgid "ARI Password"
 msgstr "Mot de passe ARI"
 
-#: Arimanager.class.php:288
+#: Arimanager.class.php:287
 msgid "ARI Username"
 msgstr "Nom d'utilisateur ARI"
 
@@ -41,7 +41,7 @@ msgstr "Ajouter Asterisk Interface REST utilisateur"
 msgid "Add User"
 msgstr "Ajouter un utilisateur"
 
-#: Arimanager.class.php:346
+#: Arimanager.class.php:345
 msgid "Allowed Origins"
 msgstr "Origines autorisées"
 
@@ -59,7 +59,7 @@ msgstr ""
 "RESTful pour la création d'applications basé sur Asterisk . Ce module offre "
 "la possibilité d'ajouter et de supprimer des utilisateurs ARI ."
 
-#: Arimanager.class.php:275
+#: Arimanager.class.php:273
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -73,8 +73,8 @@ msgstr ""
 msgid "Asterisk REST Inferface Password."
 msgstr "Mot de passe Asterisk REST inferface ."
 
-#: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
-#: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
+#: Arimanager.class.php:270 Arimanager.class.php:285 Arimanager.class.php:300
+#: Arimanager.class.php:315 Arimanager.class.php:329 Arimanager.class.php:343
 msgid "Asterisk REST Interface"
 msgstr "Interface REST d'Asterisk"
 
@@ -102,7 +102,7 @@ msgstr "Nombre de pont"
 msgid "Channel Count"
 msgstr "Nombre de Cannaux"
 
-#: Arimanager.class.php:347
+#: Arimanager.class.php:346
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -111,15 +111,11 @@ msgstr ""
 "ressources d'origine croisée. Peut être défini sur * pour autoriser toutes "
 "les origines."
 
-#: Arimanager.class.php:262
-msgid "Creating ARI Manager Table"
-msgstr "Création de la table du gestionnaire ARI"
-
 #: views/form.php:77
 msgid "Crypt"
 msgstr "Crypté"
 
-#: Arimanager.class.php:28
+#: Arimanager.class.php:38
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -127,7 +123,7 @@ msgstr "Supprimer"
 msgid "Device Count"
 msgstr "Nombre de d’équipement"
 
-#: Arimanager.class.php:355
+#: Arimanager.class.php:354
 msgid "Dropping ARI Manager Table"
 msgstr "Suppression de la table du gestionnaire ARI"
 
@@ -135,11 +131,11 @@ msgstr "Suppression de la table du gestionnaire ARI"
 msgid "Edit Asterisk REST Interface User"
 msgstr "Éditer l'utilisateur de l'interface REST d'Asterisk"
 
-#: Arimanager.class.php:319
+#: Arimanager.class.php:318
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "Activer le formatage et l'indentation des réponses JSON d'Asterisk"
 
-#: Arimanager.class.php:274
+#: Arimanager.class.php:272
 msgid "Enable the Asterisk REST Interface"
 msgstr "Activer l'interface REST d'Asterisk"
 
@@ -169,7 +165,7 @@ msgstr "Non"
 msgid "Password Type"
 msgstr "Type de mot de passe"
 
-#: Arimanager.class.php:304
+#: Arimanager.class.php:303
 msgid "Password for internal ARI calls"
 msgstr "Mot de passe pour les appels internes ARI"
 
@@ -177,7 +173,7 @@ msgstr "Mot de passe pour les appels internes ARI"
 msgid "Plain Text"
 msgstr "Texte en clair"
 
-#: Arimanager.class.php:318
+#: Arimanager.class.php:317
 msgid "Pretty Print JSON Responses"
 msgstr "Formate et indente les réponses JSON"
 
@@ -193,11 +189,11 @@ msgstr "Mot de passe de l'utilisateur de l'interface REST"
 msgid "Read Only"
 msgstr "Lecture seulement"
 
-#: Arimanager.class.php:359
+#: Arimanager.class.php:358
 msgid "Remove FreePBX Advanced Settings"
 msgstr "Suppression des paramètres avancés de FreePBX"
 
-#: Arimanager.class.php:33
+#: Arimanager.class.php:43
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -209,19 +205,19 @@ msgstr "Choisissez Oui pour les applications en lecture seule."
 msgid "Settings"
 msgstr "Paramètres"
 
-#: Arimanager.class.php:38
+#: Arimanager.class.php:48
 msgid "Submit"
 msgstr "Soumettre"
 
-#: Arimanager.class.php:102
+#: Arimanager.class.php:112
 msgid "Sucessfully Added User"
 msgstr "Utilisateur ajouté avec succès"
 
-#: Arimanager.class.php:178
+#: Arimanager.class.php:188
 msgid "Sucessfully Deleted User"
 msgstr "Utilisateur supprimé avec succès"
 
-#: Arimanager.class.php:135
+#: Arimanager.class.php:145
 msgid "Sucessfully Updated User"
 msgstr "Utilisateur mis à jour avec succès"
 
@@ -242,13 +238,13 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr "Les applications suivantes sont enregistrées avec Asterisk."
 
-#: Arimanager.class.php:333
+#: Arimanager.class.php:332
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
 "Le délai d'expiration (en millisecondes) à définir sur les connexions "
 "WebSocket."
 
-#: Arimanager.class.php:89
+#: Arimanager.class.php:99
 msgid "User Already Exists!"
 msgstr "L'utilisateur existe déjà !"
 
@@ -268,11 +264,11 @@ msgstr "Le mot de passe de l'utilisateur ne peut pas être vide !"
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: Arimanager.class.php:289
+#: Arimanager.class.php:288
 msgid "Username for internal ARI calls"
 msgstr "Nom d'utilisateur pour les appels internes d'ARI"
 
-#: Arimanager.class.php:332
+#: Arimanager.class.php:331
 msgid "Web Socket Write Timeout"
 msgstr "Délai d'écriture du socket Web"
 
@@ -285,6 +281,9 @@ msgid "You Cant Change Password Type Without Changing the Password"
 msgstr ""
 "Vous ne pouvez pas changer de type de mot de passe sans changer le mot de "
 "passe"
+
+#~ msgid "Creating ARI Manager Table"
+#~ msgstr "Création de la table du gestionnaire ARI"
 
 #~ msgid ""
 #~ "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of "
