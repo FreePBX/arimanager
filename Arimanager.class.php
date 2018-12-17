@@ -20,7 +20,7 @@ class Arimanager implements BMO {
 		$this->db = $database;
 		return $this;
 	}
-	
+
 	public function resetDatabase(){
 		$this->db = $this->FreePBX->Database();
 		return $this;
@@ -266,7 +266,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('Enable the Asterisk REST Interface');
@@ -281,7 +281,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 1;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('ARI Username');
@@ -296,7 +296,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 1;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('ARI Password');
@@ -311,7 +311,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('Pretty Print JSON Responses');
@@ -325,7 +325,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('Web Socket Write Timeout');
@@ -339,7 +339,7 @@ class Arimanager implements BMO {
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
 		$set['level'] = 0;
-		$set['module'] = '';
+		$set['module'] = 'arimanager';
 		$set['category'] = _('Asterisk REST Interface');
 		$set['emptyok'] = 0;
 		$set['name'] = _('Allowed Origins');
@@ -351,18 +351,6 @@ class Arimanager implements BMO {
 	}
 
 	public function uninstall() {
-		out(_("Dropping ARI Manager Table"));
-		$sql = "DROP TABLE IF EXISTS arimanager";
-		$this->db->query($sql);
-
-		out(_('Remove FreePBX Advanced Settings'));
-		//Remove FreePBX Advanced Setting
-		$this->Conf->remove_conf_settings('ENABLE_ARI');
-		$this->Conf->remove_conf_settings('ENABLE_ARI_PP');
-		$this->Conf->remove_conf_settings('ARI_WS_WRITE_TIMEOUT');
-		$this->Conf->remove_conf_settings('ARI_ALLOWED_ORIGINS');
-		$this->Conf->remove_conf_settings('FPBX_ARI_PASSWORD');
-		$this->Conf->remove_conf_settings('FPBX_ARI_USER');
 	}
 
 	public function backup() {
