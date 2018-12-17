@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:39-0400\n"
+"POT-Creation-Date: 2018-12-17 18:35-0500\n"
 "PO-Revision-Date: 2016-12-11 02:24+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -134,10 +134,6 @@ msgstr "Deletar"
 msgid "Device Count"
 msgstr "Contagem de Dispositivos"
 
-#: Arimanager.class.php:354
-msgid "Dropping ARI Manager Table"
-msgstr "Descartando Tabela do Gerenciador ARI"
-
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
 msgstr "Editar Usuário da Interface REST Asterisk"
@@ -199,10 +195,6 @@ msgstr "Senha de Usuário da Interface REST"
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
 msgstr "Somente Leitura"
-
-#: Arimanager.class.php:358
-msgid "Remove FreePBX Advanced Settings"
-msgstr "Apagar configurações avançadas do FreePBX"
 
 #: Arimanager.class.php:43
 msgid "Reset"
@@ -288,6 +280,12 @@ msgstr "Sim"
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr "Você Não Pode Alterar o Tipo de Senha sem Alterar a Senha"
+
+#~ msgid "Dropping ARI Manager Table"
+#~ msgstr "Descartando Tabela do Gerenciador ARI"
+
+#~ msgid "Remove FreePBX Advanced Settings"
+#~ msgstr "Apagar configurações avançadas do FreePBX"
 
 #~ msgid "Creating ARI Manager Table"
 #~ msgstr "Criando Tabela do Gerenciador ARI"

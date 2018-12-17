@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:39-0400\n"
+"POT-Creation-Date: 2018-12-17 18:35-0500\n"
 "PO-Revision-Date: 2016-04-27 10:46+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -122,10 +122,6 @@ msgstr "حذف"
 msgid "Device Count"
 msgstr "تعداد دستگاه"
 
-#: Arimanager.class.php:354
-msgid "Dropping ARI Manager Table"
-msgstr "در حال از بین بردن جدول مدیریت ARI"
-
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
 msgstr "ویرایش کاربر واسط استریسک REST"
@@ -187,10 +183,6 @@ msgstr "رمز عبور واسط استریسک REST"
 #: views/form.php:99 views/grid.php:13
 msgid "Read Only"
 msgstr "فقط خواندنی"
-
-#: Arimanager.class.php:358
-msgid "Remove FreePBX Advanced Settings"
-msgstr "حذف تنظیمات پیشرفته FreePBX"
 
 #: Arimanager.class.php:43
 msgid "Reset"
@@ -272,6 +264,12 @@ msgstr "بله"
 #: assets/js/main.js:17
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr "شما نمی توانید بدون تغییر رمز عبور، نوع آن را تغییر دهید"
+
+#~ msgid "Dropping ARI Manager Table"
+#~ msgstr "در حال از بین بردن جدول مدیریت ARI"
+
+#~ msgid "Remove FreePBX Advanced Settings"
+#~ msgstr "حذف تنظیمات پیشرفته FreePBX"
 
 #~ msgid "Creating ARI Manager Table"
 #~ msgstr "در حال ایجاد جدول مدیریت ARI"

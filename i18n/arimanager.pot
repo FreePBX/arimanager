@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:39-0400\n"
+"POT-Creation-Date: 2018-12-17 18:35-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,10 +117,6 @@ msgstr ""
 msgid "Device Count"
 msgstr ""
 
-#: Arimanager.class.php:354
-msgid "Dropping ARI Manager Table"
-msgstr ""
-
 #: views/form.php:12
 msgid "Edit Asterisk REST Interface User"
 msgstr ""
@@ -179,10 +175,6 @@ msgstr ""
 #: views/form.php:99
 #: views/grid.php:13
 msgid "Read Only"
-msgstr ""
-
-#: Arimanager.class.php:358
-msgid "Remove FreePBX Advanced Settings"
 msgstr ""
 
 #: Arimanager.class.php:43
