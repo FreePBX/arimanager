@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 17:26-0400\n"
+"POT-Creation-Date: 2019-01-21 19:13-0500\n"
 "PO-Revision-Date: 2016-04-27 10:46+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Arimanager.class.php:303
+#: Arimanager.class.php:298 arimanager.i18n.php:26
 msgid "ARI Password"
 msgstr "رمز عبور ARI"
 
-#: Arimanager.class.php:288
+#: Arimanager.class.php:283 arimanager.i18n.php:18
 msgid "ARI Username"
 msgstr "نام کاربری ARI"
 
@@ -33,15 +33,15 @@ msgstr "نام کاربری ARI"
 msgid "Actions"
 msgstr "عملیات"
 
-#: views/form.php:12
+#: views/form.php:6
 msgid "Add Asterisk REST Interface User"
 msgstr "افزودن کاربر برای واسط استریسک REST"
 
-#: views/grid.php:6 views/main.php:24
+#: views/grid.php:6 views/rnav.php:6
 msgid "Add User"
 msgstr "افزودن کاربر"
 
-#: Arimanager.class.php:346
+#: Arimanager.class.php:341 arimanager.i18n.php:22
 msgid "Allowed Origins"
 msgstr "مبدأ مجاز"
 
@@ -59,7 +59,7 @@ msgstr ""
 "برنامه های کاربردی استریسک می باشد، معرفی کرد. این ماژول امکان افزودن و یا "
 "حذف کاربران ARI را فراهم می کند."
 
-#: Arimanager.class.php:275
+#: Arimanager.class.php:270 arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -69,12 +69,13 @@ msgstr ""
 "برنامه های کاربردی استریسک می باشد، معرفی کرد. سرور ARI زمانی که فعال می "
 "شود، سرور HTTP نیز فعال است."
 
-#: views/form.php:60
+#: views/form.php:53
 msgid "Asterisk REST Inferface Password."
 msgstr "رمز عبور واسط استریسک ARI."
 
-#: Arimanager.class.php:272 Arimanager.class.php:286 Arimanager.class.php:301
-#: Arimanager.class.php:316 Arimanager.class.php:330 Arimanager.class.php:344
+#: Arimanager.class.php:267 Arimanager.class.php:281 Arimanager.class.php:296
+#: Arimanager.class.php:311 Arimanager.class.php:325 Arimanager.class.php:339
+#: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
 msgstr "واسط استریسک REST"
 
@@ -82,7 +83,7 @@ msgstr "واسط استریسک REST"
 msgid "Asterisk REST Interface Applications"
 msgstr "برنامه های کاربردی واسط استریسک REST"
 
-#: views/form.php:36
+#: views/form.php:29
 msgid "Asterisk REST Interface User Name"
 msgstr "نام کاربری واسط استریسک REST"
 
@@ -90,7 +91,7 @@ msgstr "نام کاربری واسط استریسک REST"
 msgid "Asterisk REST Interface Users"
 msgstr "کاربران واسط استریسک REST"
 
-#: views/main.php:10
+#: views/main.php:16
 msgid "Asterisk Rest Interface Users"
 msgstr "کاربران واسط استریسک REST"
 
@@ -102,7 +103,7 @@ msgstr "تعداد پل"
 msgid "Channel Count"
 msgstr "تعداد کانال"
 
-#: Arimanager.class.php:347
+#: Arimanager.class.php:342 arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -110,15 +111,15 @@ msgstr ""
 "فهرست مبدأ های مجاز که با ویرگول جدا شده اند.  برای اجازه به تمامی مبدأ ها "
 "از * استفاده می شود."
 
-#: Arimanager.class.php:262
+#: Arimanager.class.php:257
 msgid "Creating ARI Manager Table"
 msgstr "در حال ایجاد جدول مدیریت ARI"
 
-#: views/form.php:77
+#: views/form.php:70
 msgid "Crypt"
 msgstr "رمزگذاری شده"
 
-#: Arimanager.class.php:28
+#: Arimanager.class.php:30
 msgid "Delete"
 msgstr "حذف"
 
@@ -126,19 +127,19 @@ msgstr "حذف"
 msgid "Device Count"
 msgstr "تعداد دستگاه"
 
-#: Arimanager.class.php:355
+#: Arimanager.class.php:350
 msgid "Dropping ARI Manager Table"
 msgstr "در حال از بین بردن جدول مدیریت ARI"
 
-#: views/form.php:12
+#: views/form.php:6
 msgid "Edit Asterisk REST Interface User"
 msgstr "ویرایش کاربر واسط استریسک REST"
 
-#: Arimanager.class.php:319
+#: Arimanager.class.php:314 arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "فعال سازی نمایش پاسخ های دریافتی JSON از طرف استریسک"
 
-#: Arimanager.class.php:274
+#: Arimanager.class.php:269 arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
 msgstr "فعال کردن واسط استریسک REST"
 
@@ -146,7 +147,7 @@ msgstr "فعال کردن واسط استریسک REST"
 msgid "Endpoint Count"
 msgstr "تعداد نقاط پایانی"
 
-#: views/form.php:87
+#: views/form.php:80
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
@@ -156,51 +157,47 @@ msgstr ""
 "تنظیمات نداشته باشید. ARI از ذخیره سازی رمز عبور به صورت رمزگذاری شده، "
 "پشتیبانی می نماید."
 
-#: views/main.php:23
-msgid "List Users"
-msgstr "فهرست کاربران"
-
-#: views/form.php:106
+#: views/form.php:99
 msgid "No"
 msgstr "خیر"
 
-#: views/form.php:72
+#: views/form.php:65
 msgid "Password Type"
 msgstr "نوع رمز عبور"
 
-#: Arimanager.class.php:304
+#: Arimanager.class.php:299 arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
 msgstr "رمز عبور برای فراخوانی های داخلی ARI"
 
-#: views/form.php:79
+#: views/form.php:72
 msgid "Plain Text"
 msgstr "متن ساده"
 
-#: Arimanager.class.php:318
+#: Arimanager.class.php:313 arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
 msgstr "پرینت پاسخ های JSON"
 
-#: views/form.php:24
+#: views/form.php:17
 msgid "REST Interface User Name"
 msgstr "نام کاربری واسط استریسک REST"
 
-#: views/form.php:48
+#: views/form.php:41
 msgid "REST Interface User Password"
 msgstr "رمز عبور واسط استریسک REST"
 
-#: views/form.php:99 views/grid.php:13
+#: views/form.php:92 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr "فقط خواندنی"
 
-#: Arimanager.class.php:359
+#: Arimanager.class.php:354
 msgid "Remove FreePBX Advanced Settings"
 msgstr "حذف تنظیمات پیشرفته FreePBX"
 
-#: Arimanager.class.php:33
+#: Arimanager.class.php:35
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: views/form.php:114
+#: views/form.php:107
 msgid "Set to Yes for read-only applications."
 msgstr "برای برنامه‌ های کاربردی فقط خواندنی گزینه بله را انتخاب نمایید."
 
@@ -208,19 +205,19 @@ msgstr "برای برنامه‌ های کاربردی فقط خواندنی گ�
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: Arimanager.class.php:38
+#: Arimanager.class.php:40
 msgid "Submit"
 msgstr "ثبت"
 
-#: Arimanager.class.php:102
+#: Arimanager.class.php:97
 msgid "Sucessfully Added User"
 msgstr "کاربر با موفقیت اضافه شد"
 
-#: Arimanager.class.php:178
+#: Arimanager.class.php:173
 msgid "Sucessfully Deleted User"
 msgstr "کاربر با موفقیت حذف شد"
 
-#: Arimanager.class.php:135
+#: Arimanager.class.php:130
 msgid "Sucessfully Updated User"
 msgstr "کاربر با موفقیت بروز رسانی شد"
 
@@ -237,42 +234,45 @@ msgstr "در حال حاضر سرور mini-HTTP در تنظیمات پیشرفت
 msgid "The following applications have registered with Asterisk."
 msgstr "برنامه های کاربردی ذیل در استریسک رجیستر شده اند."
 
-#: Arimanager.class.php:333
+#: Arimanager.class.php:328 arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr "مهلت زمانی (به میلی ثانیه) که برای ارتباطات سوکت وب تنظیم می شود."
 
-#: Arimanager.class.php:89
+#: Arimanager.class.php:84
 msgid "User Already Exists!"
 msgstr "این کاربر در حال حاضر وجود دارد!"
 
-#: assets/js/main.js:5
+#: assets/js/main.js:4
 msgid "User Name Can Not Be Blank!"
 msgstr "نام کاربری نمی تواند خالی باشد!"
 
-#: assets/js/main.js:23
+#: assets/js/main.js:22
 msgid "User Name already exists!"
 msgstr "نام کاربری در حال حاضر وجود دارد!"
 
-#: assets/js/main.js:11
+#: assets/js/main.js:10
 msgid "User Password Can Not Be Blank!"
 msgstr "پسورد نمی تواند خالی باشد!"
 
-#: views/grid.php:12
+#: views/grid.php:12 views/rnav.php:12
 msgid "Username"
 msgstr "نام کاربری"
 
-#: Arimanager.class.php:289
+#: Arimanager.class.php:284 arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
 msgstr "نام کاربری برای فراخوانی های داخلی ARI"
 
-#: Arimanager.class.php:332
+#: Arimanager.class.php:327 arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
 msgstr "مهلت زمانی عمل نوشتن سوکت وب"
 
-#: views/form.php:104
+#: views/form.php:97
 msgid "Yes"
 msgstr "بله"
 
-#: assets/js/main.js:17
+#: assets/js/main.js:16
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr "شما نمی توانید بدون تغییر رمز عبور، نوع آن را تغییر دهید"
+
+#~ msgid "List Users"
+#~ msgstr "فهرست کاربران"

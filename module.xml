@@ -2,7 +2,7 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>13.0.4</version>
+	<version>13.0.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
+		*13.0.5* Fix visuals
 		*13.0.4* Comment and add function to find by username
 		*13.0.3* FREEPBX-9619 Adding user with Asterisk Rest Interface users does not prompt for system reload
 		*13.0.2* Version bump Beta
