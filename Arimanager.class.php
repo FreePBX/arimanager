@@ -3,6 +3,8 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013-2015 Sangoma Technologies Inc.
 //
+use Symfony\Component\Process\Process;
+use Symfony\Component\Process\Exception\ProcessFailedException;
 class Arimanager implements BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -64,25 +66,18 @@ class Arimanager implements BMO {
 			$readonly = ($_POST['readonly'] == 'yes') ? 1 : 0;
 			if(empty($_POST['id'])) {
 				$id = $this->addUser($_POST['name'],$_POST['password'],$_POST['password_type'],$readonly);
-				$_REQUEST['user'] = ($id)?$id:'';
 			} else {
 				if($_POST['password'] == '******') {
 					$this->editUser($_POST['id'],$_POST['name'],$readonly);
 				} else {
 					$this->editUser($_POST['id'],$_POST['name'],$readonly,$_POST['password'],$_POST['password_type']);
 				}
-				$_REQUEST['user'] = $_POST['id'];
-				$_REQUEST['view'] = 'form';
 			}
 			needreload();
 		} elseif(isset($_REQUEST['action']) && $_REQUEST['action'] == 'delete') {
 			if(!empty($_REQUEST['user'])) {
 				$this->deleteUser($_REQUEST['user']);
 				needreload();
-				unset($_REQUEST['user']);
-				if(isset($_REQUEST['view'])){
-					unset($_REQUEST['view']);
-				}
 			}
 		}
 	}
@@ -226,9 +221,9 @@ class Arimanager implements BMO {
 	public function display() {
 		$array = array(
 			"users" => $this->getAllUsers(),
-			"message" => $this->message,
 			"arienabled" => $this->Conf->get_conf_setting('ENABLE_ARI'),
-			"httpenabled" => $this->Conf->get_conf_setting('HTTPENABLED')
+			"httpenabled" => $this->Conf->get_conf_setting('HTTPENABLED'),
+			"freepbxuser" => $this->Conf->get_conf_setting('FPBX_ARI_USER')
 		);
 		if(!empty($_REQUEST['user'])) {
 			$array['user'] = $this->getUser($_REQUEST['user']);
@@ -248,11 +243,11 @@ class Arimanager implements BMO {
 		switch($view){
 			case 'form':
 				$content = load_view(__DIR__.'/views/form.php',$array);
-				return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled']));
+				return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled'], "message" => $this->message));
 			break;
 			default:
-			$content = load_view(__DIR__.'/views/grid.php');
-			return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled']));
+				$content = load_view(__DIR__.'/views/grid.php');
+				return show_view(__DIR__.'/views/main.php',array('content' => $content, 'httpenabled' => $array['httpenabled'], 'arienabled' =>$array['arienabled'], "message" => $this->message));
 			break;
 		}
 	}
@@ -362,22 +357,17 @@ class Arimanager implements BMO {
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
 		$pt = $this->Conf->get_conf_setting('ENABLE_ARI_PP') ? 'yes' : 'no';
 		$timeout = $this->Conf->get_conf_setting('ARI_WS_WRITE_TIMEOUT');
-		$timeout = $timeout ? $timeout : '100';
 		$allowed_origins = $this->Conf->get_conf_setting('ARI_ALLOWED_ORIGINS');
-		$allowed_origins = $allowed_origins?$allowed_origins:'*';
 		$array['ari_general_additional.conf'] = "enabled=".$en."\npretty=".$pt."\nwebsocket_write_timeout=".$timeout."\nallowed_origins=".$allowed_origins;
 		$ariuser = $this->Conf->get_conf_setting('FPBX_ARI_USER');
-		$aripass = $this->Conf->get_conf_setting('FPBX_ARI_PASSWORD');
-		$ariuser = $ariuser?$ariuser:'freepbxuser';
-		$aripass = $aripass?$aripass:md5(openssl_random_pseudo_bytes(16));
-		$aripass = $this->genPassword($aripass,'crypt');
+		$aripass = $this->genPassword($this->Conf->get_conf_setting('FPBX_ARI_PASSWORD'),'crypt');
 
 		$users = $this->getAllUsers();
 		$users[] = array(
 			'name' => $ariuser,
 			'password' => $aripass['password'],
-			'password_format' => 'crypt',
-			'read_only' => ''
+			'password_format' => $aripass['type'],
+			'read_only' => 'no'
 		);
 		$array['ari_additional.conf'] = array();
 		foreach($users as $user) {
@@ -396,54 +386,54 @@ class Arimanager implements BMO {
 		$this->FreePBX->WriteConfig($conf);
 	}
 	public function ajaxRequest($req, &$setting) {
-       switch ($req) {
-           case 'getJSON':
-					 case 'listApps':
-               return true;
-           break;
-           default:
-               return false;
-           break;
-       }
-   }
-   public function ajaxHandler(){
-       switch ($_REQUEST['command']) {
-           case 'getJSON':
-               switch ($_REQUEST['jdata']) {
-                   case 'grid':
-                      $data = array_values($this->getAllUsers());
-											if($data){
-                      	return $data;
-											}else{
-												return array();
-											}
-                   break;
+		switch ($req) {
+		case 'grid':
+		case 'listApps':
+			return true;
+		break;
+		default:
+			return false;
+		break;
+		}
+	}
 
-                   default:
-                       return false;
-                   break;
-               }
-           break;
-					 case 'listApps':
-					 	$ariuser = $this->Conf->get_conf_setting('FPBX_ARI_USER');
-					 	$aripass = $this->Conf->get_conf_setting('FPBX_ARI_PASSWORD');
-					 	$pest = new \Pest('http://localhost:8088/ari/');
-						$pest->setupAuth($ariuser, $aripass);
-						$apps = $pest->get('/applications');
-						return json_decode($apps);
-					 break;
-
-           default:
-               return false;
-           break;
-       }
-   }
-   public function loadUsers($data){
+	public function ajaxHandler(){
+		switch ($_REQUEST['command']) {
+			case 'grid':
+				$data = array_values($this->getAllUsers());
+				if($data){
+					return $data;
+				}else{
+					return array();
+				}
+			break;
+			case 'listApps':
+				$ariuser = $this->Conf->get_conf_setting('FPBX_ARI_USER');
+				$aripass = $this->Conf->get_conf_setting('FPBX_ARI_PASSWORD');
+				$pest = new \Pest('http://localhost:8088/ari/');
+				$pest->setupAuth($ariuser, $aripass);
+				$apps = $pest->get('/applications');
+				return json_decode($apps);
+			break;
+			default:
+			return false;
+		break;
+		}
+	}
+	public function loadUsers($data){
 		if(!is_array($data)){
 			$data = [];
 		}
 		foreach ($data as $user) {
-		    $this->addUser($user['username'], $user['password'], $user['type'], $user['readonly']);
+			$this->addUser($user['username'], $user['password'], $user['type'], $user['readonly']);
+		}
+	}
+
+	public function getRightNav($request) {
+		if(isset($request['view'])) {
+			return load_view(__DIR__."/views/rnav.php",array());
+		} else {
+			return '';
 		}
 	}
 }
