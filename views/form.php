@@ -1,18 +1,11 @@
 <?php
-$messagehtml = '';
-if(isset($message['message'])){
-  $messagehtml .= '<div class="alert alert-'. $message['type'].'">';
-  $messagehtml .= $message['message'];
-  $messagehtml .= '</div>';
-}
-$password_type = isset($user['password_type'])?$user['password_type']:'plain';
+$password_type = isset($user['password_format'])?$user['password_format']:'plain';
 $readonly = isset($user['read_only'])?$user['read_only']:'1';
 ?>
 
 <h2> <?php echo (isset($user['id']) ? _("Edit Asterisk REST Interface User") : _("Add Asterisk REST Interface User")) ?> </h2>
-<?php echo $messagehtml?>
 
-<form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" <?php if(isset($user['id'])) { ?>data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete<?php } ?>">
+<form class="fpbx-submit" autocomplete="off" name="ariform" id="ariform" method="post" action="?display=arimanager" <?php if(isset($user['id'])) { ?>data-fpbx-delete="?display=arimanager&amp;user=<?php echo $user['id']?>&amp;action=delete<?php } ?>">
 	<input type="hidden" name="id" value="<?php echo (isset($user['id']) ? $user['id'] : ''); ?>">
   <!--REST Interface User Name-->
   <div class="element-container">
@@ -117,4 +110,4 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
   </div>
   <!--END Read Only-->
 </form>
-<script>var users = <?php echo json_encode($usernames)?></script>
+<script>var users = <?php echo json_encode($usernames)?>; var freepbxuser = <?php echo json_encode($freepbxuser)?>;</script>
