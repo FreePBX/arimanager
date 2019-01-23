@@ -9,22 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-21 19:13-0500\n"
+"POT-Creation-Date: 2019-01-23 14:43-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: Arimanager.class.php:298
-#: arimanager.i18n.php:26
 msgid "ARI Password"
 msgstr ""
 
 #: Arimanager.class.php:283
-#: arimanager.i18n.php:18
 msgid "ARI Username"
 msgstr ""
 
@@ -42,7 +39,6 @@ msgid "Add User"
 msgstr ""
 
 #: Arimanager.class.php:341
-#: arimanager.i18n.php:22
 msgid "Allowed Origins"
 msgstr ""
 
@@ -58,7 +54,6 @@ msgid ""
 msgstr ""
 
 #: Arimanager.class.php:270
-#: arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -75,7 +70,6 @@ msgstr ""
 #: Arimanager.class.php:311
 #: Arimanager.class.php:325
 #: Arimanager.class.php:339
-#: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
 msgstr ""
 
@@ -105,7 +99,6 @@ msgid "Channel Count"
 msgstr ""
 
 #: Arimanager.class.php:342
-#: arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -136,12 +129,10 @@ msgid "Edit Asterisk REST Interface User"
 msgstr ""
 
 #: Arimanager.class.php:314
-#: arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr ""
 
 #: Arimanager.class.php:269
-#: arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
 msgstr ""
 
@@ -165,7 +156,6 @@ msgid "Password Type"
 msgstr ""
 
 #: Arimanager.class.php:299
-#: arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
 msgstr ""
 
@@ -174,7 +164,6 @@ msgid "Plain Text"
 msgstr ""
 
 #: Arimanager.class.php:313
-#: arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
 msgstr ""
 
@@ -238,7 +227,6 @@ msgid "The following applications have registered with Asterisk."
 msgstr ""
 
 #: Arimanager.class.php:328
-#: arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
 
@@ -264,12 +252,10 @@ msgid "Username"
 msgstr ""
 
 #: Arimanager.class.php:284
-#: arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
 msgstr ""
 
 #: Arimanager.class.php:327
-#: arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
 msgstr ""
 
