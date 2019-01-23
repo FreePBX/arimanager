@@ -422,7 +422,7 @@ class Arimanager implements BMO {
 	}
 	public function loadUsers($data){
 		if(!is_array($data)){
-			$data = [];
+			$data = array();
 		}
 		foreach ($data as $user) {
 			$this->addUser($user['username'], $user['password'], $user['type'], $user['readonly']);
