@@ -19,11 +19,6 @@ class Restore Extends Base\RestoreBase{
 			}
 		}
 
-		$tables = ['arimanager'];
-		foreach($tables as $table) {
-			$sth = $pdo->query("SELECT * FROM $table",\PDO::FETCH_ASSOC);
-			$res = $sth->fetchAll();
-			$this->addDataToTableFromArray($table, $res);
-		}
+		$this->restoreLegacyDatabase($pdo);
 	}
 }
