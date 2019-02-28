@@ -357,7 +357,7 @@ class Arimanager implements BMO {
 			'name' => $ariuser,
 			'password' => $aripass['password'],
 			'password_format' => $aripass['type'],
-			'read_only' => 'no'
+			'read_only' => 0
 		);
 		$array['ari_additional.conf'] = array();
 		foreach($users as $user) {
