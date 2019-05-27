@@ -2,7 +2,7 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>15.0.3.3</version>
+	<version>15.0.3.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
+		*15.0.3.4* FREEPBX-18676 Configuration File Link removed(http://freepbx.org/configuration_files) 
 		*15.0.3.3* FREEPBX-19574 frix system standard user
 		*15.0.3.2* fixing legacy restore 
 		*15.0.3* Fix visuals
