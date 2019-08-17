@@ -2,7 +2,7 @@
 namespace FreePBX\modules\Arimanager;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
-	public function runRestore($jobid){
+	public function runRestore(){
 		$configs = $this->getConfigs();
 		$this->FreePBX->Arimanager->LoadUsers($configs['users']);
 		if(is_array($configs['advanced'])){
