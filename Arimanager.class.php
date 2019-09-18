@@ -415,7 +415,7 @@ class Arimanager implements BMO {
 			$data = array();
 		}
 		foreach ($data as $user) {
-			$this->addUser($user['username'], $user['password'], $user['type'], $user['readonly']);
+			$this->addUser($user['name'], $user['password'], $user['passowrd_format'], $user['read_only']);
 		}
 	}
 
