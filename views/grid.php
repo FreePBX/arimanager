@@ -6,7 +6,7 @@ $dataurl = "ajax.php?module=arimanager&command=grid";
         <i class="fa fa-plus"></i> <span><?php echo _('Add User')?></span>
     </a>
 </div>
- <table id="ariusergrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
+ <table id="ariusergrid" data-escape="true" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
     <thead>
             <tr>
             <th data-field="name"><?php echo _("Username")?></th>
