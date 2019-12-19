@@ -361,15 +361,29 @@ class Arimanager implements BMO {
 		);
 		$array['ari_additional.conf'] = array();
 		foreach($users as $user) {
+			if(!isset($user['password_format']) || empty($user['password_format'])) {
+				$format = $this->checkPwdformat($user['password']);
+			}
 			$array['ari_additional.conf'][$user['name']] = array(
 				"type" => "user",
 				"password" => $user['password'],
-				"password_format" => $user['password_format'],
+				"password_format" => !empty($user['password_format']) ? $user['password_format'] : $format,
 				"read_only" => !empty($user['read_only']) ? 'yes' : 'no'
 			);
 		}
 
 		return $array;
+	}
+
+	public function checkPwdformat($pwd) {
+		$format = "plain";
+		if($pwd != "") {
+			$val = substr($pwd, 3);
+			if($val == "$6$" && strlen($pwd) > 100 ) {
+				$format = "crypt";
+			}
+		}
+		return $format;
 	}
 
 	public function writeConfig($conf){
