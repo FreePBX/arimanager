@@ -2,7 +2,7 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>15.0.3.7</version>
+	<version>15.0.3.8</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
+		*15.0.3.8* FREEPBX-20951 Restoring backup in FreePBX 15 system is not restoring "password_format" field of the ari manager module. 
 		*15.0.3.7* FREEI-890 Fix XSS Bootstrap Datatable Issues  
 		*15.0.3.6* FREEPBX-20568 Restoring FreePBX 15 Backup is not restoring Asterisk Rest Interface Users entries. 
 		*15.0.3.5* Related to FREEPBX-20414: removed $jobid from runRestore() 
