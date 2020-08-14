@@ -27,6 +27,7 @@
 	<description>
 		Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users.
 	</description>
+	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+REST+Interface+Users+Module</more-info>
 	<depends>
 		<module>manager</module>
 		<engine>asterisk 12</engine>
