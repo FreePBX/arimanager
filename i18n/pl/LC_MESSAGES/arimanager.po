@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 16:17+0530\n"
+"POT-Creation-Date: 2020-08-14 07:09+0000\n"
 "PO-Revision-Date: 2017-03-19 12:22+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -22,11 +22,11 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Arimanager.class.php:298
+#: Arimanager.class.php:298 arimanager.i18n.php:26
 msgid "ARI Password"
 msgstr "Hasło ARI"
 
-#: Arimanager.class.php:283
+#: Arimanager.class.php:283 arimanager.i18n.php:18
 msgid "ARI Username"
 msgstr "Nazwa użytkownika ARI"
 
@@ -42,7 +42,7 @@ msgstr "Dodaj Asterisk REST do interfejsu użytkownika"
 msgid "Add User"
 msgstr "Dodaj użytkownika"
 
-#: Arimanager.class.php:341
+#: Arimanager.class.php:341 arimanager.i18n.php:22
 msgid "Allowed Origins"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgid ""
 "ability to add and remove ARI users."
 msgstr ""
 
-#: Arimanager.class.php:270
+#: Arimanager.class.php:270 arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -70,6 +70,7 @@ msgstr "Hasło interfejsu Asterisk REST."
 
 #: Arimanager.class.php:267 Arimanager.class.php:281 Arimanager.class.php:296
 #: Arimanager.class.php:311 Arimanager.class.php:325 Arimanager.class.php:339
+#: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
 msgstr "Interfejs Aserisk REST"
 
@@ -97,7 +98,7 @@ msgstr ""
 msgid "Channel Count"
 msgstr ""
 
-#: Arimanager.class.php:342
+#: Arimanager.class.php:342 arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -127,11 +128,11 @@ msgstr "Upuszczanie tabeli menadżera ARI"
 msgid "Edit Asterisk REST Interface User"
 msgstr "Edytowanie użytkownika interfejsu Asterisk REST"
 
-#: Arimanager.class.php:314
+#: Arimanager.class.php:314 arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr ""
 
-#: Arimanager.class.php:269
+#: Arimanager.class.php:269 arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
 msgstr "Włącz interfejs Asterisk REST"
 
@@ -157,7 +158,7 @@ msgstr "Nie"
 msgid "Password Type"
 msgstr "Rodzaj hasła"
 
-#: Arimanager.class.php:299
+#: Arimanager.class.php:299 arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
 msgstr "Hasło dla wewnętrznych rozmówców ARI"
 
@@ -165,7 +166,7 @@ msgstr "Hasło dla wewnętrznych rozmówców ARI"
 msgid "Plain Text"
 msgstr "Zwykły twkst"
 
-#: Arimanager.class.php:313
+#: Arimanager.class.php:313 arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
 msgstr ""
 
@@ -229,7 +230,7 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr "Następujące aplikacje zostały zarejestrowane w Asterisk."
 
-#: Arimanager.class.php:328
+#: Arimanager.class.php:328 arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr "Limit czasu (w milisekundach) aby ustawić na połączeniach WebSocket."
 
@@ -253,11 +254,11 @@ msgstr "Hasło użytkownika nie może być puste!"
 msgid "Username"
 msgstr "Nazwa użytkownika"
 
-#: Arimanager.class.php:284
+#: Arimanager.class.php:284 arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
 msgstr "Nazwa użytkownika dla połączeń wewnętrznych ARI"
 
-#: Arimanager.class.php:327
+#: Arimanager.class.php:327 arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
 msgstr "Koniec czasu wpisu Web Socket"
 
