@@ -19,7 +19,7 @@
 	<database>
 	  <table name="arimanager">
 	    <field name="id" type="integer" primarykey="true" autoincrement="true"/>
-	    <field name="name" type="string" length="15"/>
+	    <field name="name" type="string" length="190"/>
 	    <field name="password" type="string" length="255" notnull="false"/>
 	    <field name="password_format" type="string" length="255" notnull="false"/>
 	    <field name="read_only" type="integer" default="1" notnull="false"/>
