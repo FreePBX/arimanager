@@ -66,6 +66,7 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
               <i class="fa fa-question-circle fpbx-help-icon" data-for="password_type"></i>
             </div>
             <div class="col-md-9 radioset">
+              <input type="hidden" id="oldPasswordType" value="<?php echo ($password_type) ?>">
               <input type="radio" name="password_type" id="password_typecrypt" value="crypt" <?php echo ($password_type == "crypt"?"CHECKED":"") ?>>
               <label for="password_typecrypt"><?php echo _("Crypt");?></label>
               <input type="radio" name="password_type" id="password_typeplain" value="plain" <?php echo ($password_type == "plain"?"CHECKED":"") ?>>
