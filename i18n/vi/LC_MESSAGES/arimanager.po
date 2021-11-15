@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 07:13+0000\n"
+"POT-Creation-Date: 2021-11-15 11:28+0000\n"
 "PO-Revision-Date: 2017-07-14 10:03+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -112,7 +112,7 @@ msgstr ""
 "Danh sách các nguồn gốc được cho phép ngăn cách nhau bằng dấu phẩy, cho việc "
 "chia sẻ nguồn gốc chéo. Có thể cài đặt * cho phép tất cả các nguồn gốc\"."
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Crypt"
 msgstr "Bảo mật"
 
@@ -140,7 +140,7 @@ msgstr "Kích hoạt giao diện Asterisk REST"
 msgid "Endpoint Count"
 msgstr "Đếm điểm cuối"
 
-#: views/form.php:80
+#: views/form.php:81
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
@@ -150,7 +150,7 @@ msgstr ""
 "bản thuần túy trong tệp cấu hình. ARI hỗ trợ sử dụng bảo mật (3) cho việc "
 "lưu mật khẩu."
 
-#: views/form.php:99
+#: views/form.php:100
 msgid "No"
 msgstr "Không"
 
@@ -162,7 +162,7 @@ msgstr "Kiểu mật khẩu"
 msgid "Password for internal ARI calls"
 msgstr "Mật khẩu cho các cuộc gọi ARI nội bộ"
 
-#: views/form.php:72
+#: views/form.php:73
 msgid "Plain Text"
 msgstr "Văn bản thuần túy"
 
@@ -178,7 +178,7 @@ msgstr "Tên người dùng giao diện REST"
 msgid "REST Interface User Password"
 msgstr "Mật khẩu ngừời dùng giao diện REST"
 
-#: views/form.php:92 views/grid.php:13 views/rnav.php:13
+#: views/form.php:93 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr "Chỉ được đọc"
 
@@ -186,7 +186,7 @@ msgstr "Chỉ được đọc"
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: views/form.php:107
+#: views/form.php:108
 msgid "Set to Yes for read-only applications."
 msgstr "Cài đặt Có cho các ứng dụng chỉ được đọc."
 
@@ -257,7 +257,7 @@ msgstr "Tên người dùng cho các cuộc gọi ARI nội bộ"
 msgid "Web Socket Write Timeout"
 msgstr "Thời gian chờ đọc Web Socket"
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Yes"
 msgstr "Có"
 

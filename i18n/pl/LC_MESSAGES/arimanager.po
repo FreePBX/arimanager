@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 07:13+0000\n"
+"POT-Creation-Date: 2021-11-15 11:28+0000\n"
 "PO-Revision-Date: 2017-03-19 12:22+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -104,7 +104,7 @@ msgid ""
 "May be set to * to allow all origins."
 msgstr ""
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Crypt"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr "Włącz interfejs Asterisk REST"
 msgid "Endpoint Count"
 msgstr ""
 
-#: views/form.php:80
+#: views/form.php:81
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
@@ -142,7 +142,7 @@ msgstr ""
 "zwykłego tekstu w pliku konfiguracji. ARI popiera używanie  crypty(3) do "
 "przechowywania haseł."
 
-#: views/form.php:99
+#: views/form.php:100
 msgid "No"
 msgstr "Nie"
 
@@ -154,7 +154,7 @@ msgstr "Rodzaj hasła"
 msgid "Password for internal ARI calls"
 msgstr "Hasło dla wewnętrznych rozmówców ARI"
 
-#: views/form.php:72
+#: views/form.php:73
 msgid "Plain Text"
 msgstr "Zwykły twkst"
 
@@ -170,7 +170,7 @@ msgstr "Nazwa użytkownika interfejsu REST"
 msgid "REST Interface User Password"
 msgstr "Hasło użytkownika interfejsu REST"
 
-#: views/form.php:92 views/grid.php:13 views/rnav.php:13
+#: views/form.php:93 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr "Tylko do odczytu"
 
@@ -178,7 +178,7 @@ msgstr "Tylko do odczytu"
 msgid "Reset"
 msgstr "Ponowne ustawienia"
 
-#: views/form.php:107
+#: views/form.php:108
 msgid "Set to Yes for read-only applications."
 msgstr "Ustaw na Tak dla aplikacji tylko do odczytu."
 
@@ -250,7 +250,7 @@ msgstr "Nazwa użytkownika dla połączeń wewnętrznych ARI"
 msgid "Web Socket Write Timeout"
 msgstr "Koniec czasu wpisu Web Socket"
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Yes"
 msgstr "Tak"
 
