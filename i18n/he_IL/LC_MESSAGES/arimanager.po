@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 07:12+0000\n"
+"POT-Creation-Date: 2021-11-15 11:27+0000\n"
 "PO-Revision-Date: 2016-05-09 03:26+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -107,7 +107,7 @@ msgstr ""
 "רשימה מופרדת בפסיקים של  של מקורות מאופשרים, לשיתוף משאבים ממקורות שונים. "
 "ניתן להגדיר * כדי לאפשר את כל המקורות."
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Crypt"
 msgstr ""
 
@@ -135,14 +135,14 @@ msgstr "אפשר את ממשק אסטריסק REST"
 msgid "Endpoint Count"
 msgstr "ספירת נקודות קצה"
 
-#: views/form.php:80
+#: views/form.php:81
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
 
-#: views/form.php:99
+#: views/form.php:100
 msgid "No"
 msgstr "לא"
 
@@ -154,7 +154,7 @@ msgstr "סוג סיסמא"
 msgid "Password for internal ARI calls"
 msgstr ""
 
-#: views/form.php:72
+#: views/form.php:73
 msgid "Plain Text"
 msgstr ""
 
@@ -170,7 +170,7 @@ msgstr ""
 msgid "REST Interface User Password"
 msgstr ""
 
-#: views/form.php:92 views/grid.php:13 views/rnav.php:13
+#: views/form.php:93 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:107
+#: views/form.php:108
 msgid "Set to Yes for read-only applications."
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Web Socket Write Timeout"
 msgstr ""
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Yes"
 msgstr ""
 

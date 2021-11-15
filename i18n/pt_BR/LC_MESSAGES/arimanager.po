@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 07:12+0000\n"
+"POT-Creation-Date: 2021-11-15 11:27+0000\n"
 "PO-Revision-Date: 2016-12-11 02:24+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -123,7 +123,7 @@ msgstr ""
 "Recursos entre Origens. Pode ser definido como * para permitir todas as "
 "origens."
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Crypt"
 msgstr "Criptografia"
 
@@ -151,7 +151,7 @@ msgstr "Habilitar a Interface REST Asterisk"
 msgid "Endpoint Count"
 msgstr "Contagem de Pontos de Extremidade"
 
-#: views/form.php:80
+#: views/form.php:81
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
@@ -161,7 +161,7 @@ msgstr ""
 "em texto simples no arquivo de configuração. ARI suporta o uso de "
 "criptografia(3) para armazenamento de senha."
 
-#: views/form.php:99
+#: views/form.php:100
 msgid "No"
 msgstr "Não"
 
@@ -173,7 +173,7 @@ msgstr "Tipo de Senha"
 msgid "Password for internal ARI calls"
 msgstr "Senha para chamadas ARI internas"
 
-#: views/form.php:72
+#: views/form.php:73
 msgid "Plain Text"
 msgstr "Texto Plano"
 
@@ -189,7 +189,7 @@ msgstr "Nome de Usuário de Interface REST"
 msgid "REST Interface User Password"
 msgstr "Senha de Usuário da Interface REST"
 
-#: views/form.php:92 views/grid.php:13 views/rnav.php:13
+#: views/form.php:93 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr "Somente Leitura"
 
@@ -197,7 +197,7 @@ msgstr "Somente Leitura"
 msgid "Reset"
 msgstr "Desfazer"
 
-#: views/form.php:107
+#: views/form.php:108
 msgid "Set to Yes for read-only applications."
 msgstr "Define como Sim para aplicativos de somente leitura."
 
@@ -270,7 +270,7 @@ msgstr "Nome de usuário para chamadas ARI internas"
 msgid "Web Socket Write Timeout"
 msgstr "Tempo Limite de Gravação de Soquete Web"
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Yes"
 msgstr "Sim"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 07:12+0000\n"
+"POT-Creation-Date: 2021-11-15 11:27+0000\n"
 "PO-Revision-Date: 2017-12-01 18:33+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -112,7 +112,7 @@ msgstr ""
 "ressources d'origine croisée. Peut être défini sur * pour autoriser toutes "
 "les origines."
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Crypt"
 msgstr "Crypté"
 
@@ -140,7 +140,7 @@ msgstr "Activer l'interface REST d'Asterisk"
 msgid "Endpoint Count"
 msgstr "Nombre de Postes"
 
-#: views/form.php:80
+#: views/form.php:81
 msgid ""
 "For the security consious, you probably don't want to put plaintext "
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
@@ -150,7 +150,7 @@ msgstr ""
 "des mots de passe en clair dans le fichier de configuration. ARI supporte "
 "donc l'utilisation de crypt(3) pour les mots de passe."
 
-#: views/form.php:99
+#: views/form.php:100
 msgid "No"
 msgstr "Non"
 
@@ -162,7 +162,7 @@ msgstr "Type de mot de passe"
 msgid "Password for internal ARI calls"
 msgstr "Mot de passe pour les appels internes ARI"
 
-#: views/form.php:72
+#: views/form.php:73
 msgid "Plain Text"
 msgstr "Texte en clair"
 
@@ -178,7 +178,7 @@ msgstr "Nom d'utilisateur de l'interface REST"
 msgid "REST Interface User Password"
 msgstr "Mot de passe de l'utilisateur de l'interface REST"
 
-#: views/form.php:92 views/grid.php:13 views/rnav.php:13
+#: views/form.php:93 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
 msgstr "Lecture seulement"
 
@@ -186,7 +186,7 @@ msgstr "Lecture seulement"
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: views/form.php:107
+#: views/form.php:108
 msgid "Set to Yes for read-only applications."
 msgstr "Choisissez Oui pour les applications en lecture seule."
 
@@ -261,7 +261,7 @@ msgstr "Nom d'utilisateur pour les appels internes d'ARI"
 msgid "Web Socket Write Timeout"
 msgstr "Délai d'écriture du socket Web"
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Yes"
 msgstr "Oui"
 
