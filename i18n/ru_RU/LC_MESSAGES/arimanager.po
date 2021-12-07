@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 07:09+0000\n"
-"PO-Revision-Date: 2021-11-23 08:01+0000\n"
+"PO-Revision-Date: 2021-12-08 06:05+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "arimanager/ru/>\n"
@@ -185,7 +185,7 @@ msgstr ""
 
 #: Arimanager.class.php:35
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/form.php:107
 msgid "Set to Yes for read-only applications."
