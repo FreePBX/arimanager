@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 07:09+0000\n"
-"PO-Revision-Date: 2021-12-08 06:05+0000\n"
+"PO-Revision-Date: 2022-04-19 15:25+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "arimanager/ru/>\n"
@@ -24,11 +24,11 @@ msgstr ""
 
 #: Arimanager.class.php:298 arimanager.i18n.php:26
 msgid "ARI Password"
-msgstr ""
+msgstr "Пароль ARI"
 
 #: Arimanager.class.php:283 arimanager.i18n.php:18
 msgid "ARI Username"
-msgstr ""
+msgstr "Имя пользователя ARI"
 
 #: views/grid.php:14
 msgid "Actions"
@@ -36,7 +36,7 @@ msgstr "Действия"
 
 #: views/form.php:6
 msgid "Add Asterisk REST Interface User"
-msgstr ""
+msgstr "Добавить пользователя Asterisk REST Interface"
 
 #: views/grid.php:6 views/rnav.php:6
 msgid "Add User"
@@ -44,7 +44,7 @@ msgstr "Добавить пользователя"
 
 #: Arimanager.class.php:341 arimanager.i18n.php:22
 msgid "Allowed Origins"
-msgstr ""
+msgstr "Разрешенные источники"
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
@@ -56,6 +56,9 @@ msgid ""
 "API's for building Asterisk based applications. This module provides the "
 "ability to add and remove ARI users."
 msgstr ""
+"Asterisk 12 представляет Asterisk REST Interface (ARI), набор RESTful API "
+"для создания приложений на базе Asterisk. Этот модуль предоставляет "
+"возможность добавлять и удалять пользователей ARI."
 
 #: Arimanager.class.php:270 arimanager.i18n.php:16
 msgid ""
@@ -63,50 +66,56 @@ msgid ""
 "for building Asterisk based applications. This will enable the ARI server as "
 "long as the HTTP server is enabled as well."
 msgstr ""
+"Asterisk 12 представляет Asterisk REST Interface, набор RESTful API для "
+"создания приложений на базе Asterisk. Это позволит включить сервер ARI до "
+"тех пор, пока также включен HTTP-сервер."
 
 #: views/form.php:53
 msgid "Asterisk REST Inferface Password."
-msgstr ""
+msgstr "Пароль Asterisk REST Inferface."
 
 #: Arimanager.class.php:267 Arimanager.class.php:281 Arimanager.class.php:296
 #: Arimanager.class.php:311 Arimanager.class.php:325 Arimanager.class.php:339
 #: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
-msgstr ""
+msgstr "Интерфейс Asterisk REST"
 
 #: page.arimanagerapps.php:6
 msgid "Asterisk REST Interface Applications"
-msgstr ""
+msgstr "Приложения Asterisk REST Interface"
 
 #: views/form.php:29
 msgid "Asterisk REST Interface User Name"
-msgstr ""
+msgstr "Имя пользователя Asterisk REST Interface"
 
 #: arimanager.i18n.php:4 arimanager.i18n.php:10
 msgid "Asterisk REST Interface Users"
-msgstr ""
+msgstr "Пользователи Asterisk REST Interface"
 
 #: views/main.php:16
 msgid "Asterisk Rest Interface Users"
-msgstr ""
+msgstr "Пользователи Asterisk REST Interface"
 
 #: page.arimanagerapps.php:28
 msgid "Bridge Count"
-msgstr ""
+msgstr "Количество бриджей"
 
 #: page.arimanagerapps.php:27
 msgid "Channel Count"
-msgstr ""
+msgstr "Количество каналов"
 
 #: Arimanager.class.php:342 arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
 msgstr ""
+"Разделенный запятыми список разрешенных источников для совместного "
+"использования ресурсов разных источников. Может быть установлено значение * "
+"для разрешения всех исходных данных."
 
 #: Arimanager.class.php:257
 msgid "Creating ARI Manager Table"
-msgstr ""
+msgstr "Создание таблицы управления ARI"
 
 #: views/form.php:70
 msgid "Crypt"
@@ -118,11 +127,11 @@ msgstr "Удалить"
 
 #: page.arimanagerapps.php:30
 msgid "Device Count"
-msgstr ""
+msgstr "Количество устройств"
 
 #: Arimanager.class.php:350
 msgid "Dropping ARI Manager Table"
-msgstr ""
+msgstr "Удаление таблицы управления ARI"
 
 #: views/form.php:6
 msgid "Edit Asterisk REST Interface User"
