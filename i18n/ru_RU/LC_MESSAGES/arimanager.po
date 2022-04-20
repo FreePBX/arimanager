@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 07:09+0000\n"
-"PO-Revision-Date: 2022-04-19 15:25+0000\n"
+"PO-Revision-Date: 2022-04-20 09:10+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "arimanager/ru/>\n"
@@ -135,19 +135,19 @@ msgstr "Удаление таблицы управления ARI"
 
 #: views/form.php:6
 msgid "Edit Asterisk REST Interface User"
-msgstr ""
+msgstr "Редактировать пользователя Asterisk REST Interface"
 
 #: Arimanager.class.php:314 arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr ""
+msgstr "Включить красивый вывод ответов JSON из Asterisk"
 
 #: Arimanager.class.php:269 arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
-msgstr ""
+msgstr "Включить Asterisk REST Interface"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
-msgstr ""
+msgstr "Количество внутр.номеров"
 
 #: views/form.php:80
 msgid ""
@@ -155,42 +155,45 @@ msgid ""
 "passwords in the configuration file. ARI supports the use of crypt(3) for "
 "password storage."
 msgstr ""
+"Из соображений безопасности вы, вероятно, не захотите помещать простые "
+"текстовые пароли в конфигурационный файл. ARI поддерживает использование "
+"crypt(3) для хранения паролей."
 
 #: views/form.php:99
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: views/form.php:65
 msgid "Password Type"
-msgstr ""
+msgstr "Тип пароля"
 
 #: Arimanager.class.php:299 arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
-msgstr ""
+msgstr "Пароль для внутренних вызовов ARI"
 
 #: views/form.php:72
 msgid "Plain Text"
-msgstr ""
+msgstr "Обычный текст"
 
 #: Arimanager.class.php:313 arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
-msgstr ""
+msgstr "Красивый вывод ответов JSON"
 
 #: views/form.php:17
 msgid "REST Interface User Name"
-msgstr ""
+msgstr "Имя пользователя интерфейса REST"
 
 #: views/form.php:41
 msgid "REST Interface User Password"
-msgstr ""
+msgstr "Пароль пользователя интерфейса REST"
 
 #: views/form.php:92 views/grid.php:13 views/rnav.php:13
 msgid "Read Only"
-msgstr ""
+msgstr "Только для чтения"
 
 #: Arimanager.class.php:354
 msgid "Remove FreePBX Advanced Settings"
-msgstr ""
+msgstr "Удалить Расширенные настройки FreePBX"
 
 #: Arimanager.class.php:35
 msgid "Reset"
@@ -198,11 +201,11 @@ msgstr "Сброс"
 
 #: views/form.php:107
 msgid "Set to Yes for read-only applications."
-msgstr ""
+msgstr "Установите Да для приложений, доступных только для чтения."
 
 #: arimanager.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Настройки"
 
 #: Arimanager.class.php:40
 msgid "Submit"
@@ -210,65 +213,69 @@ msgstr "Применить"
 
 #: Arimanager.class.php:97
 msgid "Sucessfully Added User"
-msgstr ""
+msgstr "Пользователь успешно добавлен"
 
 #: Arimanager.class.php:173
 msgid "Sucessfully Deleted User"
-msgstr ""
+msgstr "Пользователь успешно удален"
 
 #: Arimanager.class.php:130
 msgid "Sucessfully Updated User"
-msgstr ""
+msgstr "Пользователь успешно обновлен"
 
 #: views/main.php:6
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr ""
+"Интерфейс Asterisk REST в настоящее время отключен в Расширенных настройках"
 
 #: views/main.php:4
 msgid ""
 "The Asterisk mini-HTTP Server is Currently Disabled in Advanced Settings"
 msgstr ""
+"Мини-HTTP-сервер Asterisk в настоящее время отключен в Расширенных настройках"
 
 #: page.arimanagerapps.php:13
 msgid "The following applications have registered with Asterisk."
-msgstr ""
+msgstr "Следующие приложения зарегистрировались в Asterisk."
 
 #: Arimanager.class.php:328 arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
+"Время ожидания (в миллисекундах), устанавливаемое для подключений к "
+"WebSocket."
 
 #: Arimanager.class.php:84
 msgid "User Already Exists!"
-msgstr ""
+msgstr "Такой пользователь уже существует!"
 
 #: assets/js/main.js:4
 msgid "User Name Can Not Be Blank!"
-msgstr ""
+msgstr "Имя пользователя не может быть пустым!"
 
 #: assets/js/main.js:22
 msgid "User Name already exists!"
-msgstr ""
+msgstr "Такое имя пользователя уже существует!"
 
 #: assets/js/main.js:10
 msgid "User Password Can Not Be Blank!"
-msgstr ""
+msgstr "Пароль пользователя не может быть пустым!"
 
 #: views/grid.php:12 views/rnav.php:12
 msgid "Username"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: Arimanager.class.php:284 arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
-msgstr ""
+msgstr "Имя пользователя для внутренних вызовов ARI"
 
 #: Arimanager.class.php:327 arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
-msgstr ""
+msgstr "Тайм-аут записи WebSocket'а"
 
 #: views/form.php:97
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: assets/js/main.js:16
 msgid "You Cant Change Password Type Without Changing the Password"
-msgstr ""
+msgstr "Вы не можете изменить тип пароля не изменив пароль"
