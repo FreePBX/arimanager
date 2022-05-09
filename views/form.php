@@ -11,8 +11,8 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="name"><?php echo _("REST Interface User Name") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
@@ -35,8 +35,8 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="password"><?php echo _("REST Interface User Password") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="password"></i>
@@ -59,8 +59,8 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="password_type"><?php echo _("Password Type") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="password_type"></i>
@@ -87,8 +87,8 @@ $readonly = isset($user['read_only'])?$user['read_only']:'1';
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="readonly"><?php echo _("Read Only") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="readonly"></i>
