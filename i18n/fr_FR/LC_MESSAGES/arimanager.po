@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-15 11:28+0000\n"
+"POT-Creation-Date: 2023-02-01 13:36+0000\n"
 "PO-Revision-Date: 2017-12-01 18:33+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -48,6 +48,10 @@ msgstr "Origines autorisées"
 #: page.arimanagerapps.php:26
 msgid "Application Name"
 msgstr "Nom de l'application"
+
+#: Arimanager.class.php:355
+msgid "Ari Manager using default password"
+msgstr ""
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -270,6 +274,12 @@ msgid "You Cant Change Password Type Without Changing the Password"
 msgstr ""
 "Vous ne pouvez pas changer de type de mot de passe sans changer le mot de "
 "passe"
+
+#: Arimanager.class.php:355
+msgid ""
+"Your system is using ARI manager default password , Please go to Advanced "
+"settings and change it to new password"
+msgstr ""
 
 #~ msgid "List Users"
 #~ msgstr "Liste des utilisateurs"
