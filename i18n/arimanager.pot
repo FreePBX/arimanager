@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for arimanager
-# Copyright (C) 2008-2021 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2023 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-15 11:27+0000\n"
+"POT-Creation-Date: 2023-02-01 13:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,10 @@ msgstr ""
 
 #: page.arimanagerapps.php:26
 msgid "Application Name"
+msgstr ""
+
+#: Arimanager.class.php:355
+msgid "Ari Manager using default password"
 msgstr ""
 
 #: arimanager.i18n.php:8
@@ -267,4 +271,10 @@ msgstr ""
 
 #: assets/js/main.js:16
 msgid "You Cant Change Password Type Without Changing the Password"
+msgstr ""
+
+#: Arimanager.class.php:355
+msgid ""
+"Your system is using ARI manager default password , Please go to Advanced "
+"settings and change it to new password"
 msgstr ""
