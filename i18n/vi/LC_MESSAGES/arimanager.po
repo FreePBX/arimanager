@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 13:34+0000\n"
+"POT-Creation-Date: 2023-02-02 07:16+0000\n"
 "PO-Revision-Date: 2017-07-14 10:03+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -48,10 +48,6 @@ msgstr "Các nguồn gốc được cho phép"
 #: page.arimanagerapps.php:26
 msgid "Application Name"
 msgstr "Tên ứng dụng"
-
-#: Arimanager.class.php:355
-msgid "Ari Manager using default password"
-msgstr ""
 
 #: arimanager.i18n.php:8
 msgid ""
@@ -268,12 +264,6 @@ msgstr "Có"
 #: assets/js/main.js:16
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr "Bạn không thể thay đổi Kiểu mật khẩu khi không thay đổi mật khẩu"
-
-#: Arimanager.class.php:355
-msgid ""
-"Your system is using ARI manager default password , Please go to Advanced "
-"settings and change it to new password"
-msgstr ""
 
 #~ msgid "List Users"
 #~ msgstr "Danh sách người dùng"
