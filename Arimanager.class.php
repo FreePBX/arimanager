@@ -344,18 +344,6 @@ class Arimanager implements BMO {
 	}
 
 	public function genConfig() {
-		$nt = $this->FreePBX->Notifications;
-		$sql = "SELECT *  FROM freepbx_settings Where `keyword` = 'FPBX_ARI_PASSWORD'";
-		$sth = $this->db->prepare($sql);
-		$sth->execute();
-		$defu =  $sth->fetch(PDO::FETCH_ASSOC);
-		$defaultval = $defu['defaultval'];
-		$val = $defu['value'];
-		if($defaultval == $val) {
-			$nt->add_security("ARI", "ARIMANAGER",_("Ari Manager using default password"),_("Your system is using ARI manager default password , Please go to Advanced settings and change it to new password"),"",false,true);
-		} else {
-			$nt->delete("ARI", "ARIMANAGER");
-		}
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
 		$pt = $this->Conf->get_conf_setting('ENABLE_ARI_PP') ? 'yes' : 'no';
 		$timeout = $this->Conf->get_conf_setting('ARI_WS_WRITE_TIMEOUT');
