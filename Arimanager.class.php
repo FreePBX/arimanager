@@ -244,9 +244,19 @@ class Arimanager implements BMO {
 
 	/* Assorted stubs to validate the BMO Interface */
 	public function install() {
-
-		$set['value'] = true;
-		$set['defaultval'] =& $set['value'];
+		// new install we need to disable ari password
+		$sql = "SELECT *  FROM freepbx_settings Where `keyword` = 'ENABLE_ARI'";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		$dbval =  $sth->fetch(PDO::FETCH_ASSOC);
+		if(isset($dbval['value']) && $dbval['value'] == "1" ) {
+			// already installed
+			$value = true;
+		}else {
+			$value = false;
+		}
+		$set['value'] = $value;
+		$set['defaultval'] = false;
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -258,7 +268,7 @@ class Arimanager implements BMO {
 		$set['description'] = _("Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI',$set);
-		$this->Conf->update('ENABLE_ARI',true);
+
 
 		$set['value'] = 'freepbxuser';
 		$set['defaultval'] =& $set['value'];
@@ -319,7 +329,7 @@ class Arimanager implements BMO {
 		$this->Conf->define_conf_setting('ARI_WS_WRITE_TIMEOUT',$set);
 
 		$set['value'] = '*';
-		$set['defaultval'] =& $set['value'];
+		$set['defaultval'] = "localhost:8088";
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -344,6 +354,18 @@ class Arimanager implements BMO {
 	}
 
 	public function genConfig() {
+		$nt = $this->FreePBX->Notifications;
+		$val = $en = $this->Conf->get_conf_setting('FPBX_ARI_PASSWORD');
+		$badpass = ['01be38fed549d471654f5b01320204c8','37526a414da73baef72b33478a262ea3','391ad058e982a2f925c900129a66d8cc','7863142d8df2bbe5545770211b7015f6','7ff8816bfbdb635104a9c8bb53f012bb'];
+		if(in_array($val,$badpass)) {
+			$newpass = md5(openssl_random_pseudo_bytes(16));
+			$sql = "UPDATE freepbx_settings SET `defaultval` = :defaultval  Where `keyword` = 'FPBX_ARI_PASSWORD'";
+			$sth = $this->db->prepare($sql);
+			$sth->execute(array(':defaultval' => $newpass));
+			$nt->add_security("ARI", "ARIMANAGER",_("ARI password exploit alert"),_("Your system has got one of the potential exploited ARI password. Highly recommend to change this ARI password from the Advanced Settings(If ARI is not visible, Please enable 'Display Readonly Settings' And 'Override Readonly Settings'). Please note, you may click the refresh button next to ARI Password get the newly generated password."),"",false,true);
+		} else {
+			$nt->delete("ARI", "ARIMANAGER");
+		}
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
 		$pt = $this->Conf->get_conf_setting('ENABLE_ARI_PP') ? 'yes' : 'no';
 		$timeout = $this->Conf->get_conf_setting('ARI_WS_WRITE_TIMEOUT');
