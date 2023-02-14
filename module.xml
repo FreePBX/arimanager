@@ -2,7 +2,7 @@
 	<rawname>arimanager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk REST Interface Users</name>
-	<version>16.0.7</version>
+	<version>16.0.8</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 		<arimanager>Asterisk REST Interface Users</arimanager>
 	</menuitems>
 	<changelog>
+		*16.0.8* Packaging of ver 16.0.8
 		*16.0.7* Packaging of ver 16.0.7
 		*16.0.6* Packaging of ver 16.0.6
 		*16.0.5* Packaging of ver 16.0.5
