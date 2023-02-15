@@ -245,8 +245,30 @@ class Arimanager implements BMO {
 	/* Assorted stubs to validate the BMO Interface */
 	public function install() {
 
-		$set['value'] = true;
-		$set['defaultval'] =& $set['value'];
+		// new install we need to disable ari  And generate new random user and ranom password
+		$sql = "SELECT *  FROM freepbx_settings Where `keyword` = 'ENABLE_ARI'";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		$dbval =  $sth->fetch(PDO::FETCH_ASSOC);
+		$mangeruserupdate = false ;
+		if(isset($dbval['value'])) {
+			// already installed
+			$value = false;
+			if($dbval['value'] == "1" ) {
+				$value = true;
+			}
+		} else {
+			// new install 
+			$mangeruserupdate = true ;
+			//generate random  username
+			$str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+			$manageruser = substr(str_shuffle($str_result),0,12);
+			// Set default 
+			$value = false;
+		}
+
+		$set['value'] = $value;
+		$set['defaultval'] = false;
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -258,9 +280,11 @@ class Arimanager implements BMO {
 		$set['description'] = _("Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI',$set);
-		$this->Conf->update('ENABLE_ARI',true);
 
 		$set['value'] = 'freepbxuser';
+		if($mangeruserupdate) {
+			$set['value'] = $manageruser;
+		}
 		$set['defaultval'] =& $set['value'];
 		$set['options'] = '';
 		$set['readonly'] = 1;
@@ -319,7 +343,7 @@ class Arimanager implements BMO {
 		$this->Conf->define_conf_setting('ARI_WS_WRITE_TIMEOUT',$set);
 
 		$set['value'] = '*';
-		$set['defaultval'] =& $set['value'];
+		$set['defaultval'] = "localhost:8088";
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -344,7 +368,14 @@ class Arimanager implements BMO {
 	}
 
 	public function genConfig() {
+		$nt = $this->FreePBX->Notifications;
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
+		$user = $this->Conf->get_conf_setting('FPBX_ARI_USER');
+		if($en == 'yes' && $user == "freepbxuser") {
+			 $nt->add_security("ARI", "ARIMANAGER",_("Action Required : Change ARI Username/Password"),_("Your system is using default ARI username so recommend you to please change ARI username and password at the earliest (If ARI is not visible, Please enable 'Display Readonly Settings' And 'Override Readonly Settings"),"",false,true);
+		} else {
+			$nt->delete("ARI", "ARIMANAGER");
+		}
 		$pt = $this->Conf->get_conf_setting('ENABLE_ARI_PP') ? 'yes' : 'no';
 		$timeout = $this->Conf->get_conf_setting('ARI_WS_WRITE_TIMEOUT');
 		$allowed_origins = $this->Conf->get_conf_setting('ARI_ALLOWED_ORIGINS');
