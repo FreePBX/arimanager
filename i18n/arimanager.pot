@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-14 13:46+0000\n"
+"POT-Creation-Date: 2023-02-16 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Arimanager.class.php:287
+#: Arimanager.class.php:311
 #: arimanager.i18n.php:26
 msgid "ARI Password"
 msgstr ""
 
-#: Arimanager.class.php:272
+#: Arimanager.class.php:296
 #: arimanager.i18n.php:18
 msgid "ARI Username"
+msgstr ""
+
+#: Arimanager.class.php:375
+msgid "Action Required : Change ARI Username/Password"
 msgstr ""
 
 #: views/grid.php:14
@@ -41,7 +45,7 @@ msgstr ""
 msgid "Add User"
 msgstr ""
 
-#: Arimanager.class.php:330
+#: Arimanager.class.php:354
 #: arimanager.i18n.php:22
 msgid "Allowed Origins"
 msgstr ""
@@ -57,7 +61,7 @@ msgid ""
 "ability to add and remove ARI users."
 msgstr ""
 
-#: Arimanager.class.php:258
+#: Arimanager.class.php:280
 #: arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
@@ -69,12 +73,12 @@ msgstr ""
 msgid "Asterisk REST Inferface Password."
 msgstr ""
 
-#: Arimanager.class.php:255
-#: Arimanager.class.php:270
-#: Arimanager.class.php:285
-#: Arimanager.class.php:300
-#: Arimanager.class.php:314
-#: Arimanager.class.php:328
+#: Arimanager.class.php:277
+#: Arimanager.class.php:294
+#: Arimanager.class.php:309
+#: Arimanager.class.php:324
+#: Arimanager.class.php:338
+#: Arimanager.class.php:352
 #: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
 msgstr ""
@@ -104,7 +108,7 @@ msgstr ""
 msgid "Channel Count"
 msgstr ""
 
-#: Arimanager.class.php:331
+#: Arimanager.class.php:355
 #: arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
@@ -127,12 +131,12 @@ msgstr ""
 msgid "Edit Asterisk REST Interface User"
 msgstr ""
 
-#: Arimanager.class.php:303
+#: Arimanager.class.php:327
 #: arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr ""
 
-#: Arimanager.class.php:257
+#: Arimanager.class.php:279
 #: arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
 msgstr ""
@@ -156,7 +160,7 @@ msgstr ""
 msgid "Password Type"
 msgstr ""
 
-#: Arimanager.class.php:288
+#: Arimanager.class.php:312
 #: arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
 msgstr ""
@@ -165,7 +169,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr ""
 
-#: Arimanager.class.php:302
+#: Arimanager.class.php:326
 #: arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
 msgstr ""
@@ -225,7 +229,7 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr ""
 
-#: Arimanager.class.php:317
+#: Arimanager.class.php:341
 #: arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
@@ -251,12 +255,12 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: Arimanager.class.php:273
+#: Arimanager.class.php:297
 #: arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
 msgstr ""
 
-#: Arimanager.class.php:316
+#: Arimanager.class.php:340
 #: arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
 msgstr ""
@@ -267,4 +271,11 @@ msgstr ""
 
 #: assets/js/main.js:16
 msgid "You Cant Change Password Type Without Changing the Password"
+msgstr ""
+
+#: Arimanager.class.php:375
+msgid ""
+"Your system is using default ARI username so recommend you to please change "
+"ARI username and password at the earliest (If ARI is not visible, Please "
+"enable 'Display Readonly Settings' And 'Override Readonly Settings"
 msgstr ""
