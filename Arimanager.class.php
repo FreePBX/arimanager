@@ -372,7 +372,15 @@ class Arimanager implements BMO {
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
 		$user = $this->Conf->get_conf_setting('FPBX_ARI_USER');
 		if($en == 'yes' && $user == "freepbxuser") {
-			 $nt->add_security("ARI", "ARIMANAGER",_("Action Required : Change ARI Username/Password"),_("Your system is using default ARI username so recommend you to please change ARI username and password at the earliest (If ARI is not visible, Please enable 'Display Readonly Settings' And 'Override Readonly Settings"),"",false,true);
+			$this->FreePBX->Modules->loadFunctionsInc('sysadmin');
+			if (function_exists('sysadmin_get_license')) {
+				$lic = sysadmin_get_license();
+			}
+			if (isset($lic['deploy_type']) && $lic['deploy_type'] == 'PBXact UCC') {
+					$nt->add_security("ARI", "ARIMANAGER",_("Alert about ARI Username/Password"),_("For security reasons, we have updated the Asterisk ARI username and password to random values for your PBXact Cloud system. In the unlikely case where these credentials are being used for some external application, you will need to update that application with the new ARI username and password.  If you have any questions please contact PBXact Cloud support."),"",false,true);
+			} else{
+				$nt->add_security("ARI", "ARIMANAGER",_("Action Required : Change ARI Username/Password"),_("Your system is using default ARI username so recommend you to please change ARI username and password at the earliest (If ARI is not visible, Please enable 'Display Readonly Settings' And 'Override Readonly Settings"),"",false,true);
+			}
 		} else {
 			$nt->delete("ARI", "ARIMANAGER");
 		}
