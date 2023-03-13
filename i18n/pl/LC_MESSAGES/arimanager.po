@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-16 09:32+0000\n"
+"POT-Creation-Date: 2023-03-13 04:18+0000\n"
 "PO-Revision-Date: 2017-03-19 12:22+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,7 +30,7 @@ msgstr "Hasło ARI"
 msgid "ARI Username"
 msgstr "Nazwa użytkownika ARI"
 
-#: Arimanager.class.php:375
+#: Arimanager.class.php:382
 msgid "Action Required : Change ARI Username/Password"
 msgstr ""
 
@@ -45,6 +45,10 @@ msgstr "Dodaj Asterisk REST do interfejsu użytkownika"
 #: views/grid.php:6 views/rnav.php:6
 msgid "Add User"
 msgstr "Dodaj użytkownika"
+
+#: Arimanager.class.php:380
+msgid "Alert about ARI Username/Password"
+msgstr ""
 
 #: Arimanager.class.php:354 arimanager.i18n.php:22
 msgid "Allowed Origins"
@@ -134,6 +138,15 @@ msgstr "Włącz interfejs Asterisk REST"
 
 #: page.arimanagerapps.php:29
 msgid "Endpoint Count"
+msgstr ""
+
+#: Arimanager.class.php:380
+msgid ""
+"For security reasons, we have updated the Asterisk ARI username and password "
+"to random values for your PBXact Cloud system. In the unlikely case where "
+"these credentials are being used for some external application, you will "
+"need to update that application with the new ARI username and password.  If "
+"you have any questions please contact PBXact Cloud support."
 msgstr ""
 
 #: views/form.php:81
@@ -262,7 +275,7 @@ msgstr "Tak"
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr "Nie można zmienić rodzaju hasła bez zmiany hasła"
 
-#: Arimanager.class.php:375
+#: Arimanager.class.php:382
 msgid ""
 "Your system is using default ARI username so recommend you to please change "
 "ARI username and password at the earliest (If ARI is not visible, Please "
