@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-13 04:19+0000\n"
+"POT-Creation-Date: 2023-03-13 10:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Arimanager.class.php:311
+#: Arimanager.class.php:313
 #: arimanager.i18n.php:26
 msgid "ARI Password"
 msgstr ""
 
-#: Arimanager.class.php:296
+#: Arimanager.class.php:298
 #: arimanager.i18n.php:18
 msgid "ARI Username"
 msgstr ""
 
-#: Arimanager.class.php:382
+#: Arimanager.class.php:380
 msgid "Action Required : Change ARI Username/Password"
 msgstr ""
 
@@ -45,11 +45,11 @@ msgstr ""
 msgid "Add User"
 msgstr ""
 
-#: Arimanager.class.php:380
+#: Arimanager.class.php:476
 msgid "Alert about ARI Username/Password"
 msgstr ""
 
-#: Arimanager.class.php:354
+#: Arimanager.class.php:356
 #: arimanager.i18n.php:22
 msgid "Allowed Origins"
 msgstr ""
@@ -65,7 +65,7 @@ msgid ""
 "ability to add and remove ARI users."
 msgstr ""
 
-#: Arimanager.class.php:280
+#: Arimanager.class.php:282
 #: arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
@@ -77,12 +77,12 @@ msgstr ""
 msgid "Asterisk REST Inferface Password."
 msgstr ""
 
-#: Arimanager.class.php:277
-#: Arimanager.class.php:294
-#: Arimanager.class.php:309
-#: Arimanager.class.php:324
-#: Arimanager.class.php:338
-#: Arimanager.class.php:352
+#: Arimanager.class.php:279
+#: Arimanager.class.php:296
+#: Arimanager.class.php:311
+#: Arimanager.class.php:326
+#: Arimanager.class.php:340
+#: Arimanager.class.php:354
 #: arimanager.i18n.php:14
 msgid "Asterisk REST Interface"
 msgstr ""
@@ -112,7 +112,7 @@ msgstr ""
 msgid "Channel Count"
 msgstr ""
 
-#: Arimanager.class.php:355
+#: Arimanager.class.php:357
 #: arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
@@ -135,12 +135,12 @@ msgstr ""
 msgid "Edit Asterisk REST Interface User"
 msgstr ""
 
-#: Arimanager.class.php:327
+#: Arimanager.class.php:329
 #: arimanager.i18n.php:32
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr ""
 
-#: Arimanager.class.php:279
+#: Arimanager.class.php:281
 #: arimanager.i18n.php:12
 msgid "Enable the Asterisk REST Interface"
 msgstr ""
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Endpoint Count"
 msgstr ""
 
-#: Arimanager.class.php:380
+#: Arimanager.class.php:476
 msgid ""
 "For security reasons, we have updated the Asterisk ARI username and password "
 "to random values for your PBXact Cloud system. In the unlikely case where "
@@ -173,7 +173,7 @@ msgstr ""
 msgid "Password Type"
 msgstr ""
 
-#: Arimanager.class.php:312
+#: Arimanager.class.php:314
 #: arimanager.i18n.php:28
 msgid "Password for internal ARI calls"
 msgstr ""
@@ -182,7 +182,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr ""
 
-#: Arimanager.class.php:326
+#: Arimanager.class.php:328
 #: arimanager.i18n.php:30
 msgid "Pretty Print JSON Responses"
 msgstr ""
@@ -242,7 +242,7 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr ""
 
-#: Arimanager.class.php:341
+#: Arimanager.class.php:343
 #: arimanager.i18n.php:36
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
@@ -268,12 +268,12 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: Arimanager.class.php:297
+#: Arimanager.class.php:299
 #: arimanager.i18n.php:20
 msgid "Username for internal ARI calls"
 msgstr ""
 
-#: Arimanager.class.php:340
+#: Arimanager.class.php:342
 #: arimanager.i18n.php:34
 msgid "Web Socket Write Timeout"
 msgstr ""
@@ -286,7 +286,7 @@ msgstr ""
 msgid "You Cant Change Password Type Without Changing the Password"
 msgstr ""
 
-#: Arimanager.class.php:382
+#: Arimanager.class.php:380
 msgid ""
 "Your system is using default ARI username so recommend you to please change "
 "ARI username and password at the earliest (If ARI is not visible, Please "
