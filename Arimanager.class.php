@@ -473,7 +473,7 @@ class Arimanager extends \DB_Helper implements \BMO {
 					$lic = sysadmin_get_license();
 				}
 				if (isset($lic['deploy_type']) && $lic['deploy_type'] == 'PBXact UCC') {
-					$nt->add_security("ARI", "ARIMANAGER",_("Alert about ARI Username/Password"),_("For security reasons, we have updated the Asterisk ARI username and password to random values for your PBXact Cloud system. In the unlikely case where these credentials are being used for some external application, you will need to update that application with the new ARI username and password.  If you have any questions please contact PBXact Cloud support."),"",false,true);
+					$nt->add_security("ARI", "ARIMANAGERCLOUD",_("Alert about ARI Username/Password"),_("For security reasons, we have updated the Asterisk ARI username and password to random values for your PBXact Cloud system. In the unlikely case where these credentials are being used for some external application, you will need to update that application with the new ARI username and password.  If you have any questions please contact PBXact Cloud support."),"",false,true);
 				}
 				$this->setConfig('notificationStatus','1');
 			}
