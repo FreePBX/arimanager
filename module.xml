@@ -9,6 +9,7 @@
 	<category>Settings</category>
 	<menuitems>
 		<arimanager>Asterisk REST Interface Users</arimanager>
+		<!-- <arimanagerapps>Asterisk REST Interface Applications</arimanagerapps> -->
 	</menuitems>
 	<changelog>
 		*16.0.12* Packaging of ver 16.0.12
@@ -25,16 +26,16 @@
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<database>
-	  <table name="arimanager">
-	    <field name="id" type="integer" primarykey="true" autoincrement="true"/>
-	    <field name="name" type="string" length="190"/>
-	    <field name="password" type="string" length="255" notnull="false"/>
-	    <field name="password_format" type="string" length="255" notnull="false"/>
-	    <field name="read_only" type="integer" default="1" notnull="false"/>
-	    <key name="name_UNIQUE" type="unique">
-	      <column name="name"/>
-	    </key>
-	  </table>
+		<table name="arimanager">
+			<field name="id" type="integer" primarykey="true" autoincrement="true"/>
+			<field name="name" type="string" length="190"/>
+			<field name="password" type="string" length="255" notnull="false"/>
+			<field name="password_format" type="string" length="255" notnull="false"/>
+			<field name="read_only" type="integer" default="1" notnull="false"/>
+			<key name="name_UNIQUE" type="unique">
+				<column name="name"/>
+			</key>
+		</table>
 	</database>
 	<description>
 		Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users.
