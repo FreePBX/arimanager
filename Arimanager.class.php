@@ -5,7 +5,7 @@
 //
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
-class Arimanager implements BMO {
+class Arimanager extends \DB_Helper implements \BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -245,8 +245,32 @@ class Arimanager implements BMO {
 	/* Assorted stubs to validate the BMO Interface */
 	public function install() {
 
-		$set['value'] = true;
-		$set['defaultval'] =& $set['value'];
+		// new install we need to disable ari  And generate new random user and ranom password
+		$sql = "SELECT *  FROM freepbx_settings Where `keyword` = 'ENABLE_ARI'";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		$dbval =  $sth->fetch(PDO::FETCH_ASSOC);
+		$mangeruserupdate = false ;
+		$addNotify =  false;
+		if(isset($dbval['value'])) {
+			// already installed
+			$value = false;
+			if($dbval['value'] == "1" ) {
+				$value = true;
+			}
+		} else {
+			// new install 
+			$mangeruserupdate = true ;
+			$addNotify = true;
+			//generate random  username
+			$str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+			$manageruser = substr(str_shuffle($str_result),0,12);
+			// Set default 
+			$value = false;
+		}
+
+		$set['value'] = $value;
+		$set['defaultval'] = false;
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -258,9 +282,11 @@ class Arimanager implements BMO {
 		$set['description'] = _("Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's for building Asterisk based applications. This will enable the ARI server as long as the HTTP server is enabled as well.");
 		$set['type'] = CONF_TYPE_BOOL;
 		$this->Conf->define_conf_setting('ENABLE_ARI',$set);
-		$this->Conf->update('ENABLE_ARI',true);
 
 		$set['value'] = 'freepbxuser';
+		if($mangeruserupdate) {
+			$set['value'] = $manageruser;
+		}
 		$set['defaultval'] =& $set['value'];
 		$set['options'] = '';
 		$set['readonly'] = 1;
@@ -319,7 +345,7 @@ class Arimanager implements BMO {
 		$this->Conf->define_conf_setting('ARI_WS_WRITE_TIMEOUT',$set);
 
 		$set['value'] = '*';
-		$set['defaultval'] =& $set['value'];
+		$set['defaultval'] = "localhost:8088";
 		$set['options'] = '';
 		$set['readonly'] = 0;
 		$set['hidden'] = 0;
@@ -333,6 +359,9 @@ class Arimanager implements BMO {
 		$this->Conf->define_conf_setting('ARI_ALLOWED_ORIGINS',$set);
 
 		$this->Conf->commit_conf_settings();
+		if(!$addNotify) {
+			$this->addNotification();
+		}
 	}
 
 	public function uninstall() {
@@ -344,7 +373,14 @@ class Arimanager implements BMO {
 	}
 
 	public function genConfig() {
+		$nt = $this->FreePBX->Notifications;
 		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
+		$user = $this->Conf->get_conf_setting('FPBX_ARI_USER');
+		if($en == 'yes' && $user == "freepbxuser") {
+			$nt->add_security("ARI", "ARIMANAGER",_("Action Required : Change ARI Username/Password"),_("Your system is using default ARI username so recommend you to please change ARI username and password at the earliest (If ARI is not visible, Please enable 'Display Readonly Settings' And 'Override Readonly Settings"),"",false,true);
+		} else {
+			$nt->delete("ARI", "ARIMANAGER");
+		}
 		$pt = $this->Conf->get_conf_setting('ENABLE_ARI_PP') ? 'yes' : 'no';
 		$timeout = $this->Conf->get_conf_setting('ARI_WS_WRITE_TIMEOUT');
 		$allowed_origins = $this->Conf->get_conf_setting('ARI_ALLOWED_ORIGINS');
@@ -424,6 +460,23 @@ class Arimanager implements BMO {
 			return load_view(__DIR__."/views/rnav.php",array());
 		} else {
 			return '';
+		}
+	}
+
+	public function AddNotification() {
+		$nt = $this->FreePBX->Notifications;
+		$en = $this->Conf->get_conf_setting('ENABLE_ARI') ? 'yes' : 'no';
+		if($en == 'yes' && !($this->getConfig('notificationStatus'))) {
+			if($this->FreePBX->Modules->checkStatus("sysadmin")) {
+				$this->FreePBX->Modules->loadFunctionsInc('sysadmin');
+				if (function_exists('sysadmin_get_license')) {
+					$lic = sysadmin_get_license();
+				}
+				if (isset($lic['deploy_type']) && $lic['deploy_type'] == 'PBXact UCC') {
+					$nt->add_security("ARI", "ARIMANAGERCLOUD",_("Alert about ARI Username/Password"),_("For security reasons, we have updated the Asterisk ARI username and password to random values for your PBXact Cloud system. In the unlikely case where these credentials are being used for some external application, you will need to update that application with the new ARI username and password.  If you have any questions please contact PBXact Cloud support."),"",false,true);
+				}
+				$this->setConfig('notificationStatus','1');
+			}
 		}
 	}
 }
