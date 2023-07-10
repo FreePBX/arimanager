@@ -401,7 +401,7 @@ class Arimanager extends FreePBX_Helpers implements BMO
 									$this->editUser($id, $name , $read_only, $password, $password_format);
 								}
 								needreload();
-								$data_return = array("status" => true, "message" => _("Update Successfully"), "needreload" => true);
+								$data_return = array("status" => true, "message" => _("Updated Successfully"), "needreload" => true);
 							}
 							catch (\Exception $e)
 							{
