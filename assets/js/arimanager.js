@@ -201,7 +201,7 @@ $('#submitForm').on('click', function () {
 
 	if ((theForm.nameUser.value.search(/\s/) >= 0) || (theForm.nameUser.value.length == 0))
     {
-        return warnInvalid(theForm.nameUser, _('User Name Can Not Be Blank!'));
+        return warnInvalid(theForm.nameUser, _('The Username Cannot be Blank or Contain Spaces!'));
     }
 
 	if (theForm.passwordUser.value.length == 0)

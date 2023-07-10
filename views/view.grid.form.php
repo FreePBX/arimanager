@@ -85,7 +85,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <span id="password_formatUser-help" class="help-block fpbx-help-block"><?php echo _("For the security consious, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.")?></span>
+                                <span id="password_formatUser-help" class="help-block fpbx-help-block"><?php echo _("For the security concerns, you probably don't want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.")?></span>
                             </div>
                         </div>
                     </div>
