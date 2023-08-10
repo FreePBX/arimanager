@@ -5,61 +5,95 @@ namespace FreePBX\modules\Arimanager\Api\Gql;
 use GraphQLRelay\Relay;
 use GraphQL\Type\Definition\Type;
 use FreePBX\modules\Api\Gql\Base;
+use GraphQL\Error\UserError;
 
-class AriManagerUser extends Base {
+class AriManagerUser extends Base
+{
 	protected $module = 'arimanager';
+	protected $fields = array();
+	protected $arimanager;
 
-	public function mutationCallback() {
-		if($this->checkAllWriteScope()) {
+	public function __construct($freepbx, $typeContainer, $module)
+	{
+		parent::__construct($freepbx, $typeContainer, $module);
+
+		$this->arimanager = $freepbx->Arimanager;
+		$this->fields 	  = $this->getMutationFields();
+	}
+
+	public function mutationCallback() 
+	{
+		if($this->checkAllWriteScope()) 
+		{
 			return function() {
 				return [
 					'addAriManagerUsers' => Relay::mutationWithClientMutationId([
-						'name' => 'addAriManagerUsers',
-						'description' => 'Add a new entry to Asterisk REST Interface Users',
-						'inputFields' => $this->getMutationFields(),
-						'outputFields' => [
+						'name' 			=> 'addAriManagerUsers',
+						'description' 	=> _('Add a new entry to Asterisk REST Interface Users'),
+						'inputFields' 	=> $this->getMutationFields(),
+						'outputFields'	=> [
 							'ariManagerUser' => [
 								'type' => $this->typeContainer->get('ariManagerUser')->getObject(),
-								'resolve' => function ($payload) {
+								'resolve' => function ($payload)
+								{
 									return count($payload) > 1 ? $payload : null;
 								}
 							]
 						],
-						'mutateAndGetPayload' => function ($input) {
-							$sql = "INSERT INTO arimanager (`id`,`name`,`password`,`password_format`,`read_only`) VALUES (:id,:name,:password,:password_format,:read_only)";
-							$sth = $this->freepbx->Database->prepare($sql);
-							$sth->execute($this->getMutationExecuteArray($input));
-							$item = $this->getSingleData($input['id']);
+						'mutateAndGetPayload' => function ($input)
+						{
+							$name 			 = $input['name'] ?? '';
+							$password 		 = $input['password'] ?? null;
+							$password_format = $input['password_format'] ?? null;
+							$read_only 		 = $input['read_only'] ?? null;
+							try
+							{
+								$id = $this->arimanager->addUser($name, $read_only, $password, $password_format);
+							}
+							catch (\Exception $e)
+							{
+								throw new UserError($e->getMessage(), $e->getCode());
+							}
+							$item = $this->arimanager->getUser($id);
 							return !empty($item) ? $item : [];
 						}
 					]),
 					'updateAriManagerUsers' => Relay::mutationWithClientMutationId([
-						'name' => 'updateAriManagerUsers',
-						'description' => 'Update an entry in Asterisk REST Interface Users',
-						'inputFields' => $this->getMutationFields(),
-						'outputFields' => [
+						'name' 			=> 'updateAriManagerUsers',
+						'description' 	=> _('Update an entry in Asterisk REST Interface Users'),
+						'inputFields' 	=> $this->getMutationFields(),
+						'outputFields' 	=> [
 							'ariManagerUser' => [
 								'type' => $this->typeContainer->get('ariManagerUser')->getObject(),
-								'resolve' => function ($payload) {
+								'resolve' => function ($payload)
+								{
 									return count($payload) > 1 ? $payload : null;
 								}
 							]
 						],
-						'mutateAndGetPayload' => function ($input) {
-							$item = $this->getSingleData($input['id']);
-							if(empty($tiem)) {
-								return null;
+						'mutateAndGetPayload' => function ($input)
+						{
+							$id 			 = $input['id'] ?? '';
+							$name 			 = $input['name'] ?? '';
+							$password 		 = $input['password'] ?? null;
+							$password_format = $input['password_format'] ?? null;
+							$read_only 		 = $input['read_only'] ?? null;
+							try
+							{
+								$this->arimanager->editUser($id, $name, $read_only, $password, $password_format);
 							}
-							$sql = "UPDATE arimanager SET `id` = :id,`name` = :name,`password` = :password,`password_format` = :password_format,`read_only` = :read_only WHERE `id` = :id";
-							$sth = $this->freepbx->Database->prepare($sql);
-							$sth->execute($this->getMutationExecuteArray($input));
-							$item = $this->getSingleData($input['id']);
+							catch (\Exception $e)
+							{
+								throw new UserError($e->getMessage(), $e->getCode());
+							}
+
+							$item = $this->arimanager->getUser($input['id']);
 							return !empty($item) ? $item : [];
 						}
 					]),
 					'removeAriManagerUsers' => Relay::mutationWithClientMutationId([
-						'name' => 'removeAriManagerUsers',
-						'description' => 'Remove an entry from Asterisk REST Interface Users',
+						'name' 		  => 'removeAriManagerUsers',
+						'description' => _('Remove an entry from Asterisk REST Interface Users'),
 						'inputFields' => [
 							'id' => [
 								'type' => Type::nonNull(Type::id())
@@ -68,17 +102,22 @@ class AriManagerUser extends Base {
 						'outputFields' => [
 							'deletedId' => [
 								'type' => Type::nonNull(Type::id()),
-								'resolve' => function ($payload) {
+								'resolve' => function ($payload)
+								{
 									return $payload['id'];
 								}
 							]
 						],
-						'mutateAndGetPayload' => function ($input) {
-							$sql = "DELETE FROM arimanager WHERE `id` = :id";
-							$sth = $this->freepbx->Database->prepare($sql);
-							$sth->execute([
-								":id" => $input['id']
-							]);
+						'mutateAndGetPayload' => function ($input)
+						{
+							try
+							{
+								$this->arimanager->deleteUser($input['id']);
+							}
+							catch (\Exception $e)
+							{
+								throw new UserError($e->getMessage(), $e->getCode());
+							}
 							return ['id' => $input['id']];
 						}
 					])
@@ -87,38 +126,49 @@ class AriManagerUser extends Base {
 		}
 	}
 
-	public function queryCallback() {
-		if($this->checkAllReadScope()) {
+	public function queryCallback()
+	{
+		if ($this->checkAllReadScope())
+		{
 			return function() {
 				return [
 					'allAriManagerUsers' => [
-						'type' => $this->typeContainer->get('ariManagerUser')->getConnectionType(),
-						'description' => 'Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users.',
-						'args' => Relay::forwardConnectionArgs(),
-						'resolve' => function($root, $args) {
+						'type' 		  => $this->typeContainer->get('ariManagerUser')->getConnectionType(),
+						'description' => _('Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users.'),
+						'args' 		  => Relay::forwardConnectionArgs(),
+						'resolve' 	  => function($root, $args)
+						{
 							$after = !empty($args['after']) ? Relay::fromGlobalId($args['after'])['id'] : null;
 							$first = !empty($args['first']) ? $args['first'] : null;
 							return Relay::connectionFromArraySlice(
-								$this->getData($after,$first),
+								$this->arimanager->getUsers($after, $first),
 								$args,
 								[
 									'sliceStart' => !empty($after) ? $after : 0,
-									'arrayLength' => $this->getTotal()
+									'arrayLength' => $this->arimanager->getTotalUsers(),
 								]
 							);
 						},
 					],
 					'ariManagerUser' => [
-						'type' => $this->typeContainer->get('ariManagerUser')->getObject(),
-						'description' => 'Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users.',
-						'args' => [
+						'type' 		  => $this->typeContainer->get('ariManagerUser')->getObject(),
+						'description' => _('Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users.'),
+						'args' 		  => [
 							'id' => [
 								'type' => Type::id(),
-								'description' => 'The ID',
+								'description' => _('The ID'),
 							]
 						],
-						'resolve' => function($root, $args) {
-							return $this->getSingleData(Relay::fromGlobalId($args['id'])['id']);
+						'resolve' => function($root, $args)
+						{
+							try
+							{
+								return $this->arimanager->getUser(Relay::fromGlobalId($args['id'])['id']);
+							}
+							catch (\Exception $e)
+							{
+								throw new UserError($e->getMessage());
+							}
 						}
 					]
 				];
@@ -126,93 +176,81 @@ class AriManagerUser extends Base {
 		}
 	}
 
-	private function getTotal() {
-		$sql = "SELECT count(*) as count FROM arimanager";;
-		$sth = $this->freepbx->Database->prepare($sql);
-		$sth->execute();
-		return $sth->fetchColumn();
-	}
-
-	private function getData($after, $first) {
-		$sql = 'SELECT * FROM arimanager';
-		$sql .= " " . (!empty($first) && is_numeric($first) ? "LIMIT ".$first : "LIMIT 18446744073709551610");
-		$sql .= " " . (!empty($after) && is_numeric($after) ? "OFFSET ".$after : "OFFSET 0");
-
-		$sth = $this->freepbx->Database->prepare($sql);
-		$sth->execute();
-		return $sth->fetchAll(\PDO::FETCH_ASSOC);
-	}
-
-	private function getSingleData($id) {
-		$sth = $this->freepbx->Database->prepare('SELECT * FROM arimanager WHERE `id` = :id');
-		$sth->execute([
-			":id" => $id
-		]);
-		return $sth->fetch(\PDO::FETCH_ASSOC);
-	}
-
-	public function initializeTypes() {
+	public function initializeTypes()
+	{
 		$user = $this->typeContainer->create('ariManagerUser');
 		$user->setDescription('%description%');
 
-		$user->addInterfaceCallback(function() {
-			return [$this->getNodeDefinition()['nodeInterface']];
-		});
-
-		$user->setGetNodeCallback(function($id) {
-			return $this->getSingleData($id);
-		});
-
-		$user->addFieldCallback(function() {
+		$user->addInterfaceCallback(function()
+		{
 			return [
-				'id' => Relay::globalIdField('', function($row) {
+				$this->getNodeDefinition()['nodeInterface']
+			];
+		});
+
+		$user->setGetNodeCallback(function($id)
+		{
+			return $this->arimanager->getUser($id);
+		});
+
+		$user->addFieldCallback(function()
+		{
+			return [
+				'id' 			  => Relay::globalIdField('', function($row)
+				{
 					return isset($row['id']) ? $row['id'] : null;
 				}),
-				'arimanager_id' => [
-					'type' => Type::nonNull(Type::string()),
-					'description' => '',
-					'resolve' => function($row) {
+				'arimanager_id'   => [
+					'type'		  => Type::nonNull(Type::int()),
+					'description' => $this->fields['id']['description'],
+					'resolve' 	  => function($row) 
+					{
 						return isset($row['id']) ? $row['id'] : null;
 					}
 				],
-				'name' => [
-					'type' => Type::nonNull(Type::string()),
-					'description' => 'Asterisk REST Interface User Name',
+				'name' 			  => [
+					'type' 		  => $this->fields['name']['type'],
+					'description' => $this->fields['name']['description'],
 				],
-				'password' => [
-					'type' => Type::string(),
-					'description' => 'Asterisk REST Inferface Password.',
+				'password' 		  => [
+					'type' 		  => $this->fields['password']['type'],
+					'description' => $this->fields['password']['description'],
 				],
 				'password_format' => [
-					'type' => Type::string(),
-					'description' => 'For the security consious, you probably don\'t want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.',
+					'type' 		  => $this->fields['password_format']['type'],
+					'description' => $this->fields['password_format']['description'],
 				],
-				'read_only' => [
-					'type' => Type::boolean(),
-					'description' => 'Set to Yes for read-only applications.',
+				'read_only' 	  => [
+					'type' 		  => $this->fields['read_only']['type'],
+					'description' => $this->fields['read_only']['description'],
 				],
 
 			];
 		});
 
-		$user->setConnectionResolveNode(function ($edge) {
+		$user->setConnectionResolveNode(function ($edge)
+		{
 			return $edge['node'];
 		});
 
-		$user->setConnectionFields(function() {
+		$user->setConnectionFields(function()
+		{
 			return [
 				'totalCount' => [
-					'type' => Type::int(),
-					'resolve' => function($value) {
-						return $this->getTotal();
+					'type' 	  => Type::int(),
+					'resolve' => function($value)
+					{
+						return $this->arimanager->getTotalUsers();
 					}
 				],
 				'ariManagerUsers' => [
-					'type' => Type::listOf($this->typeContainer->get('ariManagerUser')->getObject()),
-					'resolve' => function($root, $args) {
-						$data = array_map(function($row){
+					'type' 	  => Type::listOf($this->typeContainer->get('ariManagerUser')->getObject()),
+					'resolve' => function($root, $args)
+					{
+						$data = array_map(function($row)
+						{
 							return $row['node'];
-						},$root['edges']);
+						}, $root['edges']);
 						return $data;
 					}
 				]
@@ -220,7 +258,8 @@ class AriManagerUser extends Base {
 		});
 	}
 
-	private function getMutationFields() {
+	private function getMutationFields()
+	{
 		return [
 			'id' => [
 				'type' => Type::nonNull(Type::id()),
@@ -228,32 +267,20 @@ class AriManagerUser extends Base {
 			],
 			'name' => [
 				'type' => Type::nonNull(Type::string()),
-				'description' => 'Asterisk REST Interface User Name'
+				'description' => _('Asterisk REST Interface User Name')
 			],
 			'password' => [
 				'type' => Type::string(),
-				'description' => 'Asterisk REST Inferface Password.'
+				'description' => _('Asterisk REST Inferface Password.')
 			],
 			'password_format' => [
 				'type' => Type::string(),
-				'description' => 'For the security consious, you probably don\'t want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.'
+				'description' => _('For the security consious, you probably don\'t want to put plaintext passwords in the configuration file. ARI supports the use of crypt(3) for password storage.')
 			],
 			'read_only' => [
 				'type' => Type::boolean(),
-				'description' => 'Set to Yes for read-only applications.'
+				'description' => _('Set to Yes for read-only applications.')
 			],
-
-		];
-	}
-
-	private function getMutationExecuteArray($input) {
-		return [
-			":id" => isset($input['id']) ? $input['id'] : '',
-			":name" => isset($input['name']) ? $input['name'] : '',
-			":password" => isset($input['password']) ? $input['password'] : null,
-			":password_format" => isset($input['password_format']) ? $input['password_format'] : null,
-			":read_only" => isset($input['read_only']) ? $input['read_only'] : null,
-
 		];
 	}
 }
