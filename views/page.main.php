@@ -1,15 +1,9 @@
 <?php
-	$view = isset($request['view']) ? $request['view'] : '';
-	switch($view)
-	{
-		case 'form':
-			$content = $arimanager->showPage('form');
-			break;
-
-		default:
-			$content = $arimanager->showPage('grid');
-			break;
-	}
+	$view = $request['view'] ?? '';
+	$content = match ($view) {
+     'form' => $arimanager->showPage('form'),
+     default => $arimanager->showPage('grid'),
+ };
 
 	$info = '';
 	if(! $config['httpenabled'])

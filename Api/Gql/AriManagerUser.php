@@ -10,7 +10,7 @@ use GraphQL\Error\UserError;
 class AriManagerUser extends Base
 {
 	protected $module = 'arimanager';
-	protected $fields = array();
+	protected $fields = [];
 	protected $arimanager;
 
 	public function __construct($freepbx, $typeContainer, $module)
@@ -25,8 +25,7 @@ class AriManagerUser extends Base
 	{
 		if($this->checkAllWriteScope()) 
 		{
-			return function() {
-				return [
+			return fn() => [
 					'addAriManagerUsers' => Relay::mutationWithClientMutationId([
 						'name' 			=> 'addAriManagerUsers',
 						'description' 	=> _('Add a new entry to Asterisk REST Interface Users'),
@@ -34,10 +33,7 @@ class AriManagerUser extends Base
 						'outputFields'	=> [
 							'ariManagerUser' => [
 								'type' => $this->typeContainer->get('ariManagerUser')->getObject(),
-								'resolve' => function ($payload)
-								{
-									return count($payload) > 1 ? $payload : null;
-								}
+								'resolve' => fn($payload) => (is_countable($payload) ? count($payload) : 0) > 1 ? $payload : null
 							]
 						],
 						'mutateAndGetPayload' => function ($input)
@@ -65,10 +61,7 @@ class AriManagerUser extends Base
 						'outputFields' 	=> [
 							'ariManagerUser' => [
 								'type' => $this->typeContainer->get('ariManagerUser')->getObject(),
-								'resolve' => function ($payload)
-								{
-									return count($payload) > 1 ? $payload : null;
-								}
+								'resolve' => fn($payload) => (is_countable($payload) ? count($payload) : 0) > 1 ? $payload : null
 							]
 						],
 						'mutateAndGetPayload' => function ($input)
@@ -102,10 +95,7 @@ class AriManagerUser extends Base
 						'outputFields' => [
 							'deletedId' => [
 								'type' => Type::nonNull(Type::id()),
-								'resolve' => function ($payload)
-								{
-									return $payload['id'];
-								}
+								'resolve' => fn($payload) => $payload['id']
 							]
 						],
 						'mutateAndGetPayload' => function ($input)
@@ -122,7 +112,6 @@ class AriManagerUser extends Base
 						}
 					])
 				];
-			};
 		}
 	}
 
@@ -130,8 +119,7 @@ class AriManagerUser extends Base
 	{
 		if ($this->checkAllReadScope())
 		{
-			return function() {
-				return [
+			return fn() => [
 					'allAriManagerUsers' => [
 						'type' 		  => $this->typeContainer->get('ariManagerUser')->getConnectionType(),
 						'description' => _('Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API\'s for building Asterisk based applications. This module provides the ability to add and remove ARI users.'),
@@ -172,7 +160,6 @@ class AriManagerUser extends Base
 						}
 					]
 				];
-			};
 		}
 	}
 
@@ -181,32 +168,18 @@ class AriManagerUser extends Base
 		$user = $this->typeContainer->create('ariManagerUser');
 		$user->setDescription('%description%');
 
-		$user->addInterfaceCallback(function()
-		{
-			return [
+		$user->addInterfaceCallback(fn() => [
 				$this->getNodeDefinition()['nodeInterface']
-			];
-		});
+			]);
 
-		$user->setGetNodeCallback(function($id)
-		{
-			return $this->arimanager->getUser($id);
-		});
+		$user->setGetNodeCallback(fn($id) => $this->arimanager->getUser($id));
 
-		$user->addFieldCallback(function()
-		{
-			return [
-				'id' 			  => Relay::globalIdField('', function($row)
-				{
-					return isset($row['id']) ? $row['id'] : null;
-				}),
+		$user->addFieldCallback(fn() => [
+				'id' 			  => Relay::globalIdField('', fn($row) => $row['id'] ?? null),
 				'arimanager_id'   => [
 					'type'		  => Type::nonNull(Type::int()),
 					'description' => $this->fields['id']['description'],
-					'resolve' 	  => function($row) 
-					{
-						return isset($row['id']) ? $row['id'] : null;
-					}
+					'resolve' 	  => fn($row) => $row['id'] ?? null
 				],
 				'name' 			  => [
 					'type' 		  => $this->fields['name']['type'],
@@ -225,37 +198,24 @@ class AriManagerUser extends Base
 					'description' => $this->fields['read_only']['description'],
 				],
 
-			];
-		});
+			]);
 
-		$user->setConnectionResolveNode(function ($edge)
-		{
-			return $edge['node'];
-		});
+		$user->setConnectionResolveNode(fn($edge) => $edge['node']);
 
-		$user->setConnectionFields(function()
-		{
-			return [
+		$user->setConnectionFields(fn() => [
 				'totalCount' => [
 					'type' 	  => Type::int(),
-					'resolve' => function($value)
-					{
-						return $this->arimanager->getTotalUsers();
-					}
+					'resolve' => fn($value) => $this->arimanager->getTotalUsers()
 				],
 				'ariManagerUsers' => [
 					'type' 	  => Type::listOf($this->typeContainer->get('ariManagerUser')->getObject()),
 					'resolve' => function($root, $args)
 					{
-						$data = array_map(function($row)
-						{
-							return $row['node'];
-						}, $root['edges']);
+						$data = array_map(fn($row) => $row['node'], $root['edges']);
 						return $data;
 					}
 				]
-			];
-		});
+			]);
 	}
 
 	private function getMutationFields()
