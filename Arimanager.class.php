@@ -249,12 +249,10 @@ class Arimanager extends FreePBX_Helpers implements BMO
 		{
 			$nt->delete("ARI", "ARIMANAGER");
 		}
-		$conf[self::CONF_FILE_NAME_GENERAL] = array(
-			'enabled' 				  => $en,
-			'pretty' 				  => $this->Conf->get('ENABLE_ARI_PP') ? 'yes' : 'no',
-			'websocket_write_timeout' => $this->Conf->get('ARI_WS_WRITE_TIMEOUT'),
-			'allowed_origins' 		  => $this->Conf->get('ARI_ALLOWED_ORIGINS'),
-		);
+		$pt = $this->Conf->get('ENABLE_ARI_PP') ? 'yes' : 'no';
+		$timeout = $this->Conf->get('ARI_WS_WRITE_TIMEOUT');
+		$allowed_origins = $this->Conf->get('ARI_ALLOWED_ORIGINS');
+		$config[self::CONF_FILE_NAME_GENERAL] = "enabled=".$en."\npretty=".$pt."\nwebsocket_write_timeout=".$timeout."\nallowed_origins=".$allowed_origins;
 		// File >>> ari_general_additional.conf - END
 
 
