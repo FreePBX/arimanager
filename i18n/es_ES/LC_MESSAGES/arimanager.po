@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-30 12:33+0200\n"
+"POT-Creation-Date: 2023-08-21 04:40+0000\n"
 "PO-Revision-Date: 2023-04-30 12:35+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -32,19 +32,57 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 3.2.2\n"
 
+#: Arimanager.class.php:172 arimanager.i18n.php:26
+msgid "ARI Password"
+msgstr "Contraseña ARI"
+
+#: Arimanager.class.php:164 arimanager.i18n.php:18
+msgid "ARI Username"
+msgstr "Usuario ARI"
+
+#: Arimanager.class.php:246
+msgid "Action Required : Change ARI Username/Password"
+msgstr "Acción requerida : Cambiar el nombre de usuario/contraseña ARI"
+
+#: views/view.grid.php:22
+msgid "Actions"
+msgstr "Acciones"
+
+#: Arimanager.class.php:225
+msgid "Add Notification..."
+msgstr "Añadir notificación..."
+
+#: views/view.grid.php:3
+msgid "Add User"
+msgstr "Añadir usuario"
+
 #: Api/Gql/AriManagerUser.php:32
 msgid "Add a new entry to Asterisk REST Interface Users"
 msgstr "Añadir entrada a los usuarios de la Interfaz REST de Asterisk"
 
-#: Api/Gql/AriManagerUser.php:63
-msgid "Update an entry in Asterisk REST Interface Users"
-msgstr "Editar entrada a los usuarios de la Interfaz REST de Asterisk"
+#: assets/js/arimanager.js:213
+msgid "Adding..."
+msgstr "Añadiendo..."
 
-#: Api/Gql/AriManagerUser.php:96
-msgid "Remove an entry from Asterisk REST Interface Users"
-msgstr "Eliminar entrada a los usuarios de la Interfaz REST de Asterisk"
+#: Arimanager.class.php:654
+msgid "Alert about ARI Username/Password"
+msgstr "Alerta sobre el nombre de usuario/contraseña del ARI"
+
+#: Arimanager.class.php:193 arimanager.i18n.php:22
+msgid "Allowed Origins"
+msgstr "Orígenes permitidos"
+
+#: views/page.apps.php:24
+msgid "Application Name"
+msgstr "Nombre Aplicación"
+
+#: assets/js/arimanager.js:39
+#, perl-format
+msgid "Are you sure you want to delete (%s)?"
+msgstr "¿Estás seguro de que quieres borrar (%s)?"
 
 #: Api/Gql/AriManagerUser.php:137 Api/Gql/AriManagerUser.php:155
+#: arimanager.i18n.php:8
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful "
 "API's for building Asterisk based applications. This module provides the "
@@ -54,54 +92,7 @@ msgstr ""
 "RESTful para construir aplicaciones basadas en Asterisk. Este modulo provee "
 "la habilidad de agregar y remover usuarios ARI."
 
-#: Api/Gql/AriManagerUser.php:159
-msgid "The ID"
-msgstr "El ID"
-
-#: Api/Gql/AriManagerUser.php:270 views/view.grid.form.php:36
-msgid "Asterisk REST Interface User Name"
-msgstr "Nombre de usuario Asterisk REST Interface"
-
-#: Api/Gql/AriManagerUser.php:274 views/view.grid.form.php:60
-msgid "Asterisk REST Inferface Password."
-msgstr "Contraseña de Inferface Asterisk REST."
-
-#: Api/Gql/AriManagerUser.php:278 views/view.grid.form.php:88
-msgid ""
-"For the security consious, you probably don't want to put plaintext "
-"passwords in the configuration file. ARI supports the use of crypt(3) for "
-"password storage."
-msgstr ""
-"Para los consciente en seguridad, es probable que no quieran poner "
-"contraseñas en texto plano en el archivo de configuración. ARI apoya el uso "
-"de crypt (3) para el almacenamiento de contraseña."
-
-#: Api/Gql/AriManagerUser.php:282 views/view.grid.form.php:115
-msgid "Set to Yes for read-only applications."
-msgstr "Póngalo en Si para aplicaciones solo-lectura."
-
-#: Arimanager.class.php:118
-#, php-format
-msgid "Page Not Found (%s)!!!!"
-msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
-
-#: Arimanager.class.php:125
-msgid "Checking if ARI is enabled and preparing settings..."
-msgstr "Comprobar si ARI está activado y preparar los ajustes..."
-
-#: Arimanager.class.php:150 Arimanager.class.php:221 Arimanager.class.php:227
-msgid "Done!"
-msgstr "¡Hecho!"
-
-#: Arimanager.class.php:152
-msgid "Configuring advanced settings..."
-msgstr "Configurar los ajustes avanzados..."
-
-#: Arimanager.class.php:157
-msgid "Enable the Asterisk REST Interface"
-msgstr "Habilitar Asterisk REST Interface"
-
-#: Arimanager.class.php:158
+#: Arimanager.class.php:158 arimanager.i18n.php:16
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -111,45 +102,67 @@ msgstr ""
 "para crear aplicaciones basadas en Asterisk. Esto habilitará el servidor "
 "ARI, siempre y cuando el servidor HTTP también esté habilitado."
 
-#: Arimanager.class.php:164
-msgid "ARI Username"
-msgstr "Usuario ARI"
+#: Api/Gql/AriManagerUser.php:274 views/view.grid.form.php:60
+msgid "Asterisk REST Inferface Password."
+msgstr "Contraseña de Inferface Asterisk REST."
 
-#: Arimanager.class.php:165
-msgid "Username for internal ARI calls"
-msgstr "Usuario para las llamadas ARI Internas"
+#: Arimanager.class.php:212 arimanager.i18n.php:14
+msgid "Asterisk REST Interface"
+msgstr "Interface Asterisk REST"
 
-#: Arimanager.class.php:172
-msgid "ARI Password"
-msgstr "Contraseña ARI"
+#: views/page.apps.php:2
+msgid "Asterisk REST Interface Applications"
+msgstr "Aplicaciones Interfaces Asterisk REST"
 
-#: Arimanager.class.php:173
-msgid "Password for internal ARI calls"
-msgstr "Contraseña para llamadas internas ARI"
+#: Api/Gql/AriManagerUser.php:270 views/view.grid.form.php:36
+msgid "Asterisk REST Interface User Name"
+msgstr "Nombre de usuario Asterisk REST Interface"
 
-#: Arimanager.class.php:179
-msgid "Pretty Print JSON Responses"
-msgstr "Respuestas Pretty Print JSON"
-
-#: Arimanager.class.php:180
-msgid "Enable pretty-printing of the JSON responses from Asterisk"
-msgstr "Habilitar respuestas pretty-printing de JSON desde Asterisk"
-
-#: Arimanager.class.php:186
-msgid "Web Socket Write Timeout"
-msgstr "Tiempo de espera de escritura Web Socket"
-
-#: Arimanager.class.php:187
-msgid "The timeout (in milliseconds) to set on WebSocket connections."
+#: arimanager.i18n.php:4 arimanager.i18n.php:10
+msgid "Asterisk REST Interface Users"
 msgstr ""
-"El tiempo de espera (en mili-segundos) para establecer conexiones en "
-"WebSocket."
 
-#: Arimanager.class.php:193
-msgid "Allowed Origins"
-msgstr "Orígenes permitidos"
+#: views/page.main.php:25
+msgid "Asterisk Rest Interface Users"
+msgstr "Usuarios de Inteface Rest Asterisk"
 
-#: Arimanager.class.php:194
+#: views/page.apps.php:26
+msgid "Bridge Count"
+msgstr "Conteo Bridge"
+
+#: assets/js/arimanager.js:262
+msgid "Bridges:"
+msgstr "Bridges:"
+
+#: Arimanager.class.php:560
+msgid "Cannot be deleted as it does not exist!"
+msgstr "No se puede eliminar porque no existe!"
+
+#: Arimanager.class.php:489
+msgid "Cannot be renamed as this user already exists!"
+msgstr "No se puede cambiar el nombre de este usuario porque ya existe!"
+
+#: Arimanager.class.php:485
+msgid "Cannot be update as it does not exist!"
+msgstr "No se puede actualizar porque no existe!"
+
+#: views/page.apps.php:25
+msgid "Channel Count"
+msgstr "Conteo Canales"
+
+#: assets/js/arimanager.js:260
+msgid "Channels:"
+msgstr "Canales:"
+
+#: Arimanager.class.php:125
+msgid "Checking if ARI is enabled and preparing settings..."
+msgstr "Comprobar si ARI está activado y preparar los ajustes..."
+
+#: views/view.grid.form.php:124
+msgid "Close"
+msgstr "Cerrar"
+
+#: Arimanager.class.php:194 arimanager.i18n.php:24
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -158,102 +171,69 @@ msgstr ""
 "Compartidos de Cross-Origin. Puede ser fijado en * para permitir todos los "
 "orígenes."
 
-#: Arimanager.class.php:212
-msgid "Asterisk REST Interface"
-msgstr "Interface Asterisk REST"
-
-#: Arimanager.class.php:225
-msgid "Add Notification..."
-msgstr "Añadir notificación..."
-
-#: Arimanager.class.php:246
-msgid "Action Required : Change ARI Username/Password"
-msgstr "Acción requerida : Cambiar el nombre de usuario/contraseña ARI"
-
-#: Arimanager.class.php:246
-msgid ""
-"Your system is using default ARI username so recommend you to please change "
-"ARI username and password at the earliest (If ARI is not visible, Please "
-"enable 'Display Readonly Settings' And 'Override Readonly Settings"
-msgstr ""
-"Su sistema está utilizando el nombre de usuario ARI por defecto, por lo que "
-"le recomendamos que cambie el nombre de usuario ARI y la contraseña lo antes "
-"posible (Si ARI no es visible, por favor, active \"Mostrar configuración de "
-"sólo lectura\" y \"Anular configuración de sólo lectura\")"
-
-#: Arimanager.class.php:367
-msgid "No data received!"
-msgstr "No se han recibido datos!"
-
-#: Arimanager.class.php:383
-msgid "Create Successfully"
-msgstr "Creado Correctamente"
-
-#: Arimanager.class.php:404
-msgid "Update Successfully"
-msgstr "Actualizado Correctamente"
-
-#: Arimanager.class.php:412
-msgid "Type not found!"
-msgstr "Tipo no encontrado!"
-
-#: Arimanager.class.php:424
-msgid "Removed Successfully"
-msgstr "Eliminado Correctamente"
-
-#: Arimanager.class.php:428
-msgid "Removed Failed!"
-msgstr "¡Eliminación fallida!"
-
-#: Arimanager.class.php:438
+#: Arimanager.class.php:436
 msgid "Command not found!"
 msgstr "¡Comando no encontrado!"
 
-#: Arimanager.class.php:456
-msgid "User Already Exists!"
-msgstr "El usuario ya existe!"
+#: Arimanager.class.php:152
+msgid "Configuring advanced settings..."
+msgstr "Configurar los ajustes avanzados..."
 
-#: Arimanager.class.php:460 Arimanager.class.php:499
-msgid "Password format is not supported!"
-msgstr "Formato de contraseña no soportado!"
+#: assets/js/arimanager.js:250
+msgid "Create New"
+msgstr "Crear Nuevo"
 
-#: Arimanager.class.php:483
-msgid "No user has been selected to be update!"
-msgstr "Ningún usuario ha sido seleccionado para ser actualizado!"
+#: Arimanager.class.php:381
+msgid "Create Successfully"
+msgstr "Creado Correctamente"
 
-#: Arimanager.class.php:487
-msgid "Cannot be update as it does not exist!"
-msgstr "No se puede actualizar porque no existe!"
+#: views/view.grid.form.php:78
+msgid "Crypt"
+msgstr "Criptografía"
 
-#: Arimanager.class.php:491
-msgid "Cannot be renamed as this user already exists!"
-msgstr "No se puede cambiar el nombre de este usuario porque ya existe!"
+#: views/page.apps.php:28
+msgid "Device Count"
+msgstr "Conteo Dispositivos"
 
-#: Arimanager.class.php:495 assets/js/arimanager.js:209
-msgid "User Password Can Not Be Blank!"
-msgstr "Contraseña de Usuario no puede estar en Blanco!"
+#: assets/js/arimanager.js:266
+msgid "Devices:"
+msgstr "Dispositivos:"
 
-#: Arimanager.class.php:558
-msgid "No User has been selected to be removed!"
-msgstr "Ningún usuario ha sido seleccionado para ser eliminado!"
+#: Arimanager.class.php:150 Arimanager.class.php:221 Arimanager.class.php:227
+msgid "Done!"
+msgstr "¡Hecho!"
 
-#: Arimanager.class.php:562
-msgid "Cannot be deleted as it does not exist!"
-msgstr "No se puede eliminar porque no existe!"
+#: Arimanager.class.php:180 arimanager.i18n.php:32
+msgid "Enable pretty-printing of the JSON responses from Asterisk"
+msgstr "Habilitar respuestas pretty-printing de JSON desde Asterisk"
 
-#: Arimanager.class.php:594
-msgid "No User specified!"
-msgstr "No se ha especificado ningún usuario!"
+#: Arimanager.class.php:157 arimanager.i18n.php:12
+msgid "Enable the Asterisk REST Interface"
+msgstr "Habilitar Asterisk REST Interface"
 
-#: Arimanager.class.php:602
-msgid "The User does not exist!"
-msgstr "El usuario no existe!"
+#: views/page.apps.php:27
+msgid "Endpoint Count"
+msgstr "Conteo de Endpoints"
 
-#: Arimanager.class.php:656
-msgid "Alert about ARI Username/Password"
-msgstr "Alerta sobre el nombre de usuario/contraseña del ARI"
+#: assets/js/arimanager.js:264
+msgid "Endpoints:"
+msgstr "Endpoints:"
 
-#: Arimanager.class.php:656
+#: Arimanager.class.php:729
+#, php-format
+msgid "Error (%s): %s"
+msgstr "Error (%s): %s"
+
+#: Arimanager.class.php:721
+msgid "Error 404!"
+msgstr "Error 404!"
+
+#: Arimanager.class.php:725
+#, php-format
+msgid "Error 422: %s"
+msgstr "Error 422: %s"
+
+#: Arimanager.class.php:654
 msgid ""
 "For security reasons, we have updated the Asterisk ARI username and password "
 "to random values for your PBXact Cloud system. In the unlikely case where "
@@ -268,123 +248,117 @@ msgstr ""
 "nuevo nombre de usuario y contraseña ARI.  Si tiene alguna pregunta, póngase "
 "en contacto con el soporte de PBXact Cloud."
 
-#: Arimanager.class.php:698
-msgid "The Asterisk REST Interface Module is not loaded in asterisk"
-msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
+#: views/view.grid.form.php:88
+msgid ""
+"For the security concerns, you probably don't want to put plaintext "
+"passwords in the configuration file. ARI supports the use of crypt(3) for "
+"password storage."
+msgstr ""
 
-#: Arimanager.class.php:705
-msgid "The Asterisk REST Interface is Currently Disabled."
-msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
-
-#: Arimanager.class.php:723
-msgid "Error 404!"
-msgstr "Error 404!"
-
-#: Arimanager.class.php:727
-#, php-format
-msgid "Error 422: %s"
-msgstr "Error 422: %s"
-
-#: Arimanager.class.php:731
-#, php-format
-msgid "Error (%s): %s"
-msgstr "Error (%s): %s"
+#: Api/Gql/AriManagerUser.php:278
+msgid ""
+"For the security consious, you probably don't want to put plaintext "
+"passwords in the configuration file. ARI supports the use of crypt(3) for "
+"password storage."
+msgstr ""
+"Para los consciente en seguridad, es probable que no quieran poner "
+"contraseñas en texto plano en el archivo de configuración. ARI apoya el uso "
+"de crypt (3) para el almacenamiento de contraseña."
 
 #: assets/js/arimanager.js:34
 msgid "ID not detected!"
 msgstr "¡ID no detectado!"
 
-#: assets/js/arimanager.js:39
-#, javascript-format
-msgid "Are you sure you want to delete (%s)?"
-msgstr "¿Estás seguro de que quieres borrar (%s)?"
+#: views/view.grid.form.php:11
+msgid "Loading..."
+msgstr "Cargando..."
 
-#: assets/js/arimanager.js:40 views/view.grid.form.php:105
-msgid "Yes"
-msgstr "Si"
-
-#: assets/js/arimanager.js:40 views/view.grid.form.php:107
+#: views/view.grid.form.php:107 assets/js/arimanager.js:40
 msgid "No"
 msgstr "No"
 
-#: assets/js/arimanager.js:101
-msgid "Add Asterisk REST Interface User"
-msgstr "Añadir usuarios Asterisk Interface REST"
+#: Arimanager.class.php:556
+msgid "No User has been selected to be removed!"
+msgstr "Ningún usuario ha sido seleccionado para ser eliminado!"
 
-#: assets/js/arimanager.js:102 assets/js/arimanager.js:250
-msgid "Create New"
-msgstr "Crear Nuevo"
+#: Arimanager.class.php:592
+msgid "No User specified!"
+msgstr "No se ha especificado ningún usuario!"
 
-#: assets/js/arimanager.js:108
-#, javascript-format
-msgid "Edit Asterisk REST Interface User (%s)"
-msgstr "Editar usuario de la interfaz REST de Asterisk (%s)"
+#: Arimanager.class.php:365
+msgid "No data received!"
+msgstr "No se han recibido datos!"
 
-#: assets/js/arimanager.js:109 assets/js/arimanager.js:250
-#: views/view.grid.form.php:125
+#: Arimanager.class.php:481
+msgid "No user has been selected to be update!"
+msgstr "Ningún usuario ha sido seleccionado para ser actualizado!"
+
+#: Arimanager.class.php:118
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
+
+#: views/view.grid.form.php:72
+msgid "Password Type"
+msgstr "Tipo Contraseña"
+
+#: Arimanager.class.php:173 arimanager.i18n.php:28
+msgid "Password for internal ARI calls"
+msgstr "Contraseña para llamadas internas ARI"
+
+#: Arimanager.class.php:458 Arimanager.class.php:497
+msgid "Password format is not supported!"
+msgstr "Formato de contraseña no soportado!"
+
+#: views/view.grid.form.php:80
+msgid "Plain Text"
+msgstr "Texto plano"
+
+#: Arimanager.class.php:179 arimanager.i18n.php:30
+msgid "Pretty Print JSON Responses"
+msgstr "Respuestas Pretty Print JSON"
+
+#: views/view.grid.form.php:100 views/view.grid.php:21
+msgid "Read Only"
+msgstr "Solo Lectura"
+
+#: Api/Gql/AriManagerUser.php:96
+msgid "Remove an entry from Asterisk REST Interface Users"
+msgstr "Eliminar entrada a los usuarios de la Interfaz REST de Asterisk"
+
+#: Arimanager.class.php:426
+msgid "Removed Failed!"
+msgstr "¡Eliminación fallida!"
+
+#: Arimanager.class.php:422
+msgid "Removed Successfully"
+msgstr "Eliminado Correctamente"
+
+#: views/view.grid.form.php:125 assets/js/arimanager.js:250
 msgid "Save Changes"
 msgstr "Guardar Cambios"
 
-#: assets/js/arimanager.js:138
-#, javascript-format
-msgid "Error: %s"
-msgstr "Error: %s"
+#: Api/Gql/AriManagerUser.php:282 views/view.grid.form.php:115
+msgid "Set to Yes for read-only applications."
+msgstr "Póngalo en Si para aplicaciones solo-lectura."
 
-#: assets/js/arimanager.js:204
-msgid "User Name Can Not Be Blank!"
-msgstr "Nombre de Usuario no puede estar en Blanco!"
+#: arimanager.i18n.php:6
+msgid "Settings"
+msgstr "Opciones"
 
-#: assets/js/arimanager.js:213
-msgid "Updating..."
-msgstr "Actualizando..."
+#: Arimanager.class.php:696
+msgid "The Asterisk REST Interface Module is not loaded in asterisk"
+msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
 
-#: assets/js/arimanager.js:213
-msgid "Adding..."
-msgstr "Añadiendo..."
+#: views/page.main.php:21
+msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
+msgstr ""
+"Interface Asterisk REST está actualmente deshabilitada en la configuración "
+"avanzada"
 
-#: assets/js/arimanager.js:260
-msgid "Channels:"
-msgstr "Canales:"
-
-#: assets/js/arimanager.js:262
-msgid "Bridges:"
-msgstr "Bridges:"
-
-#: assets/js/arimanager.js:264
-msgid "Endpoints:"
-msgstr "Endpoints:"
-
-#: assets/js/arimanager.js:266
-msgid "Devices:"
-msgstr "Dispositivos:"
-
-#: views/page.apps.php:2
-msgid "Asterisk REST Interface Applications"
-msgstr "Aplicaciones Interfaces Asterisk REST"
-
-#: views/page.apps.php:9
-msgid "The following applications have registered with Asterisk."
-msgstr "Las siguientes aplicaciones se han registrado con Asterisk."
-
-#: views/page.apps.php:24
-msgid "Application Name"
-msgstr "Nombre Aplicación"
-
-#: views/page.apps.php:25
-msgid "Channel Count"
-msgstr "Conteo Canales"
-
-#: views/page.apps.php:26
-msgid "Bridge Count"
-msgstr "Conteo Bridge"
-
-#: views/page.apps.php:27
-msgid "Endpoint Count"
-msgstr "Conteo de Endpoints"
-
-#: views/page.apps.php:28
-msgid "Device Count"
-msgstr "Conteo Dispositivos"
+#: Arimanager.class.php:703
+msgid "The Asterisk REST Interface is Currently Disabled."
+msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
 
 #: views/page.main.php:17
 msgid ""
@@ -393,19 +367,47 @@ msgstr ""
 "El servidor Asterisk mini-HTTP está actualmente deshabilitado en la "
 "configuración avanzada"
 
-#: views/page.main.php:21
-msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
+#: Api/Gql/AriManagerUser.php:159
+msgid "The ID"
+msgstr "El ID"
+
+#: Arimanager.class.php:600
+msgid "The User does not exist!"
+msgstr "El usuario no existe!"
+
+#: assets/js/arimanager.js:204
+msgid "The Username Cannot be Blank or Contain Spaces!"
 msgstr ""
-"Interface Asterisk REST está actualmente deshabilitada en la configuración "
-"avanzada"
 
-#: views/page.main.php:25
-msgid "Asterisk Rest Interface Users"
-msgstr "Usuarios de Inteface Rest Asterisk"
+#: views/page.apps.php:9
+msgid "The following applications have registered with Asterisk."
+msgstr "Las siguientes aplicaciones se han registrado con Asterisk."
 
-#: views/view.grid.form.php:11
-msgid "Loading..."
-msgstr "Cargando..."
+#: Arimanager.class.php:187 arimanager.i18n.php:36
+msgid "The timeout (in milliseconds) to set on WebSocket connections."
+msgstr ""
+"El tiempo de espera (en mili-segundos) para establecer conexiones en "
+"WebSocket."
+
+#: Arimanager.class.php:410
+msgid "Type not found!"
+msgstr "Tipo no encontrado!"
+
+#: Api/Gql/AriManagerUser.php:63
+msgid "Update an entry in Asterisk REST Interface Users"
+msgstr "Editar entrada a los usuarios de la Interfaz REST de Asterisk"
+
+#: Arimanager.class.php:402
+msgid "Updated Successfully"
+msgstr ""
+
+#: assets/js/arimanager.js:213
+msgid "Updating..."
+msgstr "Actualizando..."
+
+#: Arimanager.class.php:454
+msgid "User Already Exists!"
+msgstr "El usuario ya existe!"
 
 #: views/view.grid.form.php:24
 msgid "User Name"
@@ -415,37 +417,51 @@ msgstr "Usuario"
 msgid "User Password"
 msgstr "Contraseña"
 
-#: views/view.grid.form.php:72
-msgid "Password Type"
-msgstr "Tipo Contraseña"
-
-#: views/view.grid.form.php:78
-msgid "Crypt"
-msgstr "Criptografía"
-
-#: views/view.grid.form.php:80
-msgid "Plain Text"
-msgstr "Texto plano"
-
-#: views/view.grid.form.php:100 views/view.grid.php:21
-msgid "Read Only"
-msgstr "Solo Lectura"
-
-#: views/view.grid.form.php:124
-msgid "Close"
-msgstr "Cerrar"
-
-#: views/view.grid.php:3
-msgid "Add User"
-msgstr "Añadir usuario"
+#: Arimanager.class.php:493 assets/js/arimanager.js:209
+msgid "User Password Can Not Be Blank!"
+msgstr "Contraseña de Usuario no puede estar en Blanco!"
 
 #: views/view.grid.php:20
 msgid "Username"
 msgstr "Nombreusuario"
 
-#: views/view.grid.php:22
-msgid "Actions"
-msgstr "Acciones"
+#: Arimanager.class.php:165 arimanager.i18n.php:20
+msgid "Username for internal ARI calls"
+msgstr "Usuario para las llamadas ARI Internas"
+
+#: Arimanager.class.php:186 arimanager.i18n.php:34
+msgid "Web Socket Write Timeout"
+msgstr "Tiempo de espera de escritura Web Socket"
+
+#: views/view.grid.form.php:105 assets/js/arimanager.js:40
+msgid "Yes"
+msgstr "Si"
+
+#: Arimanager.class.php:246
+msgid ""
+"Your system is using default ARI username so recommend you to please change "
+"ARI username and password at the earliest (If ARI is not visible, Please "
+"enable 'Display Readonly Settings' And 'Override Readonly Settings"
+msgstr ""
+"Su sistema está utilizando el nombre de usuario ARI por defecto, por lo que "
+"le recomendamos que cambie el nombre de usuario ARI y la contraseña lo antes "
+"posible (Si ARI no es visible, por favor, active \"Mostrar configuración de "
+"sólo lectura\" y \"Anular configuración de sólo lectura\")"
+
+#~ msgid "Update Successfully"
+#~ msgstr "Actualizado Correctamente"
+
+#~ msgid "Add Asterisk REST Interface User"
+#~ msgstr "Añadir usuarios Asterisk Interface REST"
+
+#~ msgid "Edit Asterisk REST Interface User (%s)"
+#~ msgstr "Editar usuario de la interfaz REST de Asterisk (%s)"
+
+#~ msgid "Error: %s"
+#~ msgstr "Error: %s"
+
+#~ msgid "User Name Can Not Be Blank!"
+#~ msgstr "Nombre de Usuario no puede estar en Blanco!"
 
 #~ msgid "Delete"
 #~ msgstr "Borrar"
@@ -458,9 +474,6 @@ msgstr "Acciones"
 
 #~ msgid "Reset"
 #~ msgstr "Reiniciar"
-
-#~ msgid "Settings"
-#~ msgstr "Opciones"
 
 #~ msgid "Submit"
 #~ msgstr "Enviar"
