@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 12:44+0000\n"
+"POT-Creation-Date: 2024-05-16 23:46-0400\n"
 "PO-Revision-Date: 2017-07-14 10:03+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,15 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:26
+#: Arimanager.class.php:128 arimanager.i18n.php:34
 msgid "ARI Password"
 msgstr "ARI Mật khẩu"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:18
+#: Arimanager.class.php:128 arimanager.i18n.php:30
 msgid "ARI Username"
 msgstr "ARI Tên người dùng"
 
-#: Arimanager.class.php:164
+#: Arimanager.class.php:166
 msgid "Action Required : Change ARI Username/Password"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Các thao tác"
 
-#: Arimanager.class.php:140
+#: Arimanager.class.php:142
 msgid "Add Notification..."
 msgstr ""
 
@@ -53,11 +53,11 @@ msgstr ""
 msgid "Adding..."
 msgstr ""
 
-#: Arimanager.class.php:488
+#: Arimanager.class.php:490
 msgid "Alert about ARI Username/Password"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:22
+#: Arimanager.class.php:128 arimanager.i18n.php:12
 msgid "Allowed Origins"
 msgstr "Các nguồn gốc được cho phép"
 
@@ -81,7 +81,7 @@ msgstr ""
 "những API đi theo cấu trúc REST cho việc tạo nên các ứng dụng dựa trên "
 "Asterisk. Mô đun này cung cấp khả năng Thêm hoặc Xóa ARI người dùng."
 
-#: Arimanager.class.php:128 arimanager.i18n.php:16
+#: Arimanager.class.php:128 arimanager.i18n.php:20
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -124,15 +124,15 @@ msgstr "Đếm Bridge"
 msgid "Bridges:"
 msgstr ""
 
-#: Arimanager.class.php:407
+#: Arimanager.class.php:409
 msgid "Cannot be deleted as it does not exist!"
 msgstr ""
 
-#: Arimanager.class.php:348
+#: Arimanager.class.php:350
 msgid "Cannot be renamed as this user already exists!"
 msgstr ""
 
-#: Arimanager.class.php:345
+#: Arimanager.class.php:347
 msgid "Cannot be update as it does not exist!"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:24
+#: Arimanager.class.php:128 arimanager.i18n.php:16
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -160,7 +160,7 @@ msgstr ""
 "Danh sách các nguồn gốc được cho phép ngăn cách nhau bằng dấu phẩy, cho việc "
 "chia sẻ nguồn gốc chéo. Có thể cài đặt * cho phép tất cả các nguồn gốc\"."
 
-#: Arimanager.class.php:302
+#: Arimanager.class.php:304
 msgid "Command not found!"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr ""
 msgid "Create New"
 msgstr ""
 
-#: Arimanager.class.php:256
+#: Arimanager.class.php:258
 msgid "Create Successfully"
 msgstr ""
 
@@ -188,15 +188,15 @@ msgstr "Đếm thiết bị"
 msgid "Devices:"
 msgstr ""
 
-#: Arimanager.class.php:125 Arimanager.class.php:137 Arimanager.class.php:142
+#: Arimanager.class.php:125 Arimanager.class.php:137 Arimanager.class.php:144
 msgid "Done!"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:32
+#: Arimanager.class.php:128 arimanager.i18n.php:24
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "Kích hoạt pretty-priting của các hồi đáp lệnh JSON từ Asterisk"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:12
+#: Arimanager.class.php:128 arimanager.i18n.php:18
 msgid "Enable the Asterisk REST Interface"
 msgstr "Kích hoạt giao diện Asterisk REST"
 
@@ -208,21 +208,21 @@ msgstr "Đếm điểm cuối"
 msgid "Endpoints:"
 msgstr ""
 
-#: Arimanager.class.php:550
+#: Arimanager.class.php:571
 #, php-format
 msgid "Error (%s): %s"
 msgstr ""
 
-#: Arimanager.class.php:544
+#: Arimanager.class.php:565
 msgid "Error 404!"
 msgstr ""
 
-#: Arimanager.class.php:547
+#: Arimanager.class.php:568
 #, php-format
 msgid "Error 422: %s"
 msgstr ""
 
-#: Arimanager.class.php:488
+#: Arimanager.class.php:490
 msgid ""
 "For security reasons, we have updated the Asterisk ARI username and password "
 "to random values for your PBXact Cloud system. In the unlikely case where "
@@ -260,20 +260,28 @@ msgstr ""
 msgid "No"
 msgstr "Không"
 
-#: Arimanager.class.php:404
+#: Arimanager.class.php:406
 msgid "No User has been selected to be removed!"
 msgstr ""
 
-#: Arimanager.class.php:436
+#: Arimanager.class.php:438
 msgid "No User specified!"
 msgstr ""
 
-#: Arimanager.class.php:243
+#: Arimanager.class.php:245
 msgid "No data received!"
 msgstr ""
 
-#: Arimanager.class.php:342
+#: Arimanager.class.php:344
 msgid "No user has been selected to be update!"
+msgstr ""
+
+#: Arimanager.class.php:508
+msgid "Non Supported character in ARI manager / password"
+msgstr ""
+
+#: Arimanager.class.php:501
+msgid "Non Supported character in ARI manager/ password"
 msgstr ""
 
 #: Arimanager.class.php:96
@@ -285,11 +293,11 @@ msgstr ""
 msgid "Password Type"
 msgstr "Kiểu mật khẩu"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:28
+#: Arimanager.class.php:128 arimanager.i18n.php:36
 msgid "Password for internal ARI calls"
 msgstr "Mật khẩu cho các cuộc gọi ARI nội bộ"
 
-#: Arimanager.class.php:321 Arimanager.class.php:354
+#: Arimanager.class.php:323 Arimanager.class.php:356
 msgid "Password format is not supported!"
 msgstr ""
 
@@ -297,7 +305,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr "Văn bản thuần túy"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:30
+#: Arimanager.class.php:128 arimanager.i18n.php:22
 msgid "Pretty Print JSON Responses"
 msgstr "Các hồi đáp lệnh Pretty Print JSON"
 
@@ -309,11 +317,11 @@ msgstr "Chỉ được đọc"
 msgid "Remove an entry from Asterisk REST Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:293
+#: Arimanager.class.php:295
 msgid "Removed Failed!"
 msgstr ""
 
-#: Arimanager.class.php:290
+#: Arimanager.class.php:292
 msgid "Removed Successfully"
 msgstr ""
 
@@ -329,7 +337,7 @@ msgstr "Cài đặt Có cho các ứng dụng chỉ được đọc."
 msgid "Settings"
 msgstr "Các cài đặt"
 
-#: Arimanager.class.php:524
+#: Arimanager.class.php:545
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
@@ -337,7 +345,7 @@ msgstr ""
 msgid "The Asterisk REST Interface is Currently Disabled in Advanced Settings"
 msgstr "Giao diện Asterisk REST hiện tại đã bị vô hiệu trong cài đặt nâng cao"
 
-#: Arimanager.class.php:529
+#: Arimanager.class.php:550
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
@@ -351,7 +359,7 @@ msgstr ""
 msgid "The ID"
 msgstr ""
 
-#: Arimanager.class.php:443
+#: Arimanager.class.php:445
 msgid "The User does not exist!"
 msgstr ""
 
@@ -363,12 +371,12 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr "Các ứng dụng sau đây vừa được đăng ký với Asterisk."
 
-#: Arimanager.class.php:128 arimanager.i18n.php:36
+#: Arimanager.class.php:128 arimanager.i18n.php:28
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
 "Thời gian chờ ( tính bằng mili giây) để thiết lập trên các kết nối WebSocket."
 
-#: Arimanager.class.php:280
+#: Arimanager.class.php:282
 msgid "Type not found!"
 msgstr ""
 
@@ -376,7 +384,7 @@ msgstr ""
 msgid "Update an entry in Asterisk REST Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:273
+#: Arimanager.class.php:275
 msgid "Updated Successfully"
 msgstr ""
 
@@ -384,7 +392,7 @@ msgstr ""
 msgid "Updating..."
 msgstr ""
 
-#: Arimanager.class.php:318
+#: Arimanager.class.php:320
 msgid "User Already Exists!"
 msgstr "Người dùng đã tồn tại!"
 
@@ -396,7 +404,7 @@ msgstr ""
 msgid "User Password"
 msgstr ""
 
-#: Arimanager.class.php:351 assets/js/arimanager.js:209
+#: Arimanager.class.php:353 assets/js/arimanager.js:209
 msgid "User Password Can Not Be Blank!"
 msgstr "Mật khẩu người dùng không thể để trống!"
 
@@ -404,11 +412,25 @@ msgstr "Mật khẩu người dùng không thể để trống!"
 msgid "Username"
 msgstr "Tên người dùng"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:20
+#: Arimanager.class.php:128 arimanager.i18n.php:32
 msgid "Username for internal ARI calls"
 msgstr "Tên người dùng cho các cuộc gọi ARI nội bộ"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:34
+#: Arimanager.class.php:508
+#, php-format
+msgid ""
+"We have found '+' sign in your ARI manager user/ password which is not "
+"supported so please remove the '+' sign from your ARI Manager(%s) / password"
+msgstr ""
+
+#: Arimanager.class.php:501
+#, php-format
+msgid ""
+"We have found '+' sign in your ARI manager user/password which is not "
+"supported so please remove the '+' sign from your ARI Manager (%s) / password"
+msgstr ""
+
+#: Arimanager.class.php:128 arimanager.i18n.php:26
 msgid "Web Socket Write Timeout"
 msgstr "Thời gian chờ đọc Web Socket"
 
@@ -416,7 +438,7 @@ msgstr "Thời gian chờ đọc Web Socket"
 msgid "Yes"
 msgstr "Có"
 
-#: Arimanager.class.php:164
+#: Arimanager.class.php:166
 msgid ""
 "Your system is using default ARI username so recommend you to please change "
 "ARI username and password at the earliest (If ARI is not visible, Please "

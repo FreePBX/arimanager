@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 12:44+0000\n"
+"POT-Creation-Date: 2024-05-16 23:46-0400\n"
 "PO-Revision-Date: 2017-12-01 18:33+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,15 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:26
+#: Arimanager.class.php:128 arimanager.i18n.php:34
 msgid "ARI Password"
 msgstr "Mot de passe ARI"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:18
+#: Arimanager.class.php:128 arimanager.i18n.php:30
 msgid "ARI Username"
 msgstr "Nom d'utilisateur ARI"
 
-#: Arimanager.class.php:164
+#: Arimanager.class.php:166
 msgid "Action Required : Change ARI Username/Password"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Actions"
 
-#: Arimanager.class.php:140
+#: Arimanager.class.php:142
 msgid "Add Notification..."
 msgstr ""
 
@@ -53,11 +53,11 @@ msgstr ""
 msgid "Adding..."
 msgstr ""
 
-#: Arimanager.class.php:488
+#: Arimanager.class.php:490
 msgid "Alert about ARI Username/Password"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:22
+#: Arimanager.class.php:128 arimanager.i18n.php:12
 msgid "Allowed Origins"
 msgstr "Origines autorisées"
 
@@ -81,7 +81,7 @@ msgstr ""
 "RESTful pour la création d'applications basé sur Asterisk . Ce module offre "
 "la possibilité d'ajouter et de supprimer des utilisateurs ARI ."
 
-#: Arimanager.class.php:128 arimanager.i18n.php:16
+#: Arimanager.class.php:128 arimanager.i18n.php:20
 msgid ""
 "Asterisk 12 introduces the Asterisk REST Interface, a set of RESTful API's "
 "for building Asterisk based applications. This will enable the ARI server as "
@@ -123,15 +123,15 @@ msgstr "Nombre de pont"
 msgid "Bridges:"
 msgstr ""
 
-#: Arimanager.class.php:407
+#: Arimanager.class.php:409
 msgid "Cannot be deleted as it does not exist!"
 msgstr ""
 
-#: Arimanager.class.php:348
+#: Arimanager.class.php:350
 msgid "Cannot be renamed as this user already exists!"
 msgstr ""
 
-#: Arimanager.class.php:345
+#: Arimanager.class.php:347
 msgid "Cannot be update as it does not exist!"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:24
+#: Arimanager.class.php:128 arimanager.i18n.php:16
 msgid ""
 "Comma separated list of allowed origins, for Cross-Origin Resource Sharing. "
 "May be set to * to allow all origins."
@@ -160,7 +160,7 @@ msgstr ""
 "ressources d'origine croisée. Peut être défini sur * pour autoriser toutes "
 "les origines."
 
-#: Arimanager.class.php:302
+#: Arimanager.class.php:304
 msgid "Command not found!"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr ""
 msgid "Create New"
 msgstr ""
 
-#: Arimanager.class.php:256
+#: Arimanager.class.php:258
 msgid "Create Successfully"
 msgstr ""
 
@@ -188,15 +188,15 @@ msgstr "Nombre de d’équipement"
 msgid "Devices:"
 msgstr ""
 
-#: Arimanager.class.php:125 Arimanager.class.php:137 Arimanager.class.php:142
+#: Arimanager.class.php:125 Arimanager.class.php:137 Arimanager.class.php:144
 msgid "Done!"
 msgstr ""
 
-#: Arimanager.class.php:128 arimanager.i18n.php:32
+#: Arimanager.class.php:128 arimanager.i18n.php:24
 msgid "Enable pretty-printing of the JSON responses from Asterisk"
 msgstr "Activer le formatage et l'indentation des réponses JSON d'Asterisk"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:12
+#: Arimanager.class.php:128 arimanager.i18n.php:18
 msgid "Enable the Asterisk REST Interface"
 msgstr "Activer l'interface REST d'Asterisk"
 
@@ -208,21 +208,21 @@ msgstr "Nombre de Postes"
 msgid "Endpoints:"
 msgstr ""
 
-#: Arimanager.class.php:550
+#: Arimanager.class.php:571
 #, php-format
 msgid "Error (%s): %s"
 msgstr ""
 
-#: Arimanager.class.php:544
+#: Arimanager.class.php:565
 msgid "Error 404!"
 msgstr ""
 
-#: Arimanager.class.php:547
+#: Arimanager.class.php:568
 #, php-format
 msgid "Error 422: %s"
 msgstr ""
 
-#: Arimanager.class.php:488
+#: Arimanager.class.php:490
 msgid ""
 "For security reasons, we have updated the Asterisk ARI username and password "
 "to random values for your PBXact Cloud system. In the unlikely case where "
@@ -260,20 +260,28 @@ msgstr ""
 msgid "No"
 msgstr "Non"
 
-#: Arimanager.class.php:404
+#: Arimanager.class.php:406
 msgid "No User has been selected to be removed!"
 msgstr ""
 
-#: Arimanager.class.php:436
+#: Arimanager.class.php:438
 msgid "No User specified!"
 msgstr ""
 
-#: Arimanager.class.php:243
+#: Arimanager.class.php:245
 msgid "No data received!"
 msgstr ""
 
-#: Arimanager.class.php:342
+#: Arimanager.class.php:344
 msgid "No user has been selected to be update!"
+msgstr ""
+
+#: Arimanager.class.php:508
+msgid "Non Supported character in ARI manager / password"
+msgstr ""
+
+#: Arimanager.class.php:501
+msgid "Non Supported character in ARI manager/ password"
 msgstr ""
 
 #: Arimanager.class.php:96
@@ -285,11 +293,11 @@ msgstr ""
 msgid "Password Type"
 msgstr "Type de mot de passe"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:28
+#: Arimanager.class.php:128 arimanager.i18n.php:36
 msgid "Password for internal ARI calls"
 msgstr "Mot de passe pour les appels internes ARI"
 
-#: Arimanager.class.php:321 Arimanager.class.php:354
+#: Arimanager.class.php:323 Arimanager.class.php:356
 msgid "Password format is not supported!"
 msgstr ""
 
@@ -297,7 +305,7 @@ msgstr ""
 msgid "Plain Text"
 msgstr "Texte en clair"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:30
+#: Arimanager.class.php:128 arimanager.i18n.php:22
 msgid "Pretty Print JSON Responses"
 msgstr "Formate et indente les réponses JSON"
 
@@ -309,11 +317,11 @@ msgstr "Lecture seulement"
 msgid "Remove an entry from Asterisk REST Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:293
+#: Arimanager.class.php:295
 msgid "Removed Failed!"
 msgstr ""
 
-#: Arimanager.class.php:290
+#: Arimanager.class.php:292
 msgid "Removed Successfully"
 msgstr ""
 
@@ -329,7 +337,7 @@ msgstr "Choisissez Oui pour les applications en lecture seule."
 msgid "Settings"
 msgstr "Paramètres"
 
-#: Arimanager.class.php:524
+#: Arimanager.class.php:545
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
@@ -339,7 +347,7 @@ msgstr ""
 "L'interface REST d'Asterisk est actuellement désactivée dans les paramètres "
 "avancés"
 
-#: Arimanager.class.php:529
+#: Arimanager.class.php:550
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
@@ -354,7 +362,7 @@ msgstr ""
 msgid "The ID"
 msgstr ""
 
-#: Arimanager.class.php:443
+#: Arimanager.class.php:445
 msgid "The User does not exist!"
 msgstr ""
 
@@ -366,13 +374,13 @@ msgstr ""
 msgid "The following applications have registered with Asterisk."
 msgstr "Les applications suivantes sont enregistrées avec Asterisk."
 
-#: Arimanager.class.php:128 arimanager.i18n.php:36
+#: Arimanager.class.php:128 arimanager.i18n.php:28
 msgid "The timeout (in milliseconds) to set on WebSocket connections."
 msgstr ""
 "Le délai d'expiration (en millisecondes) à définir sur les connexions "
 "WebSocket."
 
-#: Arimanager.class.php:280
+#: Arimanager.class.php:282
 msgid "Type not found!"
 msgstr ""
 
@@ -380,7 +388,7 @@ msgstr ""
 msgid "Update an entry in Asterisk REST Interface Users"
 msgstr ""
 
-#: Arimanager.class.php:273
+#: Arimanager.class.php:275
 msgid "Updated Successfully"
 msgstr ""
 
@@ -388,7 +396,7 @@ msgstr ""
 msgid "Updating..."
 msgstr ""
 
-#: Arimanager.class.php:318
+#: Arimanager.class.php:320
 msgid "User Already Exists!"
 msgstr "L'utilisateur existe déjà !"
 
@@ -400,7 +408,7 @@ msgstr ""
 msgid "User Password"
 msgstr ""
 
-#: Arimanager.class.php:351 assets/js/arimanager.js:209
+#: Arimanager.class.php:353 assets/js/arimanager.js:209
 msgid "User Password Can Not Be Blank!"
 msgstr "Le mot de passe de l'utilisateur ne peut pas être vide !"
 
@@ -408,11 +416,25 @@ msgstr "Le mot de passe de l'utilisateur ne peut pas être vide !"
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:20
+#: Arimanager.class.php:128 arimanager.i18n.php:32
 msgid "Username for internal ARI calls"
 msgstr "Nom d'utilisateur pour les appels internes d'ARI"
 
-#: Arimanager.class.php:128 arimanager.i18n.php:34
+#: Arimanager.class.php:508
+#, php-format
+msgid ""
+"We have found '+' sign in your ARI manager user/ password which is not "
+"supported so please remove the '+' sign from your ARI Manager(%s) / password"
+msgstr ""
+
+#: Arimanager.class.php:501
+#, php-format
+msgid ""
+"We have found '+' sign in your ARI manager user/password which is not "
+"supported so please remove the '+' sign from your ARI Manager (%s) / password"
+msgstr ""
+
+#: Arimanager.class.php:128 arimanager.i18n.php:26
 msgid "Web Socket Write Timeout"
 msgstr "Délai d'écriture du socket Web"
 
@@ -420,7 +442,7 @@ msgstr "Délai d'écriture du socket Web"
 msgid "Yes"
 msgstr "Oui"
 
-#: Arimanager.class.php:164
+#: Arimanager.class.php:166
 msgid ""
 "Your system is using default ARI username so recommend you to please change "
 "ARI username and password at the earliest (If ARI is not visible, Please "
