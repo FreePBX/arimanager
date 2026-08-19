@@ -3,11 +3,11 @@
 ?>
 
 <!--Add Modal -->
-<div class="modal fade" id="userForm" tabindex="-1" role="dialog" aria-labelledby="userForm" aria-hidden="true">
+<div class="modal fade" id="userForm" tabindex="-1" role="dialog" aria-labelledby="userForm" >
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title"><?php echo _("Loading...") ?></h4>
             </div>
             <div class="modal-body">
@@ -121,7 +121,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _("Close") ?></button>
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal"><?php echo _("Close") ?></button>
                 <button type="button" class="btn btn-success" id="submitForm"><?php echo _("Save Changes") ?></button>
             </div>
         </div>

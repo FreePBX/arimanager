@@ -6,7 +6,7 @@ function roFormatter(value, row, idx)
 function linkFormatter(value, row, idx)
 {
 	var html = '';
-	html += sprintf('<a href="#" data-toggle="modal" data-target="#userForm" data-id="%s"><i class="fa fa-pencil"></i></a>', value);
+	html += sprintf('<a href="#" data-bs-toggle="modal" data-bs-target="#userForm" data-id="%s"><i class="fa fa-pencil"></i></a>', value);
 	html += '&nbsp;';
 	html += sprintf('<a href="#" data-id="%s" data-name="%s" id="del" data-idx="%s"><i class="fa fa-trash"></i></a>', value, row['name'], idx);
 	return html;
@@ -75,8 +75,8 @@ $('#userForm').on('shown.bs.modal', function ()
 {
     // Force focus to generate password strength level bar.
     let elementNow = $(document.activeElement);
-    $("#passwordUser").focus();
-    $(elementNow).focus();
+    $("#nameUser").focus();
+    // $(elementNow).focus();
 });
 
 $('#userForm').on('show.bs.modal', function (e)
@@ -233,7 +233,10 @@ $('#submitForm').on('click', function () {
  		if (data.status == true)
 		{
             getTableGrid().bootstrapTable('refresh', { silent: true });
- 			$("#userForm").modal('hide');
+			if(document.activeElement){
+				document.activeElement.blur();
+			}
+			 bootstrap.Modal.getOrCreateInstance($("#userForm")[0]).hide();
  		}
         fpbxToast(data.message, '', data.status == true ? 'success' : 'error');
         if (data.needreload)

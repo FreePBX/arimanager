@@ -1,5 +1,5 @@
 <div id="toolbar-all">
-    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#userForm">
+    <a href="#" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#userForm">
         <i class="fa fa-plus"></i> <?php echo _("Add User") ?>
     </a>
 </div>
